@@ -3,10 +3,9 @@ body {
   color: white;
   border-width: 0;  
   margin: 0 auto;
-  max-width: 998px;
+  max-width: 95%;
   font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; ;
-  font-style: normal;
-    font-size: 16px;
+  font-style: normal;  font-size: 16px;
 }
 
 #t3-header{
@@ -14,10 +13,10 @@ body {
     background: #000;
 }
 .head-search {
-    height: 50px;
-    margin-left: 444px;
+    height: 85px;
+    margin-left: 653px;
     margin-top: -19px;
-    width: 900px;
+    width: 187%;
 }
 .head-search ul li {
     display: inline-block;
@@ -63,21 +62,28 @@ div.head-search ul li a.icono-redes {
 }
 /*HEADER*/
 nav.t3-mainnav{
-    background: url("../images/back-nav.png") no-repeat #000000;
-    background-size: 998px 97px;
+    background: transparent;
     height: 98px;
     width: 100%;
     color: white;
     border: 0;
 }
 
-
-div.t3-navbar{    
-    margin-top: 3%;
-    float: right;    
-    max-width: 910px;
-    width: 100%;      
+div.t3-navbar{
+    background-image: url("../images/site/back_submenu.png");
+    background-repeat: no-repeat;
+    background-size: 106% 131%;
+    float: right;
+    max-width: 100%;
+    width: 74%;
 }
+
+
+.t3-mainnav .t3-navbar {
+    padding-left: 12%;
+    padding-right: 5%;
+}
+
 .t3-sidebar-1{   
     margin-left: -209px;
     margin-top: -25px;
@@ -132,7 +138,8 @@ div.titulo-dorado > h3 {
 /*BODY*/
 div.t3-wrapper{    
     background-color: black;
-    background-image: url("../images/back_body.png") ;
+    background-image: url("../images//site/backbardahl.jpg") ;
+
     position: relative;
 }
 
@@ -150,7 +157,7 @@ div.moduleleft{
 }
 
 /*CONTIENE LOS DOS MODULOS MOSTRADOS EN LA DERECHA BUSCAR PRODUCTO Y BARDALH EN TU VIDA*/
-
+/*
 #cabecera{
     color: white;
     font-size:19pt;
@@ -162,7 +169,7 @@ div.moduleleft{
     height: 50px;
     margin-top: -15px;
     position: relative;
-}
+}*/
 
 
 div.home{
@@ -174,12 +181,17 @@ div.home{
     color: black;
     font-size:9pt;
     background-image: url("../images/site/get_your_oil.jpg") ;
-    background-size: 507px 633px;
+    background-size: 100%;
     background-repeat: no-repeat;
-    background-position: -92px -110px;    
     background-color: #FFD500;
     line-height:11px;
-    padding: 1em 10%;
+    padding: 0em 47%;
+}
+#auto{
+    margin: 11px -194px;
+}
+#buscar{
+    margin: inherit;
 }
 
 #encuentra-producto {
@@ -187,11 +199,11 @@ div.home{
 }
 
 #encuentra-producto input {
-    background: transparent;
-    border: 0;
-    margin-left: 0;
-    font-size: 1.2em;
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    font-size: 8.2em;
     font-weight: bold;
+    margin: 0 -219px;
 }
 
 /*/MODULOS PAGINA PRINCIPAL/*/
@@ -515,7 +527,7 @@ ul.noti-event-home {
     height: 209px;
 }
 .t3-sidebar-2, .t3-sidebar-right {
-    width: 281px;
+    width: 466px;
 }
 
 .t3-sidebar-2 div.t3-module, .t3-sidebar-right div.t3-module, div.titulo-dorado > h3 {
@@ -539,7 +551,7 @@ label
 input[type="text"]{
     background: white;
     width: 207px;
-    height: 35px;
+    height: 27px;
 }
 input{
 }
@@ -768,6 +780,13 @@ h1.article-title {
 }
 
 .homelink img {
+    height: 129%;
+    margin-top: -48px;
+    position: absolute;
+    width: 22%;
+}
+#img_left{
+    margin: 0.68% 22%;
     position: absolute;
 }
 
