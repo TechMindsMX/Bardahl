@@ -78,17 +78,18 @@ div.t3-navbar{
     width: 74%;
 }
 
-
-.t3-mainnav .t3-navbar {
-    padding-left: 12%;
-    padding-right: 5%;
-}
-
 .t3-sidebar-1{   
     margin-left: -209px;
     margin-top: -25px;
 }
-
+.t3-navbar2{
+    background-image: url("../images/site/back_submenu.png");
+    background-repeat: no-repeat;
+    background-size: 106% 131%;
+    float: right;
+    max-width: 100%;
+    width: 74%;
+}
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3 {
     line-height: 2em;
     font-weight: bold;
@@ -783,10 +784,17 @@ h1.article-title {
     height: 129%;
     margin-top: -48px;
     position: absolute;
-    width: 22%;
+    width:19%;
 }
+#line{
+    margin-left: -14px;
+    margin-top: -45px;
+    position: absolute;
+}
+
+
 #img_left{
-    margin: 0.68% 22%;
+    margin: 0.68% 18%;
     position: absolute;
 }
 
