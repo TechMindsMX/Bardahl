@@ -1,0 +1,783 @@
+body {
+    background: none repeat scroll 0 0 #000;
+  color: white;
+  border-width: 0;  
+  margin: 0 auto;
+  max-width: 998px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; ;
+  font-style: normal;
+    font-size: 16px;
+}
+
+#t3-header{
+    height: 51px;
+    background: #000;
+}
+.head-search {
+    height: 50px;
+    margin-left: 444px;
+    margin-top: -19px;
+    width: 900px;
+}
+.head-search ul li {
+    display: inline-block;
+    font-size: 80%;
+}
+
+div.head-search ul li a.icono-redes {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.head-search ul > li > a:hover {
+    background-image: url("../images/background.png") ;
+    background-color: black;
+    color: white;
+}
+.nav >li >a:hover {
+    background-color: #FFD500;
+    color: black;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .head-search li.item-191 > a, .head-search li.item-191 > a:hover, li.item-191 {
+    background-color: #ffd500;
+    color: black;
+    background-image: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #878787;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+#t3-mainbody{
+     background-image: url("../images/background.png") ;
+}
+
+#field5{
+    background-color: white;
+}
+/*HEADER*/
+nav.t3-mainnav{
+    background: url("../images/back-nav.png") no-repeat #000000;
+    background-size: 998px 97px;
+    height: 98px;
+    width: 100%;
+    color: white;
+    border: 0;
+}
+
+
+div.t3-navbar{    
+    margin-top: 3%;
+    float: right;    
+    max-width: 910px;
+    width: 100%;      
+}
+.t3-sidebar-1{   
+    margin-left: -209px;
+    margin-top: -25px;
+}
+
+.t3-sidebar .module-title, .module-title, div.titulo-dorado > h3 {
+    line-height: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #666;
+    padding-left: 0;
+}
+
+div.titulo-dorado > h3 {
+    background-image: url("../images/pleca_dorada_large.png");
+    background-size: 100%;
+    padding-left: 1em;
+}
+.t3-sidebar .module-title {
+    text-align: center;
+}
+.t3-sidebar-2, .t3-sidebar-right {
+}
+
+.t3-sidebar-2 .module-title, .t3-sidebar-right .module-title, .module-title, div.titulo-dorado > h3 {
+    font-size: 22px;
+}
+.t3-content{
+    display: inline-block;
+    width: 703px;
+}
+.col-md-6
+.col-md-3{
+    display: inline-block;
+}
+
+/*REFERENTE AL MEGA-MENU*/
+
+.nav-child{
+    color: white;
+    background-color: black;
+}
+.encuentralos{
+    margin-top: -10px;
+    background-color: rgb(52,52,52);
+    height: 100px;
+}
+
+.alinear_center{
+    margin-left: 200px;
+}
+
+/*BODY*/
+div.t3-wrapper{    
+    background-color: black;
+    background-image: url("../images/back_body.png") ;
+    position: relative;
+}
+
+#t3-mainbody{   
+
+    max-width: 100%;
+}
+
+/*AQUI SE MARCA EL SLIDER DE HOME*/
+
+
+div.moduleleft{
+    display: inline-block;
+    color: white;
+}
+
+/*CONTIENE LOS DOS MODULOS MOSTRADOS EN LA DERECHA BUSCAR PRODUCTO Y BARDALH EN TU VIDA*/
+
+#cabecera{
+    color: white;
+    font-size:19pt;
+    text-align: center;
+    box-shadow:0 0 50px black;
+    background-image: url("../images/plecadorada.png") ;
+    background-size: 100%;
+    background-repeat: no-repeat;    
+    height: 50px;
+    margin-top: -15px;
+    position: relative;
+}
+
+
+div.home{
+    display: inline-block;
+    width: 600px;
+}
+
+#form_buscar{
+    color: black;
+    font-size:9pt;
+    background-image: url("../images/site/get_your_oil.jpg") ;
+    background-size: 507px 633px;
+    background-repeat: no-repeat;
+    background-position: -92px -110px;    
+    background-color: #FFD500;
+    line-height:11px;
+    padding: 1em 10%;
+}
+
+#encuentra-producto {
+    text-align: center;
+}
+
+#encuentra-producto input {
+    background: transparent;
+    border: 0;
+    margin-left: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*/MODULOS PAGINA PRINCIPAL/*/
+.breadcrumb{
+    background-color: transparent;
+}
+
+ul.noti-event-home {
+    padding: 0;
+}
+
+#conten_dc{
+    display: table;
+    width: 690px;
+}
+#list{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 40px;
+}
+#list2{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 40px;
+}
+#cal_container{
+    height: 450px;
+    display: block;
+    width: 690px;
+}
+#Cal_2013{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 34px;
+    height: 282px;
+    margin-left: 19px;
+    margin-top: 15px;
+    text-align: center;
+    width: 276px;
+}
+
+#lbl_artrel{    
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 18px;
+    text-align: center;
+    width: 194px;
+    }
+#Cal_2014{
+   background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 34px;
+    height: 150px;
+    margin-left: 61px;
+    margin-top: 15px;
+    text-align: center;
+    width: 276px;    
+}
+#fondo{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 27px;
+    height: 150px;
+    margin-left: 9px;
+    margin-top: 15px;
+    text-align: center;
+    width: 263px;
+}
+#smart{
+     background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 28px;
+    height: 49px;
+    margin-left: 18px;
+    margin-top: 15px;
+    text-align: center;
+    width: 356px;
+}
+/*CONTACTOS*/
+#sender_name {
+    height: 30px;
+    width: 400px;
+}
+#sender_email{
+    height: 30px;
+    width: 400px;
+}
+#subject{
+    height: 30px;
+    width: 400px;
+}
+/*GOBIERNO*/
+
+#lbl_exploracion{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 15px;
+    height: 50px;
+    margin-left: 0;
+    text-align: center;
+    width: 217px;
+}
+#lbl_exploracion2{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 0;
+    text-align: center;
+    width: 217px;
+}
+
+#lbl_fusion{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 20px;
+    height: 50px;
+    margin-left: 0;
+    text-align: center;
+    width: 217px;    
+}
+#lbl_fusion2 {
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: inline-block;
+    font-size: 17px;
+    padding: 6px 0;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold
+}
+#lbl_lubricantes {
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-size: 19pt;
+    height: 40px;
+    width: 290px;
+}
+
+#field6{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 230% auto;
+    font-size: 12pt;
+    height: 30px;
+    margin: 15px 0 0 35px;
+    width: 84px;
+}
+/*CONTADOR DE VOTOS*/
+
+#freevotes_nuova_risposta{
+    height: 15px;
+}
+/*BARDAL EN TU VIDA*/
+#cuadro_tu_vida{
+    height: 145px;
+    width: 217px;
+    background-color: white;
+    
+}
+#cuadro_tu_vida2 {
+    background-color: white;
+    height: 179px;
+    width: 223px;
+}
+#cuadro_vida{
+    background-color: white;
+    margin: 53px 0 0 30px;
+    position: absolute;   
+}
+#cuadro_vida1 {
+    background-color: white;
+    margin: 4px 0 0 64px;
+    position: absolute;
+}
+
+#select_producto{
+    background-color: #ffffff;
+    height: 34px;
+    width: 205px;
+}
+#contact_producto{
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 15px;
+}
+#input_text{
+    width: 180px;
+}
+#cuadro_lubri {
+    background-color: white;
+    margin: 12px 0 0 100px;
+    position: absolute;
+}
+#cuadro_lubricantes{
+    background-color: white;
+    height: 205px;
+    width: 290px;
+}
+#article_conteiner{
+    background-color: #ffffff;
+    display: inline-block;
+    height: 175px;
+    margin-left: 19px;
+    margin-top: 22px;
+    width: 300px;
+}
+
+#btn_enviar{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    font-size: 16px;
+    height: 34px;
+    margin-top: 16px;
+    text-align: center;
+    width: 72px;
+}
+
+.article_title{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-size: 24px;
+    height: 51px;
+    text-align: center;
+    width: 300px;
+}
+#article_img{
+    background-color: #808080;
+    height: 103px;
+    margin: 10px 0 0 107px;
+}
+#lbl_au{
+    background-image: url("../images/plecadorada.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    font-size: 19pt;
+    height: 40px;
+    width: 217px;
+}
+#cuadro_vida_trac{
+    background-color: white;
+   margin: 27px 0 0 34px;
+    position: absolute;
+}
+/*SOCIALES*/
+#sociales{
+    display: block;
+    font-size: 23px;
+    left: 380px;
+    position: relative;
+    top: -43px;
+    width: 400px;
+}
+#facebook{
+    background-color: #107cba;
+    font-size: 18px;
+    height: 30px;
+    left: -22px;
+    position: absolute;
+    text-align: center;
+    width: 90px;
+}
+#twiter{
+    background-color: #3399ff;
+    font-size: 20px;
+    height: 30px;
+    left: 84px;
+    position: absolute;
+    text-align: center;
+    width: 90px;
+}
+#google{
+     background-color: white;
+    color: red;
+    font-size: 20px;
+    height: 30px;
+    left: 186px;
+    position: absolute;
+    text-align: center;
+    width: 90px;
+}
+
+#google > a{
+    color: red;
+}
+
+#tbl_auto{
+   background-color: #2f2f2f;
+   height: 0;
+   width: 687px;
+}
+
+
+.container_left{
+    position: absolute;
+}
+#Mod105{
+    height: 209px;
+}
+.t3-sidebar-2, .t3-sidebar-right {
+    width: 281px;
+}
+
+.t3-sidebar-2 div.t3-module, .t3-sidebar-right div.t3-module, div.titulo-dorado > h3 {
+    background-image: url("../images/plecadorada.png");
+    background-color: #ffd500;
+}
+#Mod106{
+   background-color: #ffd500;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-top: -15px;
+}
+.category-modulenew_home{
+    margin-top: 55px;
+}
+label
+{    
+    font-weight:bold;
+    font-size: 110%;
+}
+input[type="text"]{
+    background: white;
+    width: 207px;
+    height: 35px;
+}
+input{
+}
+ul.latestnewstu_vida {
+    list-style: none;
+    margin: 0;
+    font-weight: bold;
+}
+ul.latestnewstu_vida li {
+    padding: 10px;
+}
+ul.latestnewstu_vida li:nth-of-type(even) {
+    background: #ffcc00;
+}
+ul.latestnewstu_vida li a {
+    color: #000000;
+}
+
+.left-date {
+    font-size: 20px;
+    display: inline-block;
+    float: left;
+    max-width: 100px;
+}
+.art-cat-content {
+    display: inline-block;
+    max-width: 91%;
+    padding-left: 2%;
+}
+
+
+/*FOOTER*/
+.t3-footnav .t3-module,
+.t3-footnav .t3-module .module-title, .t3-footnav .moduletable,
+.t3-footnav h1,
+.t3-footnav h2,
+.t3-footnav h3,
+.t3-footnav h4,
+.t3-footnav h5,
+.t3-footnav h6,
+.t3-footnav .h1,
+.t3-footnav .h2,
+.t3-footnav .h3,
+.t3-footnav .h4,
+.t3-footnav .h5,
+.t3-footnav .h6 {
+    color: #000000;
+}
+#t3-footer{
+    clear: both;
+    position: relative;
+    background-color: #FFD500;
+    height: 330px;
+    width: 99.9%;
+    margin-left: 0.09%;    
+}
+div.t3-footnav{
+    color: black;
+    margin-left: 15px;
+}
+#Mod103{
+  background-color: #FFD500;
+    height: 180px; 
+}
+div.t3-footnav .t3-module {
+    background: transparent;
+}
+ul.nav.footer-menu-brd li {
+    margin-top: 0;
+}
+ul.nav.footer-menu-brd li a {
+    color: #000;
+    padding: 0;
+}
+ul.categories-module {
+    padding: 0;
+}
+.categories-module li, ul.categories-module li, .category-module li, ul.category-module li {
+    padding: 0;
+    border: 0;
+}
+.categories-module li a, .t3-footnav .t3-module ul > li > a {
+    color: #000000;
+}
+
+
+.customfooter_menu{
+    color: black;
+}
+h1{
+    color: black;
+}
+
+div.t3-footnav {
+    padding: 20px 0;
+}
+#contacto {
+    font-size: 15px;
+    line-height: 1.9;
+}
+.t3-module.contacto {
+    width: 330%;
+}
+.t3-footnav .vertical {
+    display: inline-block;
+    margin-left: 1em;
+}
+.t3-footnav #columna-3 li {
+    margin-bottom: 14px;
+}
+.t3-footnav #columna-3 li a, .t3-footnav .item-232 a {
+    font-weight: bold;
+    font-size: 100%;
+}
+.t3-footnav #columna-4 {
+    width: 5em;
+}
+.t3-footnav li a {
+    font-size: 80%;
+}
+.t3-footnav h4, .t3-footnav h3 {
+    font-weight: bold;
+}
+.t3-footnav h4, .t3-footnav .h3li {
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serifalibri;
+    font-size: 16px;
+}
+div#footer_images img {
+    height: 60px;
+}
+.t3-footnav .col-lg-2.col-md-2.col-sm-4.col-xs-6:first-of-type h4 {
+    margin-top: 0;
+}
+.t3-footnav .moduletable {
+    margin-bottom: 1em;
+}
+
+.img_prod{
+    width: 100%;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.div_icons_prod{
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.iconos_prod{
+    margin-right: 0px;
+}
+.titulos-apartados{
+    text-align: center;
+    line-height: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px #666;
+}
+
+@media (max-width: 991px) {
+    #t3-content {
+        width: 100%;
+    }
+}
+
+.h3_categ, .prod_name {
+    margin-left: 15px;
+}
+
+.img_prod img {
+    width: 100%;
+}
+
+.texto-producto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/*Categorias*/
+.article-catimg {
+    width: 90%;
+    margin: 5%;
+}
+.cat-article {
+    width: 31%;
+    margin: 1%;
+    background-color: white;
+    display: inline-block;
+    float: left;
+}
+.pleca-dorado {
+    background-image: url("../images/plecadorada-cats.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.cat-article .pleca-dorado {
+    display: block;
+    height: 60px;
+    min-height: 60px;
+    padding: 2px 6px;
+}
+.pleca-dorado div {
+    display: table-cell;
+    height: 56px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-shadow: 0px 1px 4px #333;
+}
+.cat-article a:hover {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+
+h1.article-title {
+    color: white;
+}
+.visform input, .visform textarea {
+    width: 100%;
+}
+.visform .visCSSlabel {
+    float: none;
+}
+.visform > fieldset > div {
+    margin: 0 auto;
+    width: 57%;
+}
+
+.homelink img {
+    position: absolute;
+}
+
+td, tr td {
+    border-top: none;
+}
+
+div#calif {
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+

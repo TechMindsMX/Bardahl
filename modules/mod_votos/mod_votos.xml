@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Votos</name>
+    <author>ttorresonline.com</author>
+    <version>1.0.0</version>
+    <description>Registro de votos de articulos Bardahl</description>
+    <files>
+        <filename>mod_voto.xml</filename>
+        <filename module="mod_votos">mod_voto.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>estrella.gif</filename>
+    </files>
+    <config>
+    </config>
+</extension>

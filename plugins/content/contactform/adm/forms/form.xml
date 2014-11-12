@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="basic" label="CONTACTFORM_FIELDSET_BASIC">
+        <field name="mailto"
+            required="1"
+            validate="email"
+            type="email"
+            label="PLG_CONTENT_CONTACTFORM_MAILTO_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_MAILTO_DESC"
+            size="50" />
+
+        <field name="title"
+            type="text"
+            label="PLG_CONTENT_CONTACTFORM_TITLE_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_TITLE_DESC"
+            size="40" />
+
+        <field name="subject"
+            type="text"
+            label="PLG_CONTENT_CONTACTFORM_SUBJECT_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_SUBJECT_DESC"
+            size="50" />
+
+        <field name="sender_name"
+            type="text"
+            label="PLG_CONTENT_CONTACTFORM_SENDER_NAME_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_SENDER_NAME_DESC"
+            size="50" />
+
+        <field name="captcha"
+            type="radio"
+            default="1"
+            label="PLG_CONTENT_CONTACTFORM_CAPTCHA_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_CAPTCHA_DESC" >
+            <option value="0">JNO</option>
+            <option value="1">JYES</option>
+        </field>
+    </fieldset>
+
+    <fieldset name="advanced" label="CONTACTFORM_FIELDSET_ADVANCED">
+        <field name="success_message"
+            type="textarea"
+            label="PLG_CONTENT_CONTACTFORM_SUCCESS_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_SUCCESS_DESC"
+            cols="25"
+            rows="3" />
+        <field name="error_message"
+            type="textarea"
+            label="PLG_CONTENT_CONTACTFORM_ERROR_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_ERROR_DESC"
+            cols="25"
+            rows="3" />
+        <field name="sender_name_size"
+            type="text"
+            default="40"
+            label="PLG_CONTENT_CONTACTFORM_YOURNAME_SIZE_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_YOURNAME_SIZE_DESC"
+            size="4" />
+        <field name="sender_email_size"
+            type="text"
+            default="40"
+            label="PLG_CONTENT_CONTACTFORM_YOUREMAIL_SIZE_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_YOUREMAIL_SIZE_DESC"
+            size="4" />
+        <field name="subject_size"
+            type="text"
+            default="40"
+            label="PLG_CONTENT_CONTACTFORM_SUBJECT_SIZE_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_SUBJECT_SIZE_DESC"
+            size="4" />
+        <field name="message_cols"
+            type="text"
+            default="55"
+            label="PLG_CONTENT_CONTACTFORM_MESSAGE_COLS_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_MESSAGE_COLS_DESC"
+            size="4" />
+        <field name="message_rows"
+            type="text"
+            default="14"
+            label="PLG_CONTENT_CONTACTFORM_MESSAGE_ROWS_LABEL"
+            description="PLG_CONTENT_CONTACTFORM_MESSAGE_ROWS_DESC"
+            size="4" />
+    </fieldset>
+</form>
