@@ -1,6 +1,6 @@
 body {
     background: none repeat scroll 0 0 #000;
-  color: white;
+  color: #000000;
   border-width: 0;  
   margin: 0 auto;
   max-width: 100%;
@@ -139,10 +139,11 @@ div.titulo-dorado > h3 {
 }
 
 /*BODY*/
-div.t3-wrapper{    
+div.t3-wrapper{
     background-color: black;
-    background-image: url("../images//site/backbardahl.jpg") ;
-
+    background-image: url("../images//site/backbardahl.jpg");
+    background-repeat: repeat;
+    background-size: 100% auto;
     position: relative;
 }
 
@@ -156,7 +157,7 @@ div.t3-wrapper{
 
 div.moduleleft{
     display: inline-block;
-    color: white;
+    color: #000000;
 }
 
 /*CONTIENE LOS DOS MODULOS MOSTRADOS EN LA DERECHA BUSCAR PRODUCTO Y BARDALH EN TU VIDA*/
@@ -191,18 +192,18 @@ div.home{
     padding: 32% 50%;
 }
 
-#name0{
-    background: none no-repeat scroll 0 0 white;
-    height: 100%;
-    margin: 17px -15px 0 26px;
-    max-height: 416px;
-    max-width: 800px;
+#name4{
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% white;
+    height: 463px;
+    margin: 12px -34px 0 19px;
+    max-height: 463px;
+    max-width: 823px;
     width: 100%;
 }
 
-#name1{
+#name5{
     height: 100%;
-    margin: -45px 0 0 -42px;
+    margin: -74px 0 0 -42px;
     max-height: 580px;
     max-width: 524px;
     width: 100%;
@@ -220,6 +221,8 @@ div.home{
 #encuentra-producto {
     text-align: center;
 }
+
+
 
 #encuentra-producto input {
     background: none repeat scroll 0 0 transparent;
@@ -712,6 +715,14 @@ div#footer_images img {
     margin-bottom: 1em;
 }
 
+
+.container_right{
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0 0 33px -1px;
+    padding: 0 0 0 36px;
+}
+
 .img_prod{
     width: 100%;
     background-color: #FFFFFF;
@@ -797,6 +808,8 @@ h1.article-title {
 .visform .visCSSlabel {
     float: none;
 }
+
+
 .visform > fieldset > div {
     margin: 0 auto;
     width: 57%;
