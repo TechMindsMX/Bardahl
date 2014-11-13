@@ -85,8 +85,10 @@ div.t3-navbar{
     background-repeat: no-repeat;
     background-size: 106% 131%;
     float: right;
+    font-size: 20px;
+    margin: 0 -78px 0 0;
     max-width: 100%;
-    width: 74%;
+    width: 84%;
 }
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3 {
     background-image: url("../images/pleca_dorada_large.png");
@@ -182,14 +184,34 @@ div.home{
     background-color: transparent;
     background-image: url("../images/site/back_bproducto.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 113% 114%;
     color: black;
     font-size: 9pt;
     line-height: 13px;
-    padding: 26px 50%;
+    padding: 32% 50%;
 }
+
+#name0{
+    background: none no-repeat scroll 0 0 white;
+    height: 100%;
+    margin: 17px -15px 0 26px;
+    max-height: 416px;
+    max-width: 800px;
+    width: 100%;
+}
+
+#name1{
+    height: 100%;
+    margin: -45px 0 0 -42px;
+    max-height: 580px;
+    max-width: 524px;
+    width: 100%;
+}
+
 #auto{
-    margin: 11px -194px;
+    float: left;
+    height: 162px;
+    margin: -10px -177px;
 }
 #buscar{
     margin: inherit;
@@ -204,7 +226,7 @@ div.home{
     border: 0 none;
     font-size: 8.2em;
     font-weight: bold;
-    margin: 0 -219px;
+    margin: 0 -250px;
 }
 
 /*/MODULOS PAGINA PRINCIPAL/*/
@@ -522,7 +544,7 @@ ul.noti-event-home {
 
 
 .container_left{
-    position: absolute;
+    position: relative;
 }
 #Mod105{
     height: 209px;
