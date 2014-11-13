@@ -31,8 +31,8 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8" vertical-offset="2879" max-vertical-offset="14484">
-              <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.76880735" vertical-offset="2828" max-vertical-offset="14433">
+              <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -383,7 +383,13 @@
       <option name="project" value="LOCAL" />
       <updated>1415895877425</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="prueba">
+      <created>1415896078208</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1415896078208</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -437,7 +443,8 @@
     <MESSAGE value="Modificacion de pagina a un 100%, Cambio de Footer" />
     <MESSAGE value="Modificacion de modulo encuentra tu aceite&#10;" />
     <MESSAGE value="creacion de encabezados&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="creacion de encabezados&#10;" />
+    <MESSAGE value="prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="prueba" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -845,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8" vertical-offset="2879" max-vertical-offset="14484">
-          <caret line="195" column="0" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.76880735" vertical-offset="2828" max-vertical-offset="14433">
+          <caret line="191" column="1" selection-start-line="191" selection-start-column="1" selection-end-line="191" selection-end-column="1" />
           <folding />
         </state>
       </provider>
