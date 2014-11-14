@@ -1,0 +1,120 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+    /* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+    /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    /* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    /* Styles */
+}
+
+/* Desktops 1920 ----------- */
+@media only screen
+and (min-width : 1920px) {
+    #name4 {
+        background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% white;
+        height: 489px;
+        max-height: 463px;
+        max-width: 1500px;
+        width: 79%;
+    }
+
+    #name5 {
+        margin: -5.3% 0 0 -7.7%;
+        max-height: 537px;
+        max-width: 579px;
+        width: 99%;
+    }
+
+}
+
+
+/* Desktops 1366 ----------- */
+@media only screen
+and (min-width : 1366px) {
+    /* Styles */
+}
+
+
+/* Desktops and 1280 ----------- */
+@media only screen
+and (min-width : 1280px) {
+    /* Styles */
+}
+
+
+/* Desktops 1024 ----------- */
+@media only screen
+and (min-width : 1024px) {
+    #name4 {
+        background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% white;
+        height: 474px;
+        max-height: 463px;
+        max-width: 1024px;
+        width: 66%;
+    }
+    #name5 {
+        margin: -10.79% 0 0 -7.7%;
+        max-width: 432px;
+        width: 43%;
+    }
+    #form_buscar{
+        background-color: transparent;
+        background-image: url("../images/site/back_bproducto.png");
+        background-repeat: no-repeat;
+        background-size: 113% 114%;
+        color: black;
+        font-size: 9pt;
+        line-height: 13px;
+        padding: 32% 50%;
+    }
+
+
+}
+
+
+/* Desktops 800 ----------- */
+@media only screen
+and (min-width : 800px) {
+    /* Styles */
+}
+
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    /* Styles */
+}
