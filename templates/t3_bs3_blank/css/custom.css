@@ -126,7 +126,7 @@ div.titulo-dorado > h3 {
 }
 .t3-content{
     display: inline-block;
-    width: 50%;
+    width: 100%;
 }
 .col-md-6
 .col-md-3{
@@ -546,30 +546,35 @@ ul.noti-event-home {
 #facebook{
     background-color: #107cba;
     font-size: 18px;
-    height: 30px;
+    height: 36px;
     left: -22px;
+    margin: 122% 0 0 26%;
     position: absolute;
     text-align: center;
-    width: 90px;
+    width: 104px;
+    z-index: 1;
 }
-#twiter{
-    background-color: #3399ff;
-    font-size: 20px;
-    height: 30px;
-    left: 84px;
+#twitter{
+    background-color: #107cba;
+    font-size: 18px;
+    height: 36px;
+    left: -22px;
+    margin: 122% 0 0 56%;
     position: absolute;
     text-align: center;
-    width: 90px;
+    width: 104px;
+    z-index: 1;
 }
 #google{
-     background-color: white;
-    color: red;
-    font-size: 20px;
-    height: 30px;
-    left: 186px;
+    background-color: #107cba;
+    font-size: 18px;
+    height: 36px;
+    left: -22px;
+    margin: 122% 0 0 85%;
     position: absolute;
     text-align: center;
-    width: 90px;
+    width: 104px;
+    z-index: 1;
 }
 
 #google > a{
