@@ -227,6 +227,16 @@ div.container_left .row #name1{
     width: 30%;
 }
 
+
+.articlelanding-page{
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    float: left;
+    height: 472px;
+    margin: -44.9% 0 0 -9%;
+    max-width: 1920px;
+    width: 77%;
+}
+
 .modulelanding-page {
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
     height: 472px;

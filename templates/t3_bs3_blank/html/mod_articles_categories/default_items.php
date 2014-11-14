@@ -8,7 +8,6 @@
  */
 
 defined('_JEXEC') or die;
-
 foreach ($list as $item) :
 
 ?>
