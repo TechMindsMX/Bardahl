@@ -2,7 +2,7 @@ body {
 
     background: none repeat scroll 0 0 #000;
     border-width: 0;
-    color: white;
+    color: #000000;
     font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
     font-size: 16px;
     font-style: normal;
@@ -192,23 +192,46 @@ div.home{
     width: 600px;
 }
 
-#form_buscar{
-    background-color: transparent;
-    background-image: url("../images/site/back_bproducto.png");
-    background-repeat: no-repeat;
-    background-size: 113% 114%;
-    color: black;
+
+#div_buscar{
     font-size: 9pt;
+    height: 472px;
     line-height: 13px;
-    padding: 32% 50%;
+    margin: 0 0 0 51%;
+    position: absolute;
+    z-index: 1;
 }
 
-#name4{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% white;
-    height: 465px;
-    margin: 0.9% 0 0 1%;
-    max-height: 465px;
-    max-width: 912px;
+#form_buscar{
+    margin: 0 0 0 0;
+}
+div.container_left .row #name0{
+    width: 65%;
+}
+#back_producto{
+    height: 137%;
+    margin: -42.5% 0 0 -299px;
+    position: absolute;
+    width: 294%;
+    z-index: -1;
+}
+
+h2 {
+    color: #000000;
+
+}
+
+div.container_left .row #name1{
+    height: 471px;
+    margin: 2.5% 0 0;
+    width: 30%;
+}
+
+.modulelanding-page {
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    height: 472px;
+    margin: 3.9% 0 0 1%;
+    max-width: 1920px;
     width: 100%;
 }
 
@@ -222,8 +245,9 @@ div.home{
 
 #auto{
     float: left;
-    height: 162px;
-    margin: -10px -177px;
+    height: 100%;
+    margin: -9px -200px;
+    width: 167%;
 }
 #buscar{
     margin: inherit;
@@ -233,14 +257,16 @@ div.home{
     text-align: center;
 }
 
-
+#div_buscar  h3{
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    margin: -11px 0 0 -7px;
+    width: 124%;
+}
 
 #encuentra-producto input {
-    background: none repeat scroll 0 0 transparent;
-    border: 0 none;
-    font-size: 8.2em;
-    font-weight: bold;
-    margin: 0 -250px;
+    margin: -7px -36px;
 }
 
 /*/MODULOS PAGINA PRINCIPAL/*/
