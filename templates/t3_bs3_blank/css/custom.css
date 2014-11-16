@@ -109,12 +109,20 @@ div.titulo-dorado {
     width: 100%;;
 }
 
-div.titulo-dorado > h3 {
+div.titulo-dorado > h3, div.category-desc > h3, div.head-category > h2{
     background-image: url("../images/site/line_up.png");
+    background-position: -41px center;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    padding: 3px 194px 0 0;
-    text-align: center;
+    background-size: 55% auto;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    padding: 0 0 0 55px;
+    text-align: left;
+}
+
+div.category-desc > p{
+    margin: 1%;
 }
 .t3-sidebar .module-title {
     text-align: center;
@@ -227,8 +235,16 @@ div.container_left .row #name1{
     width: 30%;
 }
 
-
 .articlelanding-page{
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    float: left;
+    height: 472px;
+    margin: -44.9% 0 0 -9%;
+    max-width: 1920px;
+    width: 77%;
+}
+
+.head-category{
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
     float: left;
     height: 472px;
@@ -863,15 +879,21 @@ div#footer_images img {
     float: left;
 }
 .pleca-dorado {
-    background-image: url("../images/plecadorada-cats.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-color: #FFD100;
+    color: #333333;
 }
 .cat-article .pleca-dorado {
     display: block;
     height: 60px;
     min-height: 60px;
     padding: 2px 6px;
+}
+.breadcrumb > ol, li.active {
+    display: inline;
+    list-style: none;
+}
+.breadcrumb > li + li:before {
+    content: " > ";
 }
 .pleca-dorado div {
     display: table-cell;
