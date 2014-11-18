@@ -239,7 +239,7 @@ div.container_left .row #name1{
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
     float: left;
     height: 472px;
-    margin: -44.9% 0 0 -9%;
+    margin: -43.78% 0 -12px;
     max-width: 1920px;
     width: 77%;
 }
@@ -248,10 +248,11 @@ div.container_left .row #name1{
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
     float: left;
     height: 472px;
-    margin: -44.9% 0 0 -9%;
+    margin: -43.75% 0 -12px;
     max-width: 1920px;
     width: 77%;
 }
+
 
 .modulelanding-page {
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
@@ -813,7 +814,7 @@ div#footer_images img {
     width: 100%;
 }
 
-div.module-inner h3.home-news{
+div.module-inner > h3{
     background-image: url("../images/site/line_up.png");
     background-position: -41px center;
     background-repeat: no-repeat;
