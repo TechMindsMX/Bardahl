@@ -167,7 +167,7 @@ div.t3-wrapper{
 }
 
 #t3-mainbody{
-    margin: 0 0 0 87px;
+    margin: -1%;
     max-width: 100%;
 }
 
@@ -533,10 +533,9 @@ ul.noti-event-home {
     width: 72px;
 }
 
-.article_title{
-    background-image: url("../images/plecadorada.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
+.article_title, .article_title > a{
+    background-color: #FFD100;
+    color: #333333;
     font-size: 24px;
     height: 51px;
     text-align: center;
@@ -620,20 +619,17 @@ ul.noti-event-home {
 #Mod105{
     height: 209px;
 }
-.t3-sidebar-2, .t3-sidebar-right {
-    width: 38%;
+
+div.row .t3-sidebar-2, .t3-sidebar-right {
+    width: 100%;
 }
 
 .t3-sidebar-2 div.t3-module, .t3-sidebar-right div.t3-module, {
     background-image: url("../images/plecadorada.png");
     background-color: #ffd500;
 }
-#Mod106{
-   background-color: #ffd500;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    margin-top: -15px;
-}
+
+
 .category-modulenew_home{
     margin-top: 55px;
 }
@@ -650,16 +646,13 @@ input[type="text"]{
 input{
 }
 ul.latestnewstu_vida {
-    list-style: none;
-    margin: 0;
-    font-weight: bold;
+     display: inline-block;
 }
 ul.latestnewstu_vida li {
     padding: 10px;
+    display: inline-block;
 }
-ul.latestnewstu_vida li:nth-of-type(even) {
-    background: #ffcc00;
-}
+
 ul.latestnewstu_vida li a {
     color: #000000;
 }
@@ -805,11 +798,38 @@ div#footer_images img {
     line-height: 2em;
 }
 
+#div-tu-vida {
+    background-color: #ffd100;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    max-width: 286px;
+    text-align: center;
+    width: 100%;
+}
+
+#img-tu-vida{
+    max-width: 286px;
+    width: 100%;
+}
+
+div.module-inner h3.home-news{
+    background-image: url("../images/site/line_up.png");
+    background-position: -41px center;
+    background-repeat: no-repeat;
+    background-size: 51% auto;
+    color: #000000;
+    font-weight: bold;
+    line-height: 2em;
+    margin: 0 0 0 5px;
+    padding: 0 0 0 35px;
+    text-align: left;
+}
+
 .customleft{
     background-color: #ffffff;
     margin-top: 6px;
     padding: 1%;
-
 }
 .img_prod{
     width: 100%;
@@ -878,7 +898,7 @@ div#footer_images img {
     display: inline-block;
     float: left;
 }
-.pleca-dorado {
+.pleca-dorado, .article_title {
     background-color: #FFD100;
     color: #333333;
 }

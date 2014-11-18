@@ -8,10 +8,11 @@
  */
 
 defined ('_JEXEC') or die;
-
+var_dump($moduleclass_sfx,$grouped);
 ?>
 <ul class="category-module<?php echo $moduleclass_sfx; ?>">
-	<?php if ($grouped) : ?>
+
+	<?php  if ($grouped) : ?>
 		<?php foreach ($list as $group_name => $group) : ?>
 			<li>
 				<ul>
@@ -92,9 +93,7 @@ defined ('_JEXEC') or die;
 		<?php endforeach; ?>
 	<?php else : ?>
 		<?php foreach ($list as $item) :
-
 			$jfecha = new JDate($item->created);
-
 			?>
 			<li>
 				<div class="art-cat-content">
