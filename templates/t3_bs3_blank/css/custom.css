@@ -19,8 +19,8 @@ body {
 .head-search {
     font-size: 21px;
     height: 103px;
-    margin-left: 425px;
-    margin-top: -17px;
+    margin-left: 166%;
+    margin-top: -4%;
     width: 199%;
 }
 .head-search ul li {
@@ -95,7 +95,7 @@ div.t3-navbar{
     background-repeat: no-repeat;
     background-size: 106% 131%;
     float: right;
-    font-size: 20px;
+    font-size: 100%;
     margin: 0 -78px 0 0;
     max-width: 100%;
     width: 84%;
@@ -230,9 +230,9 @@ div.home{
 
 #div_buscar{
     font-size: 9pt;
-    height: 472px;
-    line-height: 13px;
-    margin: 0 0 0 51%;
+    height: 470px;
+    line-height: 10px;
+    margin: 6px 0 0 45%;
     position: absolute;
     z-index: 1;
 }
@@ -241,7 +241,7 @@ div.home{
     margin: 0 0 0 0;
 }
 div.container_left .row #name0{
-    width: 65%;
+    width: 66%;
 }
 #back_producto{
     height: 100%;
@@ -257,25 +257,29 @@ h2 {
 }
 
 div.container_left .row #name1{
-    height: 471px;
-    margin: 2.5% 0 0;
-    width: 30%;
+    background-image: url("../images/site/back_bproducto.png");
+    background-position: -61px -75px;
+    background-repeat: no-repeat;
+    background-size: 130% 132%;
+    height: 454px;
+    margin: 2.5% 0 0 -8px;
+    width: 33%;
 }
 
 .articlelanding-page{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    background: url("../images/site/line_baner.jpg") no-repeat scroll -1px 100.5% / 100% auto white;
     float: left;
-    height: 472px;
-    margin: -43.78% 0 -12px;
+    height: 436.9px;
+    margin: -41.66% 0 0 3px;
     max-width: 1920px;
-    width: 77%;
+    width: 75.1%;
 }
 
 .head-category{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 101% / 101% auto white;
     float: left;
-    height: 472px;
-    margin: -43.75% 0 -12px;
+    height: 437.9px;
+    margin: -41.695% 0 -12px;
     max-width: 1920px;
     width: 77%;
 }
@@ -283,8 +287,8 @@ div.container_left .row #name1{
 
 .modulelanding-page {
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
-    height: 472px;
-    margin: 3.9% 0 0 1%;
+    height: 436.9px;
+    margin: 4.59% 0 0 1%;
     max-width: 1920px;
     width: 100%;
 }
@@ -300,8 +304,8 @@ div.container_left .row #name1{
 #auto{
     float: left;
     height: 100%;
-    margin: -9px -200px;
-    width: 167%;
+    margin: 0 -79%;
+    width: 136%;
 }
 #buscar{
     margin: inherit;
@@ -320,7 +324,7 @@ div.container_left .row #name1{
 }
 
 #encuentra-producto input {
-    margin: -7px -36px;
+    margin: -5px -9px;
 }
 
 /*/MODULOS PAGINA PRINCIPAL/*/
@@ -596,37 +600,11 @@ ul.noti-event-home {
     top: -43px;
     width: 400px;
 }
-#facebook{
-    background-color: #107cba;
+.redes{
     font-size: 18px;
-    height: 36px;
-    left: -22px;
-    margin: 122% 0 0 26%;
+    margin: 108% 0 0 26%;
     position: absolute;
-    text-align: center;
-    width: 104px;
-    z-index: 1;
-}
-#twitter{
-    background-color: #107cba;
-    font-size: 18px;
-    height: 36px;
-    left: -22px;
-    margin: 122% 0 0 56%;
-    position: absolute;
-    text-align: center;
-    width: 104px;
-    z-index: 1;
-}
-#google{
-    background-color: #107cba;
-    font-size: 18px;
-    height: 36px;
-    left: -22px;
-    margin: 122% 0 0 85%;
-    position: absolute;
-    text-align: center;
-    width: 104px;
+    width: 100%;
     z-index: 1;
 }
 
@@ -855,7 +833,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     background-image: url("../images/site/line_up.png");
     background-position: -41px center;
     background-repeat: no-repeat;
-    background-size: 51% auto;
+    background-size: 44% auto;
     color: #000000;
     font-weight: bold;
     line-height: 2em;
@@ -868,11 +846,11 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
 }
 
 .calendar-video{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll -6px 100.1% / 100% auto white;
-    height: 471px;
-    background-size: 43.5% auto;
+    background: url("../images/site/line_baner.jpg") no-repeat scroll -6px 100.7% / 103% auto white;
+    height: 438px;
+    margin: -41.7% 0 0 6px;
     max-width: 1920px;
-    width: 77%;
+    width: 74.6%;
 }
 
 .customleft{
@@ -881,11 +859,11 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     padding: 1%;
 }
 .img_prod{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
-    height: 463px;
-    margin: -46% 0 0 -12.1px;
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 4px 101% / 101% auto white;
+    height: 437px;
+    margin: -41.67% 0 0 -12.1px;
     max-width: 1920px;
-    width: 78.4%;
+    width: 76.4%;
 
    /*
     width: 100%;
@@ -893,6 +871,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     text-align: center;
     margin-bottom: 20px;*/
 }
+
 .table-responsive .col-md-5{
     margin: -49% 0 0 -19px;
     width: 79%;
@@ -968,6 +947,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     height: 60px;
     min-height: 60px;
     padding: 2px 6px;
+    text-align: center;
 }
 .breadcrumb > ol, li.active {
     display: inline;
@@ -977,7 +957,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     content: " > ";
 }
 .pleca-dorado div {
-    display: table-cell;
+
     height: 56px;
     vertical-align: middle;
     font-weight: bold;
@@ -988,7 +968,9 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     color: #f9f9f9;
 }
 
+.t3-spotlight #name1{
 
+}
 h1.article-title {
     color: white;
 }
@@ -1013,7 +995,7 @@ h1.article-title {
 }
 
 .t3-megamenu {
-    margin: 1% 17%;
+    margin: 1% 15%;
     width: inherit;
 }
 
