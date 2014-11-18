@@ -5,3 +5,4 @@
 
 #Fields: datetime	priority	category	message
 2014-09-09T21:34:09+00:00	INFO	joomlafailure	Username and password do not match or you do not have an account yet.
+2014-11-18T04:26:23+00:00	INFO	joomlafailure	Empty password not allowed

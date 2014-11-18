@@ -12,7 +12,7 @@ body {
 
 #t3-header {
     background: none repeat scroll 0 0 black;
-    height: 68px;
+    height: 45px;
     width: 100%;
 }
 
@@ -20,7 +20,7 @@ body {
     font-size: 21px;
     height: 103px;
     margin-left: 166%;
-    margin-top: -4%;
+    margin-top: -6.9%;
     width: 199%;
 }
 .head-search ul li {
@@ -91,14 +91,12 @@ div.t3-navbar{
 }
 
 .t3-navbar2{
-    background-image: url("../images/site/back_submenu.png");
-    background-repeat: no-repeat;
     background-size: 106% 131%;
     float: right;
-    font-size: 100%;
-    margin: 0 -78px 0 0;
+    font-size: 124%;
+    margin: 0 -10.5% 0 0;
     max-width: 100%;
-    width: 84%;
+    width: 89%;
 }
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3{
     background-image: url("../images/site/line_up.png");
@@ -124,9 +122,9 @@ div.t3-navbar{
 
 .texto-producto{
     background-color: #ffffff;
-    margin: 23px 0 0 19px;
-    padding: 0;
-    width: 114%;
+    margin-left: 19px;
+    padding: 23px;
+    width: 110%;
 }
 
 
@@ -189,7 +187,6 @@ div.t3-wrapper{
     background-color: black;
     background-image: url("../images//site/backbardahl.jpg");
     background-repeat: repeat;
-    background-size: 100% auto;
     position: relative;
 }
 
@@ -858,6 +855,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
     margin-top: 6px;
     padding: 1%;
 }
+
 .img_prod{
     background: url("../images/site/line_baner.jpg") no-repeat scroll 4px 101% / 101% auto white;
     height: 437px;
@@ -925,6 +923,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
 .texto-producto h3 {
     font-size: 18px;
     margin: 10px 0;
+    color: #000000;
 }
 
 /*Categorias*/
@@ -996,24 +995,24 @@ h1.article-title {
 }
 
 .t3-megamenu {
-    margin: 1% 15%;
+    margin: 1% 16.5%;
     width: inherit;
 }
 
 #line{
     margin-left: -14px;
-    margin-top: -53px;
+    margin-top: -63px;
     position: absolute;
 }
 #img_left2{
-    margin-left: 95%;
+    margin-left: 96%;
     margin-top: 0.59%;
     position: absolute;
 }
 
 
 #img_left{
-    margin: 0.68% 18%;
+    margin: 0.68% 18.9%;
     position: absolute;
 }
 
