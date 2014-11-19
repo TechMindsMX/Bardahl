@@ -119,6 +119,7 @@ div.t3-navbar{
     padding-left: 48px;
 }
 
+
 .texto-producto{
     background-color: #ffffff;
     margin-left: 19px;
@@ -816,12 +817,12 @@ div#footer_images img {
 
 #div-tu-vida {
     background-color: #ffd100;
-    color: #000000;
-    font-weight: bold;
-    height: 62px;
-    line-height: 2em;
+    color: #333333;
+    display: block;
+    height: 60px;
+    min-height: 60px;
     text-align: center;
-    width: 284.5px;
+    width: 284px;
 }
 
 #img-tu-vida{
@@ -831,7 +832,20 @@ div#footer_images img {
 
 .newsflashblog-news{
     display: block;
-    line-height: 7em;
+}
+
+nav.wrap {
+    background: transparent;
+}
+.wrap .container >ul{
+    display: flex;
+    list-style: none;
+}
+
+
+.wrap .container >ul >li{
+    display: inline-block;
+    padding: 23px;
 }
 
 .latestnewstu_vida{
