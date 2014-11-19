@@ -63,9 +63,8 @@ div.head-search ul li a.icono-redes {
 }
 /*HEADER*/
 nav.t3-mainnav{
-    background: none repeat scroll 0 0 transparent;
     color: white;
-    height: 50px;
+    height: 100px;
     width: 100%;
 }
 
@@ -1028,10 +1027,8 @@ h1.article-title {
 }
 
 .homelink img {
-    height: 203%;
-    margin-top: -22px;
+    margin-top: -15px;
     position: absolute;
-    width: 19%;
 }
 
 .t3-megamenu {
