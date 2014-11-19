@@ -1,9 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe4048ea-7a96-4d15-8e8d-346a9c131001" name="Default" comment="Tecnologia">
+    <list default="true" id="fe4048ea-7a96-4d15-8e8d-346a9c131001" name="Default" comment="Modificaciones menores a submenu, menu principal">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/back-busqueda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/auto-amarillo-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/auto-negro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/auto-producto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/back-busqueda.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/camion-amarillo-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/camion-blanco-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/camion-negro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/camion-producto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/coche-blanco-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/lancha-amarilla-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/lancha-blanca-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/lancha-negra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/lancha-producto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/moto-amarilla-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/moto-blanca-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/moto-negra.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/moto-producto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/plecadorada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/tractor-amarillo-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/tractor-blanco-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/tractor-negro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/tractor-producto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/trailer-amarillo-on.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/trailer-blanco-off.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/trailer-negro.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/imagenes bardahl/trailer-producto.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/plecadorada.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/images/en_tu_vida.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/images/enc_produc.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/images/site/back_bproducto2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/images/site/back_bproducto3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/images/site/get_your_oil.jpg" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/blog.php" afterPath="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/blog.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css" afterPath="$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/error.php" afterPath="$PROJECT_DIR$/logs/error.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/mod_buscaproducto/tmpl/default.php" afterPath="$PROJECT_DIR$/modules/mod_buscaproducto/tmpl/default.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Bardahl.iws" />
@@ -35,18 +70,28 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.24916944" vertical-offset="0" max-vertical-offset="15510">
-              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.47928995" vertical-offset="0" max-vertical-offset="15900">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="default.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/mod_buscaproducto/tmpl/default.php">
+        <entry file="file://$PROJECT_DIR$/modules/mod_articles_news/tmpl/default.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1350">
-              <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="450">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_item.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/html/mod_articles_news/_item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="675">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -75,7 +120,6 @@
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/mod_visforms/default.php" />
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/mod_articles_categories/default_items.php" />
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/categories/default_item.php" />
-        <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/blog.php" />
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/default_item.php" />
         <option value="$PROJECT_DIR$/plugins/system/t3/base-bs3/html/layouts/joomla/content/categories_default.php" />
         <option value="$PROJECT_DIR$/plugins/system/t3/base-bs3/html/layouts/joomla/content/category_default.php" />
@@ -87,6 +131,8 @@
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/categories/default.php" />
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/article/articles.php" />
         <option value="$PROJECT_DIR$/modules/mod_buscaproducto/tmpl/default.php" />
+        <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/blog.php" />
+        <option value="$PROJECT_DIR$/templates/t3_bs3_blank/html/mod_articles_news/_item.php" />
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css" />
         <option value="$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css" />
       </list>
@@ -94,9 +140,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1417" />
-    <option name="y" value="24" />
-    <option name="width" value="1869" />
+    <option name="x" value="1427" />
+    <option name="y" value="34" />
+    <option name="width" value="1859" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -125,7 +171,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,12 +239,95 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bardahl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bardahl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="t3_bs3_blank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mod_articles_news" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bardahl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bardahl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="t3_bs3_blank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_content" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="category" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bardahl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bardahl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="t3_bs3_blank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com_content" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,6 +357,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/t3_bs3_blank/html/mod_articles_news" />
       <recent name="C:\wamp\www\bardahl\templates\t3_bs3_blank\html\com_content\article" />
       <recent name="C:\wamp\www\bardahl\templates\t3_bs3_blank\html\mod_articles_latest" />
       <recent name="C:\wamp\www\bardahl\templates\t3_bs3_blank\html\mod_breadcrumbs" />
@@ -358,7 +487,13 @@
       <option name="project" value="LOCAL" />
       <updated>1416343840589</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Modificaciones menores a submenu, menu principal">
+      <created>1416351887718</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1416351887718</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -382,10 +517,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1417" y="24" width="1869" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1427" y="34" width="1859" height="1056" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2945694" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -393,7 +527,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23987207" sideWeight="0.50167227" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32569295" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21722436" sideWeight="0.49832776" order="0" side_tool="false" content_ui="combo" x="1508" y="128" width="560" height="492" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22338665" sideWeight="0.49832776" order="0" side_tool="false" content_ui="combo" x="1508" y="128" width="560" height="492" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23987207" sideWeight="0.50167227" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34641638" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32764506" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -404,6 +538,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34812286" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2884187" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -441,10 +576,13 @@
     <MESSAGE value="actualizacion landing page, modulo Bardahl en tu vida" />
     <MESSAGE value="Productos y sub-productos" />
     <MESSAGE value="Tecnologia" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tecnologia" />
+    <MESSAGE value="Modificaciones menores a submenu, menu principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificaciones menores a submenu, menu principal" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
@@ -460,20 +598,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/tpls/blocks/mainbody.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="18.76923" vertical-offset="488" max-vertical-offset="1020">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/tpls/blocks/mainbody-home-1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="60.615383" vertical-offset="1576" max-vertical-offset="2108">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/tpls/blocks/mainbody-home-2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="18.76923" vertical-offset="488" max-vertical-offset="1020">
@@ -712,13 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75729644" vertical-offset="0" max-vertical-offset="1887">
-          <caret line="41" column="2" selection-start-line="41" selection-start-column="2" selection-end-line="41" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/default_item.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3655914" vertical-offset="0" max-vertical-offset="2431">
@@ -796,26 +913,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/mod_buscaproducto/tmpl/default.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="1350">
-          <caret line="84" column="6" selection-start-line="84" selection-start-column="6" selection-end-line="84" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/configuration.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1365">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_buscaproducto/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8589894" vertical-offset="934" max-vertical-offset="1800">
+          <caret line="123" column="17" selection-start-line="123" selection-start-column="17" selection-end-line="123" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/html/com_content/category/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.493537" vertical-offset="0" max-vertical-offset="1665">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/mod_articles_news/tmpl/default.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="875">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/html/mod_articles_news/_item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="675">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/t3_bs3_blank/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.24916944" vertical-offset="0" max-vertical-offset="15510">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.47928995" vertical-offset="0" max-vertical-offset="15900">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
           <folding />
         </state>
       </provider>

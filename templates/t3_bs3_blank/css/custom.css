@@ -18,10 +18,9 @@ body {
 
 .head-search {
     font-size: 21px;
-    height: 103px;
-    margin-left: 166%;
-    margin-top: -6.9%;
-    width: 199%;
+    margin-left: 160%;
+    margin-top: -5.9%;
+    width: 155%;
 }
 .head-search ul li {
     display: inline-block;
@@ -270,6 +269,16 @@ div.container_left .row #name1{
     margin: -41.66% 0 0 3px;
     max-width: 1920px;
     width: 75.1%;
+}
+.modulelanding-page2{
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 2px 101% / 102% auto white;
+    height: 436.6px;
+    margin: 0.1% 0 0 1%;
+    max-width: 1920px;
+    width: 100%;
+}
+#name0 #Mod122{
+    margin-bottom: 0;
 }
 
 .head-category{
@@ -576,12 +585,12 @@ ul.noti-event-home {
     margin: 10px 0 0 107px;
 }
 #lbl_au{
-    background-image: url("../images/plecadorada.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
     font-size: 19pt;
     height: 40px;
     width: 217px;
+}
+#lbl_au >a {
+    color: #000000;
 }
 #cuadro_vida_trac{
     background-color: white;
@@ -602,11 +611,15 @@ ul.noti-event-home {
     margin: 108% 0 0 26%;
     position: absolute;
     width: 100%;
+    display: flex;
     z-index: 1;
 }
-
-#google > a{
-    color: red;
+#facebook{
+    margin: -6px 0 0;
+    width: 26.5%;
+}
+#twitter{
+    width: 23%;
 }
 
 #tbl_auto{
@@ -805,16 +818,28 @@ div#footer_images img {
     background-color: #ffd100;
     color: #000000;
     font-weight: bold;
+    height: 62px;
     line-height: 2em;
-    max-width: 286px;
     text-align: center;
-    width: 100%;
+    width: 284.5px;
 }
 
 #img-tu-vida{
-    max-width: 286px;
-    width: 100%;
+    height: 157px;
+    width: 284px;
 }
+
+.newsflashblog-news{
+    display: block;
+    line-height: 7em;
+}
+
+.latestnewstu_vida{
+    display: inline-block;
+    height: 247px;
+    width: 343px;
+}
+
 .img-descarga{
     background-color: #696969;
     margin: 0 0 0 21px;
@@ -826,7 +851,7 @@ div#footer_images img {
     margin: auto;
     width: 69%;
 }
-div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
+div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clearfix >h3{
     background-image: url("../images/site/line_up.png");
     background-position: -41px center;
     background-repeat: no-repeat;
@@ -928,8 +953,9 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3{
 
 /*Categorias*/
 .article-catimg {
-    width: 90%;
-    margin: 5%;
+    height: 183px;
+    margin: 0 0 0 70px;
+    width: 201px;
 }
 .cat-article {
     width: 31%;
@@ -1001,7 +1027,7 @@ h1.article-title {
 
 #line{
     margin-left: -14px;
-    margin-top: -63px;
+    margin-top: -18px;
     position: absolute;
 }
 #img_left2{
