@@ -7,6 +7,7 @@ body {
     font-size: 16px;
     font-style: normal;
     margin: 0 auto;
+    max-width: 1300px;
     width: 100%;
 }
 
@@ -18,13 +19,14 @@ body {
 
 .head-search {
     font-size: 21px;
-    margin-left: 160%;
+    margin-left: 135%;
     margin-top: -5.9%;
-    width: 155%;
+    width: 629px;
 }
 .head-search ul li {
     display: inline-block;
-    font-size: 80%;
+    font-size: 66%;
+    margin-left: 9px;
 }
 
 div.head-search ul li a.icono-redes {
@@ -41,11 +43,21 @@ div.head-search ul li a.icono-redes {
     background-color: #FFD500;
     color: black;
 }
-
+/*
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .head-search li.item-191 > a, .head-search li.item-191 > a:hover, li.item-191 {
     background-color: #ffd500;
     color: black;
     background-image: none;
+}
+*/
+
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    background-color: #ffd500;
+    color: #000000;
+    -ms-transform: skew(-20deg, 0deg); /* IE 9 */
+    -webkit-transform: skew(-20deg, 0deg); /* Chrome, Safari, Opera */
+    transform: skew(-20deg, 0deg);
 }
 
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -83,18 +95,13 @@ div.t3-navbar{
 }
 
 
-#t3-mainnav div.t3-navbar2{
-    background-image: url("../images/site/back_submenu.png");
-    background-repeat: no-repeat;
-}
-
 .t3-navbar2{
     background-size: 106% 131%;
-    float: right;
+    float: left;
     font-size: 124%;
-    margin: 0 -10.5% 0 0;
+    margin: 0 -9.8% 0 0;
     max-width: 100%;
-    width: 89%;
+    width: 1017px;
 }
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3{
     background-image: url("../images/site/line_up.png");
@@ -390,7 +397,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-weight: bold;
     line-height: 2em;
     margin: -11px 0 0 -7px;
-    width: 124%;
+
 }
 
 #encuentra-producto input {
@@ -675,11 +682,11 @@ ul.noti-event-home {
     width: 400px;
 }
 .redes{
+    display: inline-flex;
     font-size: 18px;
-    margin: 122% 0 0 26%;
+    margin: 120% 0 0 6%;
     position: absolute;
-    width: 100%;
-    display: flex;
+    width: 400px;
     z-index: 1;
 }
 #facebook{
@@ -687,7 +694,7 @@ ul.noti-event-home {
     width: 26.5%;
 }
 #twitter{
-    width: 23%;
+    width: 26%;
 }
 
 #tbl_auto{
@@ -956,6 +963,14 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
     width: 75.6%;
 }
 
+.calendar-img{
+    display: block;
+
+}
+.img-cal{
+    display: inline-block;
+    margin: 0 0 0 103px;
+}
 
 .calendar-video > iframe{
     margin: 7% 0 0 24px;
@@ -1120,13 +1135,17 @@ h1.article-title {
 
 .t3-megamenu {
     margin: 1% 16.5%;
-    width: inherit;
+    width: 800px;
 }
 
 #line{
     margin-left: -14px;
     margin-top: -18px;
     position: absolute;
+}
+
+#line >img{
+    width: 1302px;
 }
 #img_left2{
     margin-left: 96%;
