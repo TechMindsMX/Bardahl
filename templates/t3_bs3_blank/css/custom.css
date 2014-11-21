@@ -560,18 +560,32 @@ ul.noti-event-home {
     width: 217px;    
 }
 #lbl_fusion2 {
-    background-image: url("../images/plecadorada.png");
+    background-image: url("../images/site/line_up.png");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 105% auto;
     display: inline-block;
-    font-size: 17px;
-    padding: 6px 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 22px;
     margin-left: 0;
-    text-align: center;
+    padding: 6px 76px;
+    text-align: start;
     width: 100%;
-    margin-bottom: 15px;
-    font-weight: bold
 }
+.txt-producto{
+    background-color: #ffffff;
+    width: 797px;
+}
+.txt-producto >h3{
+    color: #000000;
+}
+
+#lbl_fusion2 >a{
+    color: #000000;
+}
+
+
+
 #lbl_lubricantes {
     background-image: url("../images/plecadorada.png");
     background-repeat: no-repeat;
@@ -996,7 +1010,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 }
 
 .img_prod{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 4px 101% / 101% auto white;
+    background: url("../images/site/lineas.png") no-repeat scroll 4px 101% / 101% auto white;
     height: 482px;
     margin: -45.1% 0 0 -12.1px;
     max-width: 1920px;
@@ -1040,8 +1054,9 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 }
 .div_icons_prod{
     width: 100%;
-    margin-bottom: 15px;
+
     text-align: center;
+    margin: -93px 0 0 91px;
 }
 .iconos_prod{
     margin-right: 0px;
@@ -1184,6 +1199,38 @@ td, tr td {
 div#calif {
     margin: 0 auto;
     margin-bottom: 1em;
+}
+/**************PRODUCTOS****************/
+
+.colum-right{
+    margin: 149px 0 0 95%;
+    position: absolute;
+    width: 453px;
+}
+#calif{
+    width:136px !important; /*SE UTILIZA ESTE METODO PUES EL PARAMETRO LO ENVIA DESDE EL WEB*/
+}
+
+.img-prod{
+    background-color: #ffffff;
+    height: 482px;
+    margin: -27px 0 0;
+}
+
+.img-producto {
+    margin: 17px 0 0 59px;
+}
+.line-header{
+    margin: 23px 0 0 -7px;
+    width: 909px;
+}
+
+.title-uso{
+    font-family: bold;
+    display: inline-block;
+}
+.img-uso{
+    display: inline-block;
 }
 
 
