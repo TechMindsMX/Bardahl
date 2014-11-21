@@ -119,14 +119,18 @@ div.t3-navbar{
 }
 
 
-.texto-producto{
+.texto-producto, .promocion-text{
     background-color: #ffffff;
     margin-left: 19px;
     padding: 23px;
     width: 110%;
 }
 
-
+.promociones .img_prod >img{
+    height: 72%;
+    margin: 6% 0 0 19%;
+    width: 74%;
+}
 div.titulo-dorado {
     height: 100%;
     margin: 0 0 0 -128px;
@@ -228,7 +232,7 @@ div.home{
     font-size: 9pt;
     height: 470px;
     line-height: 10px;
-    margin: 6px 0 0 45%;
+    margin: 37px 0 0 45%;
     position: absolute;
     z-index: 1;
 }
@@ -257,44 +261,104 @@ div.container_left .row #name1{
     background-position: -61px -75px;
     background-repeat: no-repeat;
     background-size: 130% 132%;
-    height: 454px;
-    margin: 2.5% 0 0 -8px;
+    height: 501px;
+    margin: -1.5% 0 0 -8px;
     width: 33%;
 }
 
 .articlelanding-page{
     background: url("../images/site/line_baner.jpg") no-repeat scroll -1px 100.5% / 100% auto white;
     float: left;
-    height: 436.9px;
-    margin: -41.66% 0 0 3px;
+    height: 482px;
+    margin: -45.1% 0 0 3px;
     max-width: 1920px;
     width: 75.1%;
 }
+
+.articlelanding-page .base-desc{
+    margin: 4% 0 0 2%;;
+}
 .modulelanding-page2{
     background: url("../images/site/line_baner.jpg") no-repeat scroll 2px 101% / 102% auto white;
-    height: 436.6px;
-    margin: 0.1% 0 0 1%;
+    height: 482px;
+    margin: -0.7% 0 0 1%;
     max-width: 1920px;
     width: 100%;
+}
+
+.customlanding-page2{
+    margin: 12px 0 0 79px;
 }
 #name0 #Mod122{
     margin-bottom: 0;
 }
 
 .head-category{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 101% / 101% auto white;
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 101% / 109% auto white;
     float: left;
-    height: 437.9px;
-    margin: -41.695% 0 -12px;
+    height: 482px;
+    margin: -45.1% 0 0 2.1px;
     max-width: 1920px;
-    width: 77%;
+    width: 74%;
+}
+
+.contact-form{
+    font-size: 77%;
+    margin: 22px 0 0 -2px;
+}
+.container-contacto{
+   width: 100%;
+}
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .inputbox {
+    border-radius: 0;
 }
 
 
+.control-left{
+    margin: -12px 0 0 -15%;
+    position: absolute;
+}
+.control-right{
+    margin: -1.7% 0 0 34%;
+    position: absolute;
+}
+
+#jform_contact_email, #jform_contact_message,.invalid{
+    background-color: #ffffff;
+    height: 27px;
+    width: 207px;
+}
+.contact-form #jform_contact_emailmsg {
+    width: 207px;
+}
+
+.form-actions{
+    -ms-transform: skew(-20deg, 0deg); /* IE 9 */
+    -webkit-transform: skew(-20deg, 0deg); /* Chrome, Safari, Opera */
+    transform: skew(-20deg, 0deg);
+    background-color: transparent;
+    position: absolute;
+    margin: 17% 0 0 60%;
+}
+
+.btn-primary {
+    background-color: #ffd500;
+    border-color: #ffd500;
+    color: #ffffff;
+}
+.contact-2{
+    display: inline-block;
+    margin: 50px 0 0 13px;
+}
+
+.head-category .category-desc{
+    margin: 1%;
+}
+
 .modulelanding-page {
     background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
-    height: 436.9px;
-    margin: 4.59% 0 0 1%;
+    height: 482px;
+    margin: -0.6% 0 0 1%;
     max-width: 1920px;
     width: 100%;
 }
@@ -310,8 +374,8 @@ div.container_left .row #name1{
 #auto{
     float: left;
     height: 100%;
-    margin: 0 -79%;
-    width: 136%;
+    margin: -1px -86%;
+    width: 146%;
 }
 #buscar{
     margin: inherit;
@@ -336,7 +400,11 @@ div.container_left .row #name1{
 /*/MODULOS PAGINA PRINCIPAL/*/
 .breadcrumb{
     background-color: transparent;
+    position: absolute;
+    z-index: 1;
 }
+
+
 
 ul.noti-event-home {
     padding: 0;
@@ -608,7 +676,7 @@ ul.noti-event-home {
 }
 .redes{
     font-size: 18px;
-    margin: 108% 0 0 26%;
+    margin: 122% 0 0 26%;
     position: absolute;
     width: 100%;
     display: flex;
@@ -654,7 +722,7 @@ label
     font-weight:bold;
     font-size: 110%;
 }
-input[type="text"]{
+input[type="text"],.validate-email {
     background: white;
     width: 207px;
     height: 27px;
@@ -864,7 +932,7 @@ nav.wrap {
     margin: auto;
     width: 69%;
 }
-div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clearfix >h3{
+div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clearfix >h3, .title-dorado >h3{
     background-image: url("../images/site/line_up.png");
     background-position: -41px center;
     background-repeat: no-repeat;
@@ -882,12 +950,16 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 
 .calendar-video{
     background: url("../images/site/line_baner.jpg") no-repeat scroll -6px 100.7% / 103% auto white;
-    height: 438px;
-    margin: -41.7% 0 0 6px;
+    height: 482px;
+    margin: -45.1% 0 0 6px;
     max-width: 1920px;
-    width: 74.6%;
+    width: 75.6%;
 }
 
+
+.calendar-video > iframe{
+    margin: 7% 0 0 24px;
+}
 .customleft{
     background-color: #ffffff;
     margin-top: 6px;
@@ -896,16 +968,26 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 
 .img_prod{
     background: url("../images/site/line_baner.jpg") no-repeat scroll 4px 101% / 101% auto white;
-    height: 437px;
-    margin: -41.67% 0 0 -12.1px;
+    height: 482px;
+    margin: -45.1% 0 0 -12.1px;
     max-width: 1920px;
     width: 76.4%;
-
-   /*
-    width: 100%;
-    background-color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 20px;*/
+}
+.slider-content{
+    margin: 51px 0 0 181px;
+    width: 550px;
+}
+.texto-promociones{
+    width: 100%
+;
+}
+.conteiner-slider{
+    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    height: 482.1px;
+    margin: -50% 0 0;
+    max-width: 1920px;
+    position: absolute;
+    width: 73.3%;
 }
 
 .table-responsive .col-md-5{
@@ -953,9 +1035,9 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 }
 
 .img_prod img {
-    height: 80%;
-    margin: 3% 0 0 24%;
-    width: 50%;
+    height: 76%;
+    margin: 6% 0 0 15%;
+    width: 80%;
 }
 
 .texto-producto h3 {
@@ -991,9 +1073,14 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 .breadcrumb > ol, li.active {
     display: inline;
     list-style: none;
+    color: #000000;
 }
 .breadcrumb > li + li:before {
     content: " > ";
+    color: #000000;
+}
+.breadcrumb >li >a, .breadcrumb >li>span{
+    color: #000000;
 }
 .pleca-dorado div {
 
