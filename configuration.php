@@ -14,7 +14,7 @@ class JConfig {
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
-	public $password = 'passportben190678';
+	public $password = 'p4ssb4rd4hl';
 	public $db = 'friks_bardahl_db';
 	public $dbprefix = 'gnsvz_';
 	public $live_site = '';
