@@ -1,9 +1,10 @@
+
 body {
 
     background: none repeat scroll 0 0 #000;
     border-width: 0;
     color: #000000;
-    font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+    font-family: Oswald,sans-serif;
     font-size: 16px;
     font-style: normal;
     margin: 0 auto;
@@ -19,7 +20,7 @@ body {
 
 .head-search {
     font-size: 21px;
-    margin-left: 161%;
+    margin-left: 174%;
     margin-top: -5.9%;
     width: 629px;
 }
@@ -117,6 +118,10 @@ div.t3-navbar{
 .navbar-nav > li:focus{
     color: #ffd500;
 }
+.navbar-nav > li{
+    padding: 0 7px;
+
+}
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3{
     background-image: url("../images/site/line_up.png");
     background-size: 52% auto;
@@ -133,10 +138,11 @@ div.t3-navbar{
     background-repeat: no-repeat;
     background-size: 52% auto;
     color: #000000;
+    font-size: 100%;
     font-weight: bold;
     line-height: 2em;
-    margin: 0 0 0 -28px;
-    padding-left: 48px;
+    margin: 16px 0 0 -15px;
+    padding-left: 33px;
 }
 
 
@@ -146,7 +152,32 @@ div.t3-navbar{
     padding: 23px;
     width: 110%;
 }
+.contacto-text{
+    background-color: #ffffff;
+    margin-left: 19px;
+    padding: 23px;
+    width: 110%;
+}
+.contacto-text > a {
+    color: #000000;
+}
+.form-contacto{
+    width: 800px;
+}
 
+.contact{
+    margin: 0 0 0 34px;
+}
+.form-inter{
+    margin: 0 0 0 20px;
+}
+
+
+.contact>textarea{
+    background-color: #ffffff;
+    height: 200px;
+    width: 479px;
+}
 .promociones .img_prod >img{
     height: 72%;
     margin: 6% 0 0 19%;
@@ -166,8 +197,10 @@ div.titulo-dorado > h3, div.category-desc > h3, div.head-category > h2{
     color: #000000;
     font-weight: bold;
     line-height: 2em;
-    padding: 0 0 0 55px;
     text-align: left;
+    margin: 38px 0 0 -18px;
+    padding: 0 0 0 28px;
+
 }
 
 div.category-desc > p{
@@ -288,7 +321,7 @@ div.container_left .row #name1{
 }
 
 .articlelanding-page{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll -1px 100.5% / 100% auto white;
+    background-color: #ffffff;
     float: left;
     height: 482px;
     margin: -45.1% 0 0 3px;
@@ -300,11 +333,11 @@ div.container_left .row #name1{
     margin: 4% 0 0 2%;;
 }
 .modulelanding-page2{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 2px 101% / 102% auto white;
+    background-color: #ffffff;
     height: 482px;
-    margin: -0.7% 0 0 1%;
+    margin: -0.7% 0 0 -1%;
     max-width: 1920px;
-    width: 100%;
+    width: 102%;
 }
 
 .customlanding-page2{
@@ -315,12 +348,12 @@ div.container_left .row #name1{
 }
 
 .head-category{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 101% / 109% auto white;
+    background-color: #ffffff;
     float: left;
     height: 482px;
     margin: -45.1% 0 0 2.1px;
     max-width: 1920px;
-    width: 74%;
+    width: 75%;
 }
 
 .contact-form{
@@ -377,12 +410,21 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .modulelanding-page {
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    background-color: #ffffff;
     height: 482px;
     margin: -0.6% 0 0 1%;
     max-width: 1920px;
     width: 100%;
 }
+#line_position{
+    margin: -53px 0 0 8px;
+    position: absolute;
+    z-index: 1;
+}
+#line_position >img{
+    width: 894px;
+}
+
 
 #name5{
     height: 100%;
@@ -394,9 +436,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 
 #auto{
     float: left;
-    height: 100%;
-    margin: -1px -86%;
-    width: 146%;
+    height: 38%;
+    margin: -1px -79%;
+    width: 134%;
 }
 #buscar{
     margin: inherit;
@@ -435,11 +477,146 @@ ul.noti-event-home {
     display: table;
     width: 690px;
 }
+
+#menu-landing-1{
+    background-image: url("../images/site/pleca_titulos.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 46px;
+    width: 100%;
+}
+#menu-landing-1 >a{
+    color: #000000;
+    font-size: 22px;
+    line-height: 2em;
+    padding-left: 1em;
+}
+#menu-landing-2 >a{
+    color: #000000;
+    font-size: 16px;
+    line-height: 3em;
+    padding-left: 1em;
+}
+.containter-table {
+    display: table;
+    margin: 14px;
+    width: 1274px;
+}
+#segundo{
+    margin: 1%;
+}
+ #cuadro-1{
+     display: inline-block;
+     height: 230px;
+     margin: 0 0 0 34px;
+     width: 45%;
+}
+
+#img-lading{
+    background-color: #ffffff;
+
+}
+#cuadro-1 #img-lading >a >img{
+    height: 280px;
+    width: 100%;
+}
+
+#cuadro-2{
+    display: inline-block;
+    margin: 41px 0 0 8px;
+    width: 32%;
+}
+#cuadro-2 #img-lading >a >img{
+    height: 187px;
+    width: 100%;
+}
+#menu-landing-2{
+    background-image: url("../images/site/pleca_titulos.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 46px;
+    width: 100%;
+}
+
 #list{
     display: inline-block;
     width: 200px;
     margin-bottom: 40px;
 }
+
+.productos-form{
+    margin: 508px 0 0;
+    position: absolute;
+}
+
+.texto-form >h3{
+    background-image: url("../images/site/line_up.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    color: black;
+    font-weight: bold;
+    margin: 0 0 0 -7px;
+    padding: 6px 42px;
+}
+.data{
+    background-color: #ffffff;
+    width: 797px;
+}
+.data >table{
+    border-collapse: separate;
+    border-spacing:  5px;
+}
+#idtext{
+    width: 330px;
+}
+
+.contact-textarea>textarea{
+    width: 797px;
+    height: 150px;
+    background-color: #ffffff;
+}
+
+.boton_envio{
+    background-color: #ffd500;
+    height: 38px;
+    margin: 10px 0 0 687px;
+    width: 103px;
+    transform: skew(-20deg, 0deg);
+    -ms-transform: skew(-20deg, 0deg); /* IE 9 */
+    -webkit-transform: skew(-20deg, 0deg); /* Chrome, Safari, Opera */
+}
+
+.contacto_boton{
+    background-color: #ffd500;
+    height: 38px;
+    margin: -61px 0 0 741px;
+    width: 103px;
+    transform: skew(-20deg, 0deg);
+    -ms-transform: skew(-20deg, 0deg); /* IE 9 */
+    -webkit-transform: skew(-20deg, 0deg); /* Chrome, Safari, Opera */
+}
+
+
+
+.msg{
+    color: #000000;
+    background-color: #ffffff;
+}
+
+#label-form{
+    width: 25%;
+    float: left;
+}
+.texto-form{
+    margin: 0 0 0 -50px;
+    padding-left: 48px;
+    width: 400px;
+}
+
+#t3-content .table-responsive{
+    height: 900px;
+}
+
 #list2{
     display: inline-block;
     width: 200px;
@@ -658,7 +835,7 @@ ul.noti-event-home {
 #article_conteiner{
     background-color: #ffffff;
     display: inline-block;
-    height: 175px;
+    height: 340px;
     margin-left: 19px;
     margin-top: 22px;
     width: 300px;
@@ -882,7 +1059,7 @@ div.t3-footnav {
     font-weight: bold;
 }
 .t3-footnav h4, .t3-footnav .h3li {
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serifalibri;
+    font-family:Oswald, sans-serif;
     font-size: 16px;
 }
 div#footer_images img {
@@ -918,7 +1095,7 @@ div#footer_images img {
 }
 
 #div-tu-vida {
-    background-color: #ffd100;
+    background-image: url("../images/site/pleca_titulos.png");
     color: #333333;
     display: block;
     height: 60px;
@@ -984,7 +1161,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 }
 
 .calendar-video{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll -6px 100.7% / 103% auto white;
+    background-color: #ffffff;
     height: 482px;
     margin: -45.1% 0 0 6px;
     max-width: 1920px;
@@ -1010,7 +1187,7 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 }
 
 .img_prod{
-    background: url("../images/site/lineas.png") no-repeat scroll 4px 101% / 101% auto white;
+   background-color: #ffffff;
     height: 482px;
     margin: -45.1% 0 0 -12.1px;
     max-width: 1920px;
@@ -1025,12 +1202,12 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 ;
 }
 .conteiner-slider{
-    background: url("../images/site/line_baner.jpg") no-repeat scroll 1px 100% / 100% auto white;
+    background-color: #ffffff;
     height: 482.1px;
-    margin: -50% 0 0;
+    margin: -50% 0 0 -5px;
     max-width: 1920px;
     position: absolute;
-    width: 73.3%;
+    width: 74.3%;
 }
 
 .table-responsive .col-md-5{
@@ -1053,10 +1230,9 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 
 }
 .div_icons_prod{
-    width: 100%;
-
+    margin: -28px 0 0 67px;
     text-align: center;
-    margin: -93px 0 0 91px;
+    width: 100%;
 }
 .iconos_prod{
     margin-right: 0px;
@@ -1093,19 +1269,23 @@ div.module-inner > h3, div.calendar-descarga >h3, div.calendar-fondos >h3, .clea
 /*Categorias*/
 .article-catimg {
     height: 183px;
-    margin: 0 0 0 70px;
+    margin: 0 0 0 161px;
     width: 201px;
 }
 .cat-article {
-    width: 31%;
+    width: 48%;
     margin: 1%;
     background-color: white;
     display: inline-block;
     float: left;
 }
 .pleca-dorado, .article_title {
-    background-color: #FFD100;
-    color: #333333;
+    background-image: url("../images/site/pleca_titulos.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 46px;
+    width: 100%;
+    line-height: 2em;
 }
 .cat-article .pleca-dorado {
     display: block;
@@ -1158,7 +1338,7 @@ h1.article-title {
 }
 
 .homelink img {
-    margin-top: -15px;
+    margin: -18px 0 0 15px;
     position: absolute;
 }
 
@@ -1172,13 +1352,13 @@ h1.article-title {
 }
 
 #line{
-    margin-left: -14px;
-    margin-top: -18px;
+    margin-left: -27px;
+    margin-top: -9px;
     position: absolute;
 }
 
 #line >img{
-    width: 1302px;
+    width: 1309px;
 }
 #img_left2{
     margin-left: 96%;
@@ -1194,6 +1374,7 @@ h1.article-title {
 
 td, tr td {
     border-top: none;
+    color: #000000;
 }
 
 div#calif {
@@ -1226,7 +1407,7 @@ div#calif {
 }
 
 .title-uso{
-    font-family: bold;
+    font-weight: bold;
     display: inline-block;
 }
 .img-uso{

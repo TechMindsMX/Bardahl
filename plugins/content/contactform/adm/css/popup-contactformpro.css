@@ -1,103 +1,103 @@
-/**
- * ------------------------------------------------------------------------
- * Plugin ContactForm for Joomla! 1.7 - 2.5
- * ------------------------------------------------------------------------
- * @copyright   Copyright (C) 2011-2012 Chartiermedia.com - All Rights Reserved.
- * @license     GNU/GPLv3, http://www.gnu.org/copyleft/gpl.html
- * @author:     Sebastien Chartier
- * @link:       http://www.chartiermedia.com
- * ------------------------------------------------------------------------
- *
- * @package	Joomla.Plugin
- * @subpackage  ContactForm
- * @version     1.12 (February 20, 2012)
- * @since	1.7
- */
-
-html, body {
-	background-color: #F0F0F0;
-	font-family:  Tahoma, Verdana, sans-serif !important;
-	margin: 0px !important; padding: 0px !important;
-        font-size: 12px;
-}
-
-h3{font-size: 100%;}
-dd .invalid{
-    border: #ee1111 1px solid;
-}
-dt.tabs{display: inline-block; }
-dt.tabs.open a{
-    background: #fff;
-    text-decoration: underline;
-    color: #0B55C4;
-}
-
-dd{ margin: 0; }
-
-form {
-	padding: 0px;
-	margin: 0 auto;
-	width: 100%;
-}
-
-fieldset {
-	border-top: 1px solid #CCCCCC;
-	border-bottom: 1px solid #CCCCCC;
-}
-
-fieldset.radio{
-    border: none;
-}
-
-button {
-	padding: 3px;
-	border: 1px solid #CCCCCC;
-	font-weight: bold;
-	color: #0B55C4;
-	background-color: white;
-}
-button:hover {
-	border: 1px solid #0B55C4;
-}
-
-p#buttons{text-align:center;}
-
-select,input,button {
-	font: Tahoma, Verdana, sans-serif;
-}
-
-a {
-	padding: 5px;
-	border: 1px solid #0B55C4;
-        text-decoration: none;
-        color:#aaa;
-}
-
-a:hover {
-    color: #0B55C4;
-}
-
-dl#btnContactform{
-    text-align: center;
-}
-
-legend {
-    color: #146295;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-input, select {
-    padding:2px;
-    border: 1px solid silver;
-    background: #fff;
-}
-
-fieldset input,
-fieldset textarea,
-fieldset select,
-fieldset img,
-fieldset button {
-    width: auto;
-    margin: 5px 5px 5px 10px;
-}
+/**
+ * ------------------------------------------------------------------------
+ * Plugin ContactForm for Joomla! 1.7 - 2.5
+ * ------------------------------------------------------------------------
+ * @copyright   Copyright (C) 2011-2012 Chartiermedia.com - All Rights Reserved.
+ * @license     GNU/GPLv3, http://www.gnu.org/copyleft/gpl.html
+ * @author:     Sebastien Chartier
+ * @link:       http://www.chartiermedia.com
+ * ------------------------------------------------------------------------
+ *
+ * @package	Joomla.Plugin
+ * @subpackage  ContactForm
+ * @version     1.12 (February 20, 2012)
+ * @since	1.7
+ */
+
+html, body {
+	background-color: #F0F0F0;
+	font-family:  Tahoma, Verdana, sans-serif !important;
+	margin: 0px !important; padding: 0px !important;
+        font-size: 12px;
+}
+
+h3{font-size: 100%;}
+dd .invalid{
+    border: #ee1111 1px solid;
+}
+dt.tabs{display: inline-block; }
+dt.tabs.open a{
+    background: #fff;
+    text-decoration: underline;
+    color: #0B55C4;
+}
+
+dd{ margin: 0; }
+
+form {
+	padding: 0px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+fieldset {
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+fieldset.radio{
+    border: none;
+}
+
+button {
+	padding: 3px;
+	border: 1px solid #CCCCCC;
+	font-weight: bold;
+	color: #0B55C4;
+	background-color: white;
+}
+button:hover {
+	border: 1px solid #0B55C4;
+}
+
+p#buttons{text-align:center;}
+
+select,input,button {
+	font: Tahoma, Verdana, sans-serif;
+}
+
+a {
+	padding: 5px;
+	border: 1px solid #0B55C4;
+        text-decoration: none;
+        color:#aaa;
+}
+
+a:hover {
+    color: #0B55C4;
+}
+
+dl#btnContactform{
+    text-align: center;
+}
+
+legend {
+    color: #146295;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+input, select {
+    padding:2px;
+    border: 1px solid silver;
+    background: #fff;
+}
+
+fieldset input,
+fieldset textarea,
+fieldset select,
+fieldset img,
+fieldset button {
+    width: auto;
+    margin: 5px 5px 5px 10px;
+}

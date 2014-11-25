@@ -1,180 +1,180 @@
-<?xml version="1.0" encoding="utf-8"?>
-<extension type="plugin" version="1.6" method="upgrade" group="system">
-  <name>System - iCaptcha</name>
-  <creationDate>09-Nov-2011</creationDate>
-  <author>Douglas Machado</author>
-  <authorEmail>admin@fok.com.br</authorEmail>
-  <authorUrl>http://idealextensions.com</authorUrl>
-  <copyright>(C) 2011 idealextensions.com - Brazil</copyright>
-  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
-  <version>1.7.2</version>
-  <description>PLG_SYSTEM_ICAPTCHA_XML_DESCRIPTION</description>
-  <files folder="site">
-    <folder>captcha_systems</folder>
-    <folder>elements</folder>
-    <folder>helpers</folder>
-    <folder>language</folder>
-    <filename plugin="icaptcha">icaptcha.php</filename>
-    <filename>index.html</filename>
-  </files>
-  <params/>
-  <languages folder="site/language">
-    <language tag="bg-BG">bg-BG/bg-BG.plg_system_icaptcha.ini</language>
-    <language tag="da-DK">da-DK/da-DK.plg_system_icaptcha.ini</language>
-    <language tag="en-GB">en-GB/en-GB.plg_system_icaptcha.ini</language>
-    <language tag="pt-BR">pt-BR/pt-BR.plg_system_icaptcha.ini</language>
-    <language tag="fr-FR">fr-FR/fr-FR.plg_system_icaptcha.ini</language>
-    <language tag="es-ES">es-ES/es-ES.plg_system_icaptcha.ini</language>
-  </languages>
-
-  <config>
-    <fields name="params" addfieldpath="/plugins/system/icaptcha/elements">
-      <fieldset name="basic">
-        <field name="only_non_registered" type="radio" default="0" label="Non Registered users only?" description="Whether to display the captcha to non registered users only. If set to Yes logged in users will not see the captcha">
-          <option value="1">JYES</option>
-          <option value="0">JNO</option>
-        </field>
-        <field name="captcha_systems" type="switch" default="securImage2" label="Choose CAPTCHA System" description="SecurImage requires GD image Library, ReCaptcha requires an API (free) and MathGuard is very simple and Will protect against most spam bots ">
-          <option value="securImage2">SecureImage 2 - Recommended</option>
-          <option value="recaptcha">ReCAPTCHA</option>
-          <option value="mathguard">MathGuard - Simple and fast</option>
-          <option value="vouchsafe">VouchSafe</option>
-        </field>
-        <field name="captcha_systems-recaptcha-title" type="title" label="ReCAPTCHA Configuration" group="captcha_systems-recaptcha" description="Visit ReCAPTCHA.net in order to get a API key" />
-        <field name="captcha_systems-recaptcha-PubKey" type="text" default="" label="ReCAPTCHA Public Key" description="" />
-        <field name="captcha_systems-recaptcha-PriKey" type="text" default="" label="ReCAPTCHA Private Key" description="" />
-        <field name="captcha_systems-recaptcha-Theme" type="list" default="red" label="ReCAPTCHA Theme" description="Choose a color theme for te ReCAPTCHA">
-          <option value="red">Red</option>
-          <option value="white">White</option>
-          <option value="blackglass">Blackglass</option>
-          <option value="clean">Clean</option>
-        </field>
-        <field name="captcha_systems-recaptcha-Lang" type="list" default="en" label="ReCAPTCHA Language" description="Choose a language for the ReCAPTCHA">
-          <option value="en">English</option>
-          <option value="nl">Dutch</option>
-          <option value="fr">French</option>
-          <option value="de">German</option>
-          <option value="pt">Portuguese</option>
-          <option value="ru">Russian</option>
-          <option value="es">Spanish</option>
-          <option value="tr">Turkish</option>
-        </field>
-        <field name="captcha_systems-securImage2-reloadbutton" type="radio" default="1" label="Reload link" description="Shows/Hides an small refresh type image taht allows the option to reload the image">
-          <option value="1">Show</option>
-          <option value="0">Hide</option>
-        </field>
-        <field name="captcha_systems-securImage2-ajaxcheck" type="radio" 
-        	default="0" 
-        	label="Check code using Ajax" 
-        	description="Use Ajax to check the code before the form is submitted.">
-          <option value="1">Yes</option>
-          <option value="0">No</option>
-        </field>
-        <field name="captcha_systems-securImage2-reloadimage" type="imagethumbnails" default="sync.png" label="Reload Image" directory="plugins/system/icaptcha/captcha_systems/securImage2/images/" exclude="audio_icon.gif|.txt" hide_none="1" hide_default="1" description="Choose an image that matches your template" />
-        <field name="captcha_systems-securImage2-background" type="imagethumbnails" default="" label="Background Image" directory="plugins/system/icaptcha/captcha_systems/securImage2/backgrounds/" hide_default="1" exclude="index.html" description="Choose a background image or set to none if you want to show a background color instead.        You can include more background images in this directory:         [Path to Joomla]/plugins/system/icaptcha/captcha_systems/securImage2/backgrounds/" />
-        <field name="captcha_systems-securImage2-ttf" type="filelist" default="-1" label="True Type Font" directory="plugins/system/icaptcha/captcha_systems/securImage2/" hide_none="0" hide_default="1" filter=".ttf" description="Choose a font type for the image code.          You can include more True Type fonts (TTF) in this directory          [Path to Joomla]/plugins/system/icaptcha/captcha_systems/securImage2/" />
-        <field name="captcha_systems-securImage2-width" type="text" default="140" label="Image width" description="The desired width of the CAPTCHA image. Only numbers" />
-        <field name="captcha_systems-securImage2-height" type="text" default="60" label="Image height" description="The desired height of the CAPTCHA image. Only numbers" />
-        <field name="captcha_systems-securImage2-length" type="list" default="4" label="Length" description="The length of the code to generate.">
-          <option value="random">Random (3 to 5 chars)</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-        </field>
-        <field name="captcha_systems-securImage2-perturbation" type="list" default="0.7" label="Perturbation" description="How much to distort image, higher = more distortion. Distortion is only available when using TTF fonts">
-          <option value="0.1">1</option>
-          <option value="0.2">2</option>
-          <option value="0.3">3</option>
-          <option value="0.4">4</option>
-          <option value="0.5">5</option>
-          <option value="0.6">6</option>
-          <option value="0.7">7</option>
-          <option value="0.8">8</option>
-          <option value="0.9">9</option>
-          <option value="1">10</option>
-        </field>
-        <field name="captcha_systems-securImage2-text_angle_minimum" type="list" default="0" label="Minimum Angle" description="The minimum angle in degrees, with 0 degrees being left-to-right reading text.         *Higher values represent a counter-clockwise rotation.         *For example, a value of 90 would result in bottom-to-top reading text.         *This value along with maximum angle distance do not need to be very high with perturbation">
-          <option value="-90">-90</option>
-          <option value="-80">-80</option>
-          <option value="-70">-70</option>
-          <option value="-60">-60</option>
-          <option value="-50">-50</option>
-          <option value="-40">-40</option>
-          <option value="-30">-30</option>
-          <option value="-20">-20</option>
-          <option value="-10">-10</option>
-          <option value="0" />
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40">40</option>
-          <option value="50">50</option>
-          <option value="06">60</option>
-          <option value="70">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-        </field>
-        <field name="captcha_systems-securImage2-text_angle_maximum" type="list" default="0" label="Maximum Angle" description="The maximum angle in degrees, with 0 degrees being left-to-right reading text.         *Higher values represent a counter-clockwise rotation.         *For example, a value of 90 would result in bottom-to-top reading text.">
-          <option value="-90">-90</option>
-          <option value="-80">-80</option>
-          <option value="-70">-70</option>
-          <option value="-60">-60</option>
-          <option value="-50">-50</option>
-          <option value="-40">-40</option>
-          <option value="-30">-30</option>
-          <option value="-20">-20</option>
-          <option value="-10">-10</option>
-          <option value="0" />
-          <option value="10">10</option>
-          <option value="20">20</option>
-          <option value="30">30</option>
-          <option value="40">40</option>
-          <option value="50">50</option>
-          <option value="06">60</option>
-          <option value="70">70</option>
-          <option value="80">80</option>
-          <option value="90">90</option>
-        </field>
-        <field class="color" name="captcha_systems-securImage2-text_color" type="text" default="3D3D3D" label="Text Color" description="The text color to use for drawing characters as a Securimage_Color.         *Make sure this contrasts well with the background color or image" />
-        <field name="captcha_systems-securImage2-number_lines" type="list" default="8" label="Number of lines" description="Draw vertical and horizontal lines on the image">
-          <option value="0" />
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-          <option value="6">6</option>
-          <option value="7">7</option>
-          <option value="8">8</option>
-          <option value="9">9</option>
-          <option value="10">10</option>
-          <option value="11">11</option>
-          <option value="12">12</option>
-          <option value="13">13</option>
-          <option value="14">14</option>
-          <option value="15">15</option>
-        </field>
-        <field class="color" name="captcha_systems-securImage2-line_color" type="text" default="7C7C7C" label="Line Color" description="Color of lines drawn over text" />
-        <field name="captcha_systems-securImage2-image_signature" type="text" default="" label="Signature over image" description="Text to write at the bottom corner of captcha image" />
-        <field class="color" name="captcha_systems-securImage2-signature_color" type="text" default="FFFFFF" label="Text Color" description="Color to use for writing signature text" />
-        <field class="color" name="captcha_systems-securImage2-bg_color" type="text" default="FFFFFF" label="Background Color" description="The background color for the image as a Securimage_Color" />
-        <field name="captcha_systems-mollom-title" type="title" label="Mollom Configuration" group="captcha_systems-mollom" description="You need to register at      &lt;a href=&quot;http://mollom.com/user/register&quot; target=&quot;_blank&quot;&gt;mollom.com&lt;/a&gt;      to get your key's.      Read more about Molloms       &lt;a href=&quot;http://mollom.com/terms-of-service&quot; target=&quot;_blank&quot;&gt;Terms of Service&lt;/a&gt;" />
-        <field name="captcha_systems-mollom-PubKey" type="text" default="" label="Mollom Public Key" description="" />
-        <field name="captcha_systems-mollom-PriKey" type="text" default="" label="Mollom Private Key" description="" />
-        <field name="captcha_systems-mollom-CaptchaType" type="list" default="both" label="Captcha Type" description="">
-          <option value="image">Image Captcha Only</option>
-          <option value="sound">Audio Captcha Only</option>
-          <option value="both">Both Image And Audio Captcha</option>
-        </field>
-        <field name="captcha_systems-vouchsafe-title" type="title" label="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_CONFIGURATION_TITLE_LABEL" group="captcha_systems-vouchsafe" description="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_CONFIGURATION_TITLE_DESC" />
-        <field name="captcha_systems-vouchsafe-PubKey" type="text" default="" label="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_PUBLIC_KEY_LABEL" description="" />
-        <field name="captcha_systems-vouchsafe-PriKey" type="text" default="" label="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_PRIVATE_KEY_LABEL" description="" />
-      </fieldset>
-    </fields>
-  </config>
-</extension>
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="1.6" method="upgrade" group="system">
+  <name>System - iCaptcha</name>
+  <creationDate>09-Nov-2011</creationDate>
+  <author>Douglas Machado</author>
+  <authorEmail>admin@fok.com.br</authorEmail>
+  <authorUrl>http://idealextensions.com</authorUrl>
+  <copyright>(C) 2011 idealextensions.com - Brazil</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.7.2</version>
+  <description>PLG_SYSTEM_ICAPTCHA_XML_DESCRIPTION</description>
+  <files folder="site">
+    <folder>captcha_systems</folder>
+    <folder>elements</folder>
+    <folder>helpers</folder>
+    <folder>language</folder>
+    <filename plugin="icaptcha">icaptcha.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <params/>
+  <languages folder="site/language">
+    <language tag="bg-BG">bg-BG/bg-BG.plg_system_icaptcha.ini</language>
+    <language tag="da-DK">da-DK/da-DK.plg_system_icaptcha.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_system_icaptcha.ini</language>
+    <language tag="pt-BR">pt-BR/pt-BR.plg_system_icaptcha.ini</language>
+    <language tag="fr-FR">fr-FR/fr-FR.plg_system_icaptcha.ini</language>
+    <language tag="es-ES">es-ES/es-ES.plg_system_icaptcha.ini</language>
+  </languages>
+
+  <config>
+    <fields name="params" addfieldpath="/plugins/system/icaptcha/elements">
+      <fieldset name="basic">
+        <field name="only_non_registered" type="radio" default="0" label="Non Registered users only?" description="Whether to display the captcha to non registered users only. If set to Yes logged in users will not see the captcha">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+        <field name="captcha_systems" type="switch" default="securImage2" label="Choose CAPTCHA System" description="SecurImage requires GD image Library, ReCaptcha requires an API (free) and MathGuard is very simple and Will protect against most spam bots ">
+          <option value="securImage2">SecureImage 2 - Recommended</option>
+          <option value="recaptcha">ReCAPTCHA</option>
+          <option value="mathguard">MathGuard - Simple and fast</option>
+          <option value="vouchsafe">VouchSafe</option>
+        </field>
+        <field name="captcha_systems-recaptcha-title" type="title" label="ReCAPTCHA Configuration" group="captcha_systems-recaptcha" description="Visit ReCAPTCHA.net in order to get a API key" />
+        <field name="captcha_systems-recaptcha-PubKey" type="text" default="" label="ReCAPTCHA Public Key" description="" />
+        <field name="captcha_systems-recaptcha-PriKey" type="text" default="" label="ReCAPTCHA Private Key" description="" />
+        <field name="captcha_systems-recaptcha-Theme" type="list" default="red" label="ReCAPTCHA Theme" description="Choose a color theme for te ReCAPTCHA">
+          <option value="red">Red</option>
+          <option value="white">White</option>
+          <option value="blackglass">Blackglass</option>
+          <option value="clean">Clean</option>
+        </field>
+        <field name="captcha_systems-recaptcha-Lang" type="list" default="en" label="ReCAPTCHA Language" description="Choose a language for the ReCAPTCHA">
+          <option value="en">English</option>
+          <option value="nl">Dutch</option>
+          <option value="fr">French</option>
+          <option value="de">German</option>
+          <option value="pt">Portuguese</option>
+          <option value="ru">Russian</option>
+          <option value="es">Spanish</option>
+          <option value="tr">Turkish</option>
+        </field>
+        <field name="captcha_systems-securImage2-reloadbutton" type="radio" default="1" label="Reload link" description="Shows/Hides an small refresh type image taht allows the option to reload the image">
+          <option value="1">Show</option>
+          <option value="0">Hide</option>
+        </field>
+        <field name="captcha_systems-securImage2-ajaxcheck" type="radio" 
+        	default="0" 
+        	label="Check code using Ajax" 
+        	description="Use Ajax to check the code before the form is submitted.">
+          <option value="1">Yes</option>
+          <option value="0">No</option>
+        </field>
+        <field name="captcha_systems-securImage2-reloadimage" type="imagethumbnails" default="sync.png" label="Reload Image" directory="plugins/system/icaptcha/captcha_systems/securImage2/images/" exclude="audio_icon.gif|.txt" hide_none="1" hide_default="1" description="Choose an image that matches your template" />
+        <field name="captcha_systems-securImage2-background" type="imagethumbnails" default="" label="Background Image" directory="plugins/system/icaptcha/captcha_systems/securImage2/backgrounds/" hide_default="1" exclude="index.html" description="Choose a background image or set to none if you want to show a background color instead.        You can include more background images in this directory:         [Path to Joomla]/plugins/system/icaptcha/captcha_systems/securImage2/backgrounds/" />
+        <field name="captcha_systems-securImage2-ttf" type="filelist" default="-1" label="True Type Font" directory="plugins/system/icaptcha/captcha_systems/securImage2/" hide_none="0" hide_default="1" filter=".ttf" description="Choose a font type for the image code.          You can include more True Type fonts (TTF) in this directory          [Path to Joomla]/plugins/system/icaptcha/captcha_systems/securImage2/" />
+        <field name="captcha_systems-securImage2-width" type="text" default="140" label="Image width" description="The desired width of the CAPTCHA image. Only numbers" />
+        <field name="captcha_systems-securImage2-height" type="text" default="60" label="Image height" description="The desired height of the CAPTCHA image. Only numbers" />
+        <field name="captcha_systems-securImage2-length" type="list" default="4" label="Length" description="The length of the code to generate.">
+          <option value="random">Random (3 to 5 chars)</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </field>
+        <field name="captcha_systems-securImage2-perturbation" type="list" default="0.7" label="Perturbation" description="How much to distort image, higher = more distortion. Distortion is only available when using TTF fonts">
+          <option value="0.1">1</option>
+          <option value="0.2">2</option>
+          <option value="0.3">3</option>
+          <option value="0.4">4</option>
+          <option value="0.5">5</option>
+          <option value="0.6">6</option>
+          <option value="0.7">7</option>
+          <option value="0.8">8</option>
+          <option value="0.9">9</option>
+          <option value="1">10</option>
+        </field>
+        <field name="captcha_systems-securImage2-text_angle_minimum" type="list" default="0" label="Minimum Angle" description="The minimum angle in degrees, with 0 degrees being left-to-right reading text.         *Higher values represent a counter-clockwise rotation.         *For example, a value of 90 would result in bottom-to-top reading text.         *This value along with maximum angle distance do not need to be very high with perturbation">
+          <option value="-90">-90</option>
+          <option value="-80">-80</option>
+          <option value="-70">-70</option>
+          <option value="-60">-60</option>
+          <option value="-50">-50</option>
+          <option value="-40">-40</option>
+          <option value="-30">-30</option>
+          <option value="-20">-20</option>
+          <option value="-10">-10</option>
+          <option value="0" />
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="06">60</option>
+          <option value="70">70</option>
+          <option value="80">80</option>
+          <option value="90">90</option>
+        </field>
+        <field name="captcha_systems-securImage2-text_angle_maximum" type="list" default="0" label="Maximum Angle" description="The maximum angle in degrees, with 0 degrees being left-to-right reading text.         *Higher values represent a counter-clockwise rotation.         *For example, a value of 90 would result in bottom-to-top reading text.">
+          <option value="-90">-90</option>
+          <option value="-80">-80</option>
+          <option value="-70">-70</option>
+          <option value="-60">-60</option>
+          <option value="-50">-50</option>
+          <option value="-40">-40</option>
+          <option value="-30">-30</option>
+          <option value="-20">-20</option>
+          <option value="-10">-10</option>
+          <option value="0" />
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+          <option value="50">50</option>
+          <option value="06">60</option>
+          <option value="70">70</option>
+          <option value="80">80</option>
+          <option value="90">90</option>
+        </field>
+        <field class="color" name="captcha_systems-securImage2-text_color" type="text" default="3D3D3D" label="Text Color" description="The text color to use for drawing characters as a Securimage_Color.         *Make sure this contrasts well with the background color or image" />
+        <field name="captcha_systems-securImage2-number_lines" type="list" default="8" label="Number of lines" description="Draw vertical and horizontal lines on the image">
+          <option value="0" />
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <option value="15">15</option>
+        </field>
+        <field class="color" name="captcha_systems-securImage2-line_color" type="text" default="7C7C7C" label="Line Color" description="Color of lines drawn over text" />
+        <field name="captcha_systems-securImage2-image_signature" type="text" default="" label="Signature over image" description="Text to write at the bottom corner of captcha image" />
+        <field class="color" name="captcha_systems-securImage2-signature_color" type="text" default="FFFFFF" label="Text Color" description="Color to use for writing signature text" />
+        <field class="color" name="captcha_systems-securImage2-bg_color" type="text" default="FFFFFF" label="Background Color" description="The background color for the image as a Securimage_Color" />
+        <field name="captcha_systems-mollom-title" type="title" label="Mollom Configuration" group="captcha_systems-mollom" description="You need to register at      &lt;a href=&quot;http://mollom.com/user/register&quot; target=&quot;_blank&quot;&gt;mollom.com&lt;/a&gt;      to get your key's.      Read more about Molloms       &lt;a href=&quot;http://mollom.com/terms-of-service&quot; target=&quot;_blank&quot;&gt;Terms of Service&lt;/a&gt;" />
+        <field name="captcha_systems-mollom-PubKey" type="text" default="" label="Mollom Public Key" description="" />
+        <field name="captcha_systems-mollom-PriKey" type="text" default="" label="Mollom Private Key" description="" />
+        <field name="captcha_systems-mollom-CaptchaType" type="list" default="both" label="Captcha Type" description="">
+          <option value="image">Image Captcha Only</option>
+          <option value="sound">Audio Captcha Only</option>
+          <option value="both">Both Image And Audio Captcha</option>
+        </field>
+        <field name="captcha_systems-vouchsafe-title" type="title" label="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_CONFIGURATION_TITLE_LABEL" group="captcha_systems-vouchsafe" description="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_CONFIGURATION_TITLE_DESC" />
+        <field name="captcha_systems-vouchsafe-PubKey" type="text" default="" label="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_PUBLIC_KEY_LABEL" description="" />
+        <field name="captcha_systems-vouchsafe-PriKey" type="text" default="" label="PLG_SYSTEM_ICAPTCHA_VOUCHSAFE_PRIVATE_KEY_LABEL" description="" />
+      </fieldset>
+    </fields>
+  </config>
+</extension>

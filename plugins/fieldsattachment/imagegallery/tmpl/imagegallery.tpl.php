@@ -1,4 +1,4 @@
-<ul class="gallery gal[FIELD_ID]">
-    [LINES]
-</ul>
-
+<ul class="gallery gal[FIELD_ID]">
+    [LINES]
+</ul>
+
