@@ -56,8 +56,8 @@ $imagenes = json_decode($item->images);
     </div>
 <br>
    <div class="texto-header">
-       <h3>
-           <?php echo $item->title; ?>
+       <h3 class="module-title landig-tab">
+          <span> <?php echo $item->title; ?></span>
        </h3>
     </div>
     <br>
