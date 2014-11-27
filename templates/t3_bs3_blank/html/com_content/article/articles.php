@@ -66,6 +66,11 @@ $imagenes = json_decode($item->images);
         <?php echo $item->introtext; ?>
 
     </div>
+</div>
+<br><br><br>
 
-
+<div class="texto-header">
+    <h3 class="module-title landig-tab">
+        <span> Relacionados</span>
+    </h3>
 </div>

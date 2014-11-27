@@ -20,8 +20,8 @@ defined('_JEXEC') or die;
 
 $item_heading = $params->get('item_heading', 'h4');
 $imagenes=json_decode($item->images);
-?>
 
+?>
 
 <div class="latestnewstu_vida ">
 

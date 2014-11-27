@@ -21,9 +21,6 @@ $sidebar2 = 'sidebar-2';
 $sidebar1 = $this->countModules($sidebar1) ? $sidebar1 : false;
 $sidebar2 = $this->countModules($sidebar2) ? $sidebar2 : false;
 ?>
-    <div id="line_position">
-        <img  src="templates/t3_bs3_blank/images/site/lineas.png">
-    </div>
 <?php
 // detect layout
 if ($sidebar1 && $sidebar2) {

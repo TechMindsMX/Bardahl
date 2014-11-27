@@ -15,9 +15,11 @@ defined('_JEXEC') or die;
 
     </div>
     <div class="module-inner">
-        <h3>Tipos de producto</h3>
+        <h3 class="module-title ">
+            <span>Tipos de producto</span>
+        </h3>
     </div>
-    <br/>
+
 <?php
 
 JLoader::register('fieldsattachHelper',  'components/com_fieldsattach/helpers/fieldsattach.php');
@@ -47,7 +49,7 @@ foreach($categorias as $key => $value) {
 
         </div>
 
-        <div class="article_title">
+        <div class="article_titl">
 
             <a href="index.php?option=<?php echo $data[$i]->get('extension'); ?>&view=category&id=<?php echo $data[$i]->get('id') ?>">
 

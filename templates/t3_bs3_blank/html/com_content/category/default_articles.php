@@ -28,7 +28,9 @@ $params = &$this->item->params;
 $n = count($this->items);
 echo '
     <div class="module-inner">
-        <h3>Tipos de producto</h3>
+        <h3 class="module-title ">
+            <span>Tipos de Producto</span>
+        </h3>
     </div>
     <br/>';
 $listOrder = $this->escape($this->state->get('list.ordering'));

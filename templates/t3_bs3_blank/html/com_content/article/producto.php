@@ -57,7 +57,9 @@ $score = $rating->getRating($item->id);
 </script>
 <div class="clearfix"></div>
 <div class="texto-header">
-    <h3>Información del Producto</h3>
+    <h3 class="module-title ">
+        <span>Informacion de Produto</span>
+    </h3>
 </div>
 <div class="clearfix">&nbsp;</div>
 <div class="table-responsive">
@@ -65,9 +67,9 @@ $score = $rating->getRating($item->id);
         <div class="img-prod">
             <br/>
             <br/>
-            <div class="texto-header">
-                <h3><?php echo $item->title;   ?></h3>
-            </div>
+            <h3 class="module-title ">
+                <span><?php echo $item->title;   ?></span>
+            </h3>
             <img class="img-producto" src="<?php echo $imagenes->image_fulltext; ?>">
             <div class="div_icons_prod">
                 <div class="title-uso">Tipos de uso:</div>
@@ -113,12 +115,15 @@ $score = $rating->getRating($item->id);
     <div class="col-md-7 txt-producto">
         <?php  echo $item->introtext; ?>
     </div>
+
     <div class="productos-form">
         <form method="post" class="contacto">
             <fieldset>
-                <div class="texto-form">
-                    <h3>Comenta este Producto</h3>
-                </div>
+                <br/>
+                <h3 class="module-title ">
+                    <span>Comenta este Producto</span>
+                </h3>
+                <br/>
                 <div class="data">
                     <table>
                         <tr>
