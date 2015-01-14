@@ -24,9 +24,33 @@ class busquedaController extends JControllerLegacy {
         $rating->insertRating($data);
 
         $score = $rating->getRating($data['articleId']);
+        $data = $rating->getNumber($data['articleId']);
 
-        $respuesta = array('success'=>true, 'score'=> $score);
+        $respuesta = array('success'=>true, 'score'=> $score, 'conteo' => $data);
 
         echo json_encode($respuesta);
+    }
+
+    public  function blog(){
+        $filtro     = array('nombre' => 'STRING', 'email' => 'STRING', 'mensaje' => 'STRING', 'article' => 'STRING');
+        $data		= $this->input_data->getArray($filtro);
+        $blog     = new blog();
+        $document   = JFactory::getDocument();
+
+        $document->setMimeEncoding('application/json');
+
+        $blog->insertBlog($data);
+
+        $respuesta = array('success'=>true);
+
+        echo json_encode($respuesta);
+    }
+
+    public  function getBlog(){
+        $filtro     = array('article' => 'STRING');
+        $data		= $this->input_data->getArray($filtro);
+        $getBlog    = new blog();
+        $data       = $getBlog->getBlog($data);
+        echo json_encode($data);
     }
 }
