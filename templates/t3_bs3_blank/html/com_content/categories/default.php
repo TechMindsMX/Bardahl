@@ -38,8 +38,6 @@ foreach($categorias as $key => $value) {
 
         <div class="article_image">
 
-                    <span>
-
                 <?php
 
                 $value->imagen = json_decode($value->params);

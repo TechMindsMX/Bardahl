@@ -31,7 +31,12 @@ $imagenes = json_decode($item->images);
 ?>
 <div class="promociones">
     <div class="img_prod">
-        <img src="<?php echo $imagenes->image_intro; ?>">
+
+        <?php if(isset($imagenes->image_intro) and $imagenes->image_intro<>'' ){
+           echo "<img src=".$imagenes->image_intro.">";
+        }
+        ?>
+
     </div>
     <br>
     <br>

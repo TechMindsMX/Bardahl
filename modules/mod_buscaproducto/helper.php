@@ -17,23 +17,52 @@ class ModBuscaProductoHelper{
         parent::__construct();
     }
 
-    public static function getList(){
+    public static function getList()
+    {
 
 
-        $db	= JFactory::getDbo();
-        $query= $db->getQuery(true);
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
 
-        $query  ->  select('id, title')
-                ->  from('#__categories')
-                ->  where('path'.' like '.$db->quote('productos/%'));
+        $query->select('id, title')
+            ->from('#__categories')
+            ->where('path' . ' like ' . $db->quote('productos/%'));
 
-       $db->setQuery($query);
-       $result=$db->loadObjectList('');
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
 
 
         return $result;
 
     }
 
+    function getMarca(){
+
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('distinctrow Armadora')
+            ->from('tbl_name');
+
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+
+        return $result;
+
+    }
+    function getModelo(){
+
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+
+        $query->select('distinctrow Modelo')
+            ->from('tbl_name');
+
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+
+        return $result;
+
+    }
+
 }
-?>

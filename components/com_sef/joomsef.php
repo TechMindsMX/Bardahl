@@ -2755,8 +2755,8 @@ class JoomSEF
         'isibility: visible; display: i'.
         'nline;" title="Web development'.
         ', Joomla, CMS, CRM, Online sho'.
-        'p software, databases">Joomla '.
-        'SEF URLs by Artio</a></div>';
+        'p software, databases"> '.
+        '</a></div>';
 
 		// Fixing Yootheme and Joomla search
         if (JRequest::getCmd('format') != 'raw' &&  JRequest::getCmd('tmpl')!='raw')

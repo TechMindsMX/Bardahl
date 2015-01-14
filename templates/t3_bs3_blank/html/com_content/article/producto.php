@@ -10,7 +10,9 @@ defined('_JEXEC') or die;
 JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
 jimport('bardahl.rating');
 // Create shortcuts to some parameters.
-$present= $this->presentaciones;
+
+$present= $this->item->presentaciones;
+
 $params  = $this->item->params;
 $images  = json_decode($this->item->images);
 $urls    = json_decode($this->item->urls);
@@ -29,22 +31,27 @@ $score = $rating->getRating($item->id);
 
     var ruta = "<?php echo JUri::base(); ?>libraries/bardahl/js/raty/img/"
     jQuery(document).ready(function () {
+         getblog();
         jQuery('#calif').raty({
             click: function(score) {
                 var request = jQuery.ajax({
-                    url :"index.php?option=com_busqueda&task=raty&format=raw",
+                    url :"<?php echo JUri::base(); ?>index.php?option=com_busqueda&task=raty&format=raw",
                     data: {"articleId" : <?php echo $item->id; ?>,
                         "score"     : score
                     },
                     type: 'post'
                 });
                 request.done(function(result){
-                    promedio = parseFloat(result.score);
+                    var promedio    = parseFloat(result.score);
+                    var conteo      = result.conteo;
+
+
                     jQuery('#calif').raty({
                         readOnly: true,
                         path  : ruta,
                         score  : promedio
                     });
+                    document.getElementById('number').innerHTML += '' +conteo.uno+' '+conteo.dos+' '+conteo.tres+' '+conteo.cuatro+' '+conteo.cinco;
                 });
                 request.fail(function (jqXHR, textStatus) {
                     alert('<?php echo JText::_("RATING_ERROR"); ?>');
@@ -58,7 +65,7 @@ $score = $rating->getRating($item->id);
 <div class="clearfix"></div>
 <div class="texto-header">
     <h3 class="module-title ">
-        <span>Informacion de Produto</span>
+        <span>Información de Producto</span>
     </h3>
 </div>
 <div class="clearfix">&nbsp;</div>
@@ -106,9 +113,10 @@ $score = $rating->getRating($item->id);
             </div>
             <div id="raty" >
                 <div id="calif"></div>
+                <div id="number"></div>
             </div>
             <div id="lbl_fusion2">
-                <span class"titulios-apartados">Recomienda a un amigo</span>
+                <span class"titulios-apartados"><a href="mailto:" style="color: #000000"> Recomienda a un amigo</a></span>
             </div>
         </div>
     </div>
@@ -154,9 +162,36 @@ $score = $rating->getRating($item->id);
                 </div>
             </fieldset>
         </form>
+        <div class="Table" id="Table"></div>
         <script>
+            function getblog(){
+                var idarticle = 'article='+ <?php echo $item->id ?>;
+                jQuery.ajax({
+                        type: "POST",
+                        url: "<?php echo JUri::base(); ?>index.php?option=com_busqueda&task=getBlog&format=raw",
+                        data: idarticle,
 
-            function envio(){
+                           success: function(data) {
+
+                           var rows = jQuery.parseJSON(data);
+                           document.getElementById('Table').innerHTML = '';
+                           for (i = 0; i <= rows.length; i++) {
+
+                                document.getElementById('Table').innerHTML += '' +
+                                '<div class="Row fila'+i%2+'">' +
+                                    '<div class="Cell nombre">'+rows[i].nombre+'</div>' +
+                                    '<div class="Cell text">'+rows[i].mensaje+'</div></div>' +
+                                '<br>';
+                           }
+                        },
+                        error: function() {
+                            jQuery('.ajaxgif').hide();
+                            jQuery('.msg').text('Hubo un error!').addClass('msg_error').animate({ 'right' : '130px' }, 300);
+                        }
+                    });
+                }
+
+                function envio(){
                 var nombre = jQuery(".nombre").val();
                 var email = jQuery(".email").val();
                 var validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
@@ -172,14 +207,15 @@ $score = $rating->getRating($item->id);
                     return false;
                 }else{
                     jQuery('.ajaxgif').removeClass('hide');
-                    var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje;
+                    var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje+'&article='+ <?php echo $item->id ?>;
                     jQuery.ajax({
                         type: "POST",
-                        url: "libraries/bardahl/proceso.php",
+                        url: "<?php echo JUri::base(); ?>index.php?option=com_busqueda&task=blog&format=raw",
                         data: datos,
                         success: function() {
                             jQuery('.ajaxgif').hide();
                             jQuery('.msg').text('Mensaje enviado!').addClass('msg_ok').animate({ 'right' : '130px' }, 300);
+                            getblog();
                         },
                         error: function() {
                             jQuery('.ajaxgif').hide();

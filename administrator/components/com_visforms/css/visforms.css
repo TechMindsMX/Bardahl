@@ -1,69 +1,69 @@
-.txtred {
-	color:#FF0000;
-}
-
-.txtgreen {
-	color: #00CC00;
-}
-
-.text_area, .admintable {
-	width: 99%;
-}
-
-.normalField {
-	width: 200px;
-}
-
-.field100 {
-	width: 100px;
-	//display: table-row;
-}
-
-.field300 {
-	width: 350px;
-}
-
-.noborder {
-	border: none !important;
-}
-
-.labelwidth {
-	min-width: 100px !important;
-}
-
-.visformbottom {
-	text-align: center;
-	margin-top: 5px;
-	color: #999;
-	padding-top: 5px;
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #CCCCCC;
-}
-
-.visadmintable td.key {
-	width: 15% !important;
-}
-
-.visadmintable input.longfield {
-	width: 95%;
-}
-
-.visadmintable td.value {
-	width: 45%;
-}
-
-.visadmintable td.description {
-	width: 40%;
-}
-
-.com_visforms .form-horizontal .noclear:after {
-    clear: none;
-}
-
-#jform_defaultvalue_f_radio_default-lbl,
-#jform_defaultvalue_f_select_default-lbl {
-	display: inline-block;
-
-	min-width: 0;
-}
+.txtred {
+	color:#FF0000;
+}
+
+.txtgreen {
+	color: #00CC00;
+}
+
+.text_area, .admintable {
+	width: 99%;
+}
+
+.normalField {
+	width: 200px;
+}
+
+.field100 {
+	width: 100px;
+	//display: table-row;
+}
+
+.field300 {
+	width: 350px;
+}
+
+.noborder {
+	border: none !important;
+}
+
+.labelwidth {
+	min-width: 100px !important;
+}
+
+.visformbottom {
+	text-align: center;
+	margin-top: 5px;
+	color: #999;
+	padding-top: 5px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+
+.visadmintable td.key {
+	width: 15% !important;
+}
+
+.visadmintable input.longfield {
+	width: 95%;
+}
+
+.visadmintable td.value {
+	width: 45%;
+}
+
+.visadmintable td.description {
+	width: 40%;
+}
+
+.com_visforms .form-horizontal .noclear:after {
+    clear: none;
+}
+
+#jform_defaultvalue_f_radio_default-lbl,
+#jform_defaultvalue_f_select_default-lbl {
+	display: inline-block;
+
+	min-width: 0;
+}

@@ -209,7 +209,8 @@ class ContentModelCategory extends JModelList
 	 */
 	function getItems()
 	{
-		$limit = $this->getState('list.limit');
+		$limit = '';//$this->getState('list.limit');
+
 
 		if ($this->_articles === null && $category = $this->getCategory())
 		{

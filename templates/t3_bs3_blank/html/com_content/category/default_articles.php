@@ -26,10 +26,22 @@ JHtml::addIncludePath(JPATH_COMPONENT . '/helpers/html');
 $params = &$this->item->params;
 
 $n = count($this->items);
+if(isset($_GET['Itemid'])){
+    $title='Articulos Relacionados';
+}else{
+    $title='Tipos de Producto';
+}
+$url=$_SERVER['REQUEST_URI'];
+$url=explode('/', $url);
+$url=$url['2'];
+$url=explode('-', $url);
+$url=$url['0'];
+
+
 echo '
     <div class="module-inner">
         <h3 class="module-title ">
-            <span>Tipos de Producto</span>
+            <span>'.$title.'</span>
         </h3>
     </div>
     <br/>';
@@ -83,7 +95,14 @@ if (!empty($this->items)) {
 
     <div>
 
-        <?php foreach ($this->items as $i => $article) :
+        <?php
+        if ($url==74){
+            $cuenta         = count($this->items);
+            $this->items[$cuenta+1]   = $this->items['0'];
+            unset($this->items['0']);
+        }
+
+        foreach ($this->items as $i => $article) :
 
             ?>
 

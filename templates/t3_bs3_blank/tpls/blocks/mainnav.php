@@ -23,10 +23,10 @@ defined('_JEXEC') or die;
 <nav id="t3-mainnav" class="wrap navbar navbar-default t3-mainnav">
 
 	<a href="<?php echo JUri::base(); ?>" class="homelink"><img src="templates/t3_bs3_blank/images/site/bardahl.png"/></a>
-    <div id="img_left">
-     <img  src="templates/t3_bs3_blank/images/site/line_left_submenu.png"/>
+    <div class="back" id="img_left">
+     <img  src="templates/t3_bs3_blank/images/site/line_right_submenu.png"/>
     </div>
-    <div id="img_left2">
+    <div class="back"  id="img_left2">
         <img src="templates/t3_bs3_blank/images/site/line_right_submenu.png">
     </div>
 

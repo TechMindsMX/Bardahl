@@ -9,5 +9,6 @@
 defined('_JEXEC') or die;
 // Include the syndicate functions only once
 require_once __DIR__ . '/helper.php';
-    $result=ModBuscaProductoHelper::getList();
+    $marca=ModBuscaProductoHelper::getMarca();
+    $modelo=ModBuscaProductoHelper::getModelo();
 require JModuleHelper::getLayoutPath('mod_buscaproducto', $params->get('layout', 'default'));

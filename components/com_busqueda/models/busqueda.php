@@ -8,9 +8,8 @@ jimport('joomla.application.component.modelitem');
  */
 class busquedaModelbusqueda extends JModelItem {
     public function __construct(){
-        $campos             =   array('producto' => 'INT', 'modelo'=> 'ALNNUM', 'kilometraje' => 'INT', 'marca' => 'word', 'etiqueta'=>'word');
+        $campos             = array('producto' => 'INT', 'modelo'=> 'ALNNUM', 'kilometraje' => 'INT', 'year' => 'INT', 'marca' => 'word', 'etiqueta'=>'word');
         $this->inputVars    = JFactory::getApplication()->input->getArray($campos);
-
         parent::__construct();
     }
 
@@ -43,7 +42,7 @@ class busquedaModelbusqueda extends JModelItem {
 
             $query 	= $db->getQuery(true);
 
-            $query->select('introtext, title, Images')
+            $query->select('introtext, title, Images, alias, id, catid')
                   ->from($db->quoteName('#__content'))
 	            ->where( $db->quoteName( 'id' ) . ' = ' . $db->quote( $value->content_item_id ) );
 
@@ -55,46 +54,79 @@ class busquedaModelbusqueda extends JModelItem {
             $value->title       = $result->title;
             $value->introtext   = $result->introtext;
             $value->images      = json_decode($result->Images);
+            $value->Itemid      = $result->catid;
+            $value->id          = $result->id;
+            $value->alias       = $result->alias;
         }
 
         return $results;
 	}
 
     public function getBusquedamodulo(){
-        $respuesta = array();
 
-        $db		= JFactory::getDbo();
-        $query 	= $db->getQuery(true);
 
-        $query->select('*')
-            ->from($db->quoteName('#__content'))
-            ->where($db->quoteName('catid').' = '.$db->quote($this->inputVars['producto']));
+        $array=explode('-', $this->inputVars['kilometraje']);
+        $compare    =$array[0];
 
-        $db->setQuery($query);
 
-        $results = $db->loadObjectList();
+
+        $primero = array(
+            '47',
+            '48',
+        );
+
+        $segundo = array(
+            '108',
+            '52',
+            '51',
+        );
+
+         $tercero =array(
+             '53',
+             '54'
+         );
+
+       $respuesta = array();
+
+        if($compare == 0){
+            $arreglo = $primero;
+        }
+        if($compare > 50000 or $array < 100000){
+            $arreglo = $segundo;
+        }
+        if($compare > 100000) {
+            $arreglo = $tercero;
+        }
+        foreach ($arreglo as $key => $value) {
+            $db		= JFactory::getDbo();
+            $query 	= $db->getQuery(true);
+            $query->select('*')
+                ->from($db->quoteName('#__content'))
+                ->where($db->quoteName('id').' = '.$db->quote($value));
+            $db->setQuery($query);
+            $results[] = $db->loadObject();
+        }
 
         foreach($results as $key => $value){
-            $query 	= $db->getQuery(true);
+            if($value<>NULL){
+                $query 	= $db->getQuery(true);
+                $query->select('*')
+                    ->from($db->quoteName('#__categories', 'a'))
+                    ->join('INNER', $db->quoteName('#__menu','b').'ON ('.$db->quoteName('a.path') . ' = ' . $db->quoteName('b.path').')')
+                    ->where($db->quoteName('a.id').' = '.$db->quote($value->catid));
+                $db->setQuery($query);
+                $result = $db->loadObject();
 
-            $query->select('b.id as Itemid')
-                  ->from($db->quoteName('#__categories', 'a'))
-                  ->join('INNER', $db->quoteName('#__menu','b').'ON ('.$db->quoteName('a.path') . ' = ' . $db->quoteName('b.path').')')
-                  ->where($db->quoteName('a.id').' = '.$db->quote($value->catid));
-
-            $db->setQuery($query);
-
-            $result = $db->loadObject();
-
-            self::getFieldsAttach($value);
-            $value->Itemid  = $result->Itemid;
-            $value->images  = json_decode($value->images);
-            $value->urls    = json_decode($value->urls);
-
-            if($value->Kilometraje == $this->inputVars['kilometraje']){
-                $respuesta[] = $value;
-            }elseif($this->inputVars['kilometraje'] === 0){
-                $respuesta[] = $value;
+                self::getFieldsAttach($value);
+                $valor=new stdClass();
+                $valor->path    = $result->path;
+                $valor->id      = $value->id;
+                $valor->alias   = $value->alias;
+                $valor->title   = $value->title;
+                $valor->Itemid  = @$result->Itemid;
+                $valor->images  = json_decode($value->images);
+                $valor->urls    = json_decode($value->urls);
+                $respuesta[] = $valor;
             }
         }
 
@@ -107,15 +139,15 @@ class busquedaModelbusqueda extends JModelItem {
         $query->select('tableb.title, tablea.value')
             ->from($db->quoteName('#__fieldsattach_values', 'tablea'))
             ->join('INNER', $db->quoteName('#__fieldsattach', 'tableb').'ON ('.$db->quoteName('tablea.fieldsid') . ' = ' . $db->quoteName('tableb.id').')')
-	        ->where( $db->quoteName( 'tablea.articleid' ) . ' = ' . $db->quote( $objeto->content_item_id ) );
+	        ->where( $db->quoteName( 'tablea.articleid' ) . ' = ' . $db->quote( $objeto->id ) );
         $db->setQuery($query);
 
         $results = $db->loadObjectList();
 
+
         foreach($results as $key => $value){
             $propiedad  = $value->title;
             $valor      = $value->value;
-
             $objeto->$propiedad = $valor;
         }
     }

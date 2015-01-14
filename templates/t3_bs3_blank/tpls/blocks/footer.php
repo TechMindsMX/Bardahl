@@ -10,11 +10,16 @@ defined('_JEXEC') or die;
 
 <!-- FOOTER -->
 <footer id="t3-footer" class="wrap t3-footer">
-   
+
 	<?php if ($this->checkSpotlight('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6')) : ?>
 		<!-- FOOT NAVIGATION -->
 		<div id="container_footer">
+
 			<?php $this->spotlight('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6') ?>
+			<div class="vertical2" id="columna-4">
+				<p>
+					<img alt="" src="images/bardahl-circulo.png" style="height: 40px; width: 40px;" />​</p>
+			</div>
 		</div>
 		<!-- //FOOT NAVIGATION -->
 	<?php endif ?>

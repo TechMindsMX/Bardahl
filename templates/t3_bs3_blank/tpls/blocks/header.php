@@ -77,8 +77,8 @@ if ($headright = $this->countModules('head-search or languageswitcherload')) {
                     <div id="line">
                         <img  src="templates/t3_bs3_blank/images/site/line_under_submenu.jpg">
 					</div>
-                    <div id="line-menu">
-                        <img  src="templates/t3_bs3_blank/images/site/back_submenu.png">
+                    <div class="back"  id="line-menu">
+                        <img src="templates/t3_bs3_blank/images/site/back_submenu.png">
                     </div>
 					<!-- //HEAD SEARCH -->
 
