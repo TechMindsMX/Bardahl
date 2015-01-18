@@ -202,6 +202,7 @@ div.t3-navbar{
     text-align: left;
     padding: 0 12px;
 }
+
 .module-title >span {
     margin: 0 0 0 14px;
 }
@@ -510,13 +511,12 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     position: absolute;
     z-index: 1;
     margin: 16px;
-}
-.module-ct > ol.breadcrumb {
-    margin-left: 0;
-    padding: 6px 31px;
+    text-transform: capitalize;
 }
 
-
+.breadcrumb a{
+    color: black;
+}
 ul.noti-event-home {
     padding: 0;
 }
@@ -1460,18 +1460,7 @@ nav.wrap {
     background-position: 0 0;
     line-height: 2em;
 }
-.breadcrumb > ol, li.active {
-    display: inline;
-    list-style: none;
-    color: #000000;
-}
-.breadcrumb > li + li:before {
-    content: " > ";
-    color: #000000;
-}
-.breadcrumb >li >a, .breadcrumb >li>span{
-    color: #000000;
-}
+
 .pleca-dorado div {
     color: black;
     font-family: Oswald;
