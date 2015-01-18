@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+<body>
+
+{menu}
+<table align='center' class='sectiontableheader' id='CommentMenu' width='100%' cellpadding='0' cellspacing='0' border='0'>
+  <tr>
+    <td align='left' class='label'>{_COMMENTS_2_4}</td>
+	<td align='right' class='buttons'>
+	  <table cellpadding='0' cellspacing='0' border='0'>
+	    <tr>{buttons}</tr>
+	  </table>
+	</td>
+  </tr>
+</table>
+{/menu}
+
+{search}
+<form name='joomlacommentsearch' method='post'>
+  <a name='SearchForm'></a>
+  <table align='center' cellpadding='0' cellspacing='0' class='form'>
+    <tr>
+      <td colspan='3' class='sectiontableheader' align='center'>{_JOOMLACOMMENT_SEARCH}</td>
+    </tr>
+    <tr class='sectiontableentry1'>
+      <td class='item'>{_JOOMLACOMMENT_PROMPT_KEYWORD}</td>
+	  <td class='item'><input name='tsearch' type='text' class='inputbox' size='40' /></td>
+	  <td class='item'><input name='bsearch' type='button' class='button' value='{_JOOMLACOMMENT_SEARCH}' onclick='search()' /></td>
+	</tr>
+    <tr class='sectiontableentry2'>
+      <td colspan='3' class='item'>
+        <input type='radio' name='rsearchphrase' onClick='rsearchphrase_selection="any"' checked='checked' />{_JOOMLACOMMENT_SEARCH_ANYWORDS}
+        <input type='radio' name='rsearchphrase' onClick='rsearchphrase_selection="all"' />{_JOOMLACOMMENT_SEARCH_ALLWORDS}
+        <input type='radio' name='rsearchphrase' onClick='rsearchphrase_selection="exact"' />{_JOOMLACOMMENT_SEARCH_PHRASE}
+	  </td>
+    </tr>
+  </table>
+  <div style='margin-bottom: 5px;'></div>
+</form>
+{/search}
+
+{searchresults}
+<div id='SearchResults'>
+  <a name='SearchResults'></a>
+  <table align='center' cellpadding='0' cellspacing='0' class='form'>
+    <tr>
+      <td class='sectiontableheader' align='center'>{resulttitle}</td>
+    </tr>
+	{searchresult}
+    <tr>
+      <td>
+	    <table width='100%' class='{postclass}' align='center' cellpadding='0' cellspacing='0' class='searchresult'>
+		  <tbody>
+		  <tr class='small'>
+            <td class='item'>{title} {_JOOMLACOMMENT_BY} {name}</td>
+	      </tr>
+          <tr class='item'>
+            <td class='item'><a  href='{adress}'>{preview}</a></td>
+          </tr>
+          <tr class='small'>
+            <td class='item'>{date}</td>
+          </tr>
+          </tbody>
+        </table>
+	  </td>
+    </tr>
+    {/searchresult}
+  </table>
+  <div style='margin-bottom: 5px;'></div>
+</div>
+{/searchresults}
+
+{post}
+<table class='post' width='100%' cellpadding='0' cellspacing='0'>
+  <tbody class='{postclass}'>
+    <tr>
+      <td><table class='postheader' width='100%' cellpadding='0' cellspacing='0'>
+          <tr>
+            <td align='left'><span class='postusername'>{username}</span>{space}<span class='posttitle'>{title}</span></td>
+            <td align='right'><span class='postusertype'>{usertype}</span> | <span class='createdate'>{date}</span></td>
+          </tr>
+        </table></td>
+    </tr>
+    <tr>
+      <td colspan='2'><table class='postbody' width='100%' cellpadding='0' cellspacing='0'>
+          <tr>
+            {avatar}<td class='avatarcontainer' width='1' align='center'>{avatar_picture}</td>{/avatar}
+			<td>{content}</td>
+          </tr>
+        </table></td>
+    </tr>
+  {footer}
+  <tr>
+    <td><table class='postfooter' width='100%' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td align='left'>{editbuttons}</td>
+          <td align='right'>{voting}</td>
+        </tr>
+      </table></td>
+  </tr>
+  {/footer}
+  </tbody>
+</table>
+{/post}
+
+{form}
+<form name='joomlacommentform' method='post' action='{self}'>
+  <a name='CommentForm'></a>
+  <input type='hidden' name='content_id' value='{id}'/>
+  <table align='center' cellpadding='0' cellspacing='0' class='form'>
+    <tr>
+      <td colspan='2'><div class='sectiontableheader'>
+          <div id='CommentFormTitle' align='center'>{_WRITECOMMENT}</div>
+        </div></td>
+    </tr>
+    <tr class='sectiontableentry1'>
+      <td><div class='item'>{_ENTERNAME}</div></td>
+      <td><div class='item'>
+          <input name='tname' type='text' class='inputbox' size='40' value='{username}' {readonly}/>
+        </div></td>
+    </tr>
+    <tr class='sectiontableentry1'>
+      <td><div class='item'>{_ENTERTITLE}</div></td>
+      <td><div class='item'>
+          <input name='ttitle' type='text' class='inputbox' size='40'/>
+        </div></td>
+    </tr>
+    {UBBCode}
+    <tr class='sectiontableentry2'>
+      <td><div class='item'>{_UBBCODE}</div></td>
+      <td><div class='buttoncontainer'>
+          <div style='float: left;'> {UBBCodeButtons} </div>
+          <div style='float: left;'> {UBBCodeSelect} </div>
+        </div></td>
+    </tr>
+    {/UBBCode}
+    <tr class='sectiontableentry1'>
+      <td align='center' valign='middle'>{emoticons}</td>
+      <td><div class='item'>
+          <textarea name='tcomment' class='inputbox' cols='40' rows='10'></textarea>
+        </div></td>
+    </tr>
+    <tr>
+      <td class='sectiontableentry2'>
+	  <table class='buttoncontainer' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td><input type='button' class='button' name='bsend' value='{_SENDFORM}' onclick='editPost(-1,-1)' /></td>
+          <td id='busy'></td>
+        </tr>
+      </table>
+      </td>
+      <td class='sectiontableentry2'>
+      {captcha}
+		<table class='captchacontainer' cellpadding='0' cellspacing='0'>
+        <tr>
+          <td><input type='text' name='security_try' id='security_try' size='15' maxlength='10' class='captchainput' /></td>
+          <td>{security_image}</td>
+        </tr>
+      	</table>
+      {/captcha}
+      </td>
+    </tr>
+  </table>
+</form>
+{/form}
+</body>
+</html>

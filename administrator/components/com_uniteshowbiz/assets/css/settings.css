@@ -1,0 +1,332 @@
+/* ====================================== */
+/* 			Settings Wide
+/* ====================================== */
+
+.unite_settings_wide hr{
+    border:0px;
+    border-top:1px dashed #999;
+    width:400px;
+    float:left;
+}
+.ui-dialog .ui-dialog-titlebar-close span.ui-icon{
+    /*margin: 0;*/
+}
+
+.remove_image{
+    margin-top: 20px !important;
+
+}
+.remove_image.btn:focus{
+    outline: none;
+}
+#button_duplicate_layer.button-disabled {
+
+    border-color:#bbb;
+    color:#464646;
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+
+    /* IE 5-7 */
+    filter: alpha(opacity=50);
+
+    /* Netscape */
+    -moz-opacity: 0.5;
+
+    /* Safari 1.x */
+    -khtml-opacity: 0.5;
+
+    /* Good browsers */
+    opacity: 0.5;
+}
+.unite_settings_wide .disabled th,
+.unite_settings_wide .disabled td,
+.unite_settings_wide .disabled input,
+.unite_settings_wide .disabled select,
+.unite_settings_wide .disabled .description,
+.unite_settings_wide .disabled{
+    color:#6D6D6D;	
+}
+
+
+.unite_settings_wide .disabled input,
+
+.unite_postbox .disabled input{
+    background-color:#F0F0F0;
+}
+
+/* ====================================== */
+/* 			Textbox Classes
+/* ====================================== */
+
+.textbox-small{
+    width:60px;
+}
+
+.text-sidebar{
+    width:60px;
+}
+
+.text-sidebar-normal{
+    width:100px;
+}
+
+.text-sidebar-long{
+    width:125px;
+}
+
+.text-sidebar-long2{
+    width:185px;
+}
+
+.text-sidebar-link{
+    width:340px;
+}
+
+
+/* ====================================== */
+/* 			Settings
+/* ====================================== */
+
+.spanSettingsStaticText{
+    font-style:italic;
+}
+
+.unite-postbox{
+}
+
+.unite-postbox hr{
+    border:none;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #fff;
+}
+
+.unite-postbox h3{
+    height:30px;
+    line-height: 25px;
+    cursor:pointer !important;
+    padding:0px;
+    margin:0px;
+    position:relative;	
+}
+
+.unite-postbox h3.no-accordion{
+    cursor:default;
+}
+
+.unite-postbox h3 .postbox-arrow{
+    width:25px;
+    height:25px;
+    float:right;
+    background-image:url('../images/wp-arrows.png');
+    background-repeat:no-repeat;
+    background-position:right 5px;
+    margin-right:4px;
+}
+
+.unite-postbox .inputCheckbox{
+    margin-top:6px;	
+}
+
+.unite-postbox h3.box_closed .postbox-arrow{
+    background-position:right -66px;
+}
+
+.unite-postbox h3 span{
+    display:block;
+    padding-top:3px;
+    padding-left:5px;
+    color:#000000;
+    max-width:200px;
+    float:left;
+}
+
+/* style disabled input */
+.unite-postbox li.disabled input,
+.unite-postbox input[type='text'][disabled='disabled']{
+    color:#6D6D6D;
+    background-color:#F0F0F0;
+}
+
+.view_wrapper{
+    position:relative;
+}
+
+/* color picker */
+#divColorPicker{
+    position:absolute;
+}
+
+.zoomfact-text{
+    width:70px;
+}
+
+.wp-admin select{
+    min-width:80px;
+}
+
+.settings_panel{
+    margin-top:10px;
+}
+.settings_panel input[type="radio"],.settings_panel input[type="checkbox"]{
+    margin-top: 0px;
+}
+.settings_panel label{
+    width: auto;
+    display: inline;
+}
+.settings_panel .settings_panel_left{
+    float:left;
+    width:700px;
+    padding-left: 10px;
+}
+
+#filter-bar{
+    text-align:right;
+    margin-bottom:10px;
+    padding:5px;
+}
+.settings_panel .setting_required{
+    font-size:16px;
+    color:red;
+}
+
+.settings_panel_left .description{
+    display:block;
+}
+
+
+.settings_panel_left .button-primary{
+    margin-top:20px;
+}
+
+.settings_panel_left .button_preview_slider{
+    width:18px;
+    height:18px;
+    background:url(../images/preview.png) no-repeat;
+    cursor:pointer;
+    margin-left:30px;
+    margin-top:0px;
+    display:block;
+    float:left;
+}
+
+.settings_panel .settings_panel_right{
+    float:left;
+    width:380px;
+}
+
+.list_settings{
+    padding:0px;
+    margin:0px;
+}
+
+.list_settings li{
+    display:block;
+    padding-left:5px;
+    padding-top:10px;
+    padding-bottom:4px;
+    margin:0px !important;
+}
+
+.list_settings li.disabled{
+    color:#6D6D6D;
+    font-weight:normal !important;
+}
+
+.list_settings li .setting_text,
+.list_settings li .setting_input,
+.list_settings li .setting_unit{
+    display:block;
+    float:left;
+}
+
+.list_settings li .setting_text{
+    min-width:135px;
+    padding-right:4px;
+    corsor:default;
+    text-align:left;
+}
+
+.setting_text.setting_type_list{
+    line-height:23px;
+}
+
+/* for setting inside post */
+#post-body .list_settings li .setting_text{
+    min-width:100px;
+}
+
+.list_settings li .setting_unit{
+    padding-left:2px;
+    padding-top:3px;
+}
+
+.list_settings li .settings_addhtml{
+    float: left;
+    /*padding-left:10px;*/
+    margin-top: 0;
+    display: inline-block
+}
+
+.list_settings li .setting_input select{
+    min-width:60px;
+    width: auto
+}
+.list_settings li .setting_input input,.list_settings li .setting_input select{
+    margin-top: -5px;
+}
+.list_settings li .setting_input label{
+    display: inline
+}
+.list_settings .inputColorPicker{
+    width:110px;
+}
+
+
+.settings_buttons{
+    padding-top:15px;
+    padding-bottom:5px;
+}
+
+.button-image-select{
+    margin-right:5px;
+}
+
+.setting-image-preview{
+    border:1px dashed black;
+    display:block;
+    float:left;
+    background-position:center center;
+    background-repeat:no-repeat;
+    padding:0px !important;
+    margin-right:10px;
+    margin-bottom: 20px;
+
+}
+
+.settings_wrap .link_setting_title{
+    font-size:12px;
+    float:right;
+    margin-right:10px;
+}
+
+.settings_wrap .link_setting_title.link-selected{
+    color:green;
+}
+
+
+.settings_wrap .settings_static_text{
+    font-style:italic;
+    color:#666666;
+}
+
+.settings_wrap .form-table th {
+    width: 160px;
+    text-align: left;
+}
+
+p.help, p.description, span.description, .form-wrap p {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}

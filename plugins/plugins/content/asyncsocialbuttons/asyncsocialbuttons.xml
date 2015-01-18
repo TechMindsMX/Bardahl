@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+
+	<name>Content - Asynchronous Social Buttons</name>
+	<author>www.deconf.com</author>
+	<creationDate>Jul 2013</creationDate>
+	<copyright>Copyright (C) 2010 www.deconf.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorUrl>http://www.deconf.com/</authorUrl>
+	<version>1.8</version>
+	<description>	<![CDATA[
+	<u>Asynchronous Social Buttons</u><br /><br />
+	For help, support and FAQ visit: <a href="http://www.deconf.com/en" target="_blank">Asynchronous Social Buttons</a>.<br />
+	]]></description>
+	<files>
+		<filename plugin="asyncsocialbuttons">asyncsocialbuttons.php</filename>
+		<folder>asyncsocialbuttons</folder>
+	</files>
+	<config>
+	  
+	  <fields name="params" addfieldpath="/plugins/content">
+	  
+		<fieldset name="basic">
+		
+			  <field name="spacer1" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;Select Position&lt;b&gt;&lt;u&gt;" description="" />  
+			  <field name="aposition" type="list" default="1" label="Position" description="Display social buttons before/after article">
+					<option value="0">Top</option>
+					<option value="1">Bottom</option>
+			  </field>
+			  <field name="spacer2" type="spacer" default="" label="&lt;b&gt;&lt;u&gt;Enable/Disable Buttons&lt;b&gt;&lt;u&gt;" description="" />
+			  <field name="atwitter" type="list" default="1" label="Twitter Button" description="Enable Twitter Button">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+			  </field>	 
+			  <field name="afacebook" type="list" default="1" label="Facebook Button" description="Enable Facebook Button">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+			  </field>				  
+			  <field name="agoogle" type="list" default="1" label="Google+ Button" description="Enable Google+ Button">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+			  </field>
+			  <field name="alinkedin" type="list" default="1" label="LinkedIn Button" description="Enable LinkedIn Button">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+			  </field>
+			  <field name="abuffer" type="list" default="1" label="Buffer Button" description="Enable Digg Button">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+			  </field>	  
+		</fieldset>
+	  </fields>
+	</config>
+	
+</extension>

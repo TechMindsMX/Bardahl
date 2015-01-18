@@ -43,15 +43,12 @@ $score = $rating->getRating($item->id);
                 });
                 request.done(function(result){
                     var promedio    = parseFloat(result.score);
-                    var conteo      = result.conteo;
-
-
                     jQuery('#calif').raty({
                         readOnly: true,
                         path  : ruta,
                         score  : promedio
                     });
-                    document.getElementById('number').innerHTML += '' +conteo.uno+' '+conteo.dos+' '+conteo.tres+' '+conteo.cuatro+' '+conteo.cinco;
+                    document.getElementById('number').innerHTML += '!Gracias por tu voto¡';
                 });
                 request.fail(function (jqXHR, textStatus) {
                     alert('<?php echo JText::_("RATING_ERROR"); ?>');
@@ -64,9 +61,9 @@ $score = $rating->getRating($item->id);
 </script>
 <div class="clearfix"></div>
 <div class="texto-header">
-    <h3 class="module-title ">
-        <span>Información de Producto</span>
-    </h3>
+    <h1 class="module-title ">
+        Información de Producto
+    </h1>
 </div>
 <div class="clearfix">&nbsp;</div>
 <div class="table-responsive">
@@ -74,9 +71,9 @@ $score = $rating->getRating($item->id);
         <div class="img-prod">
             <br/>
             <br/>
-            <h3 class="module-title ">
-                <span><?php echo $item->title;   ?></span>
-            </h3>
+            <h1 class="module-title ">
+                <?php echo $item->title;   ?>
+            </h1>
             <img class="img-producto" src="<?php echo $imagenes->image_fulltext; ?>">
             <div class="div_icons_prod">
                 <div class="title-uso">Tipos de uso:</div>
@@ -93,13 +90,13 @@ $score = $rating->getRating($item->id);
         </div>
         <div class="colum-right">
             <div id="lbl_fusion2">
-                <a target="_blank" href="images/hoja_de_seguridad/<?php echo $item->hoja_de_seguridad ?>">
+                <a target="_blank" href="images/hoja-de-seguridad/<?php echo $item->hoja_de_seguridad ?>">
                     <span class"titulios-apartados">Hoja de Seguridad</span>
                 </a>
             </div>
             <div id="lbl_fusion2">
-                <a target="_blank" href="images/ficha_tecnica/<?php echo $item->ficha_tecnica ?>">
-                    <span class"titulios-apartados">Ficha Tecnica</span>
+                <a target="_blank" href="images/ficha-tecnica/<?php echo $item->ficha_tecnica ?>">
+                    <span class"titulios-apartados">Ficha Técnica</span>
                 </a>
             </div>
             <div id="lbl_fusion2">

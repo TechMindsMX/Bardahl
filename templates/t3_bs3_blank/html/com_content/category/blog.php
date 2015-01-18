@@ -19,7 +19,7 @@ $i=0;
 
 
 ?>
-    <h2 class="tit"> <?php  echo $this->data->title; ?><br><br></h2>
+    <h1 class="tit"> <?php  echo $this->data->title; ?><br><br></h1>
 
 <?php
 echo $this->data->description;

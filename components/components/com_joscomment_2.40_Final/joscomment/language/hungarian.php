@@ -1,0 +1,73 @@
+<?php
+// Author: Patai László
+DEFINE('_JOOMLACOMMENT_COMMENTS', 'Hozzászólások');
+DEFINE('_JOOMLACOMMENT_COMMENTS_1', 'Hozzászólások');
+DEFINE('_JOOMLACOMMENT_COMMENTS_2_4', 'Hozzászólások');
+
+DEFINE('_JOOMLACOMMENT_WRITECOMMENT', 'Hozzászólás');
+DEFINE('_JOOMLACOMMENT_EDITCOMMENT', 'Hozzászólás módosítás');
+DEFINE('_JOOMLACOMMENT_UBBCODE', 'UBBKód:');
+DEFINE('_JOOMLACOMMENT_ENTERNAME', 'Név:');
+DEFINE('_JOOMLACOMMENT_ENTERTITLE', 'Tárgy:');
+DEFINE('_JOOMLACOMMENT_SENDFORM', 'Küldés');
+DEFINE('_JOOMLACOMMENT_BY', ' - ');
+
+DEFINE('_JOOMLACOMMENT_COLOR', 'szín');
+DEFINE('_JOOMLACOMMENT_AQUA', 'világoskék');
+DEFINE('_JOOMLACOMMENT_BLACK', 'fekete');
+DEFINE('_JOOMLACOMMENT_BLUE', 'kék');
+DEFINE('_JOOMLACOMMENT_FUCHSIA', 'rózsaszín');
+DEFINE('_JOOMLACOMMENT_GRAY', 'szürke');
+DEFINE('_JOOMLACOMMENT_GREEN', 'zöld');
+DEFINE('_JOOMLACOMMENT_LIME', 'világoszöld');
+DEFINE('_JOOMLACOMMENT_MAROON', 'barna');
+DEFINE('_JOOMLACOMMENT_NAVY', 'sötétkék');
+DEFINE('_JOOMLACOMMENT_OLIVE', 'olivaszín');
+DEFINE('_JOOMLACOMMENT_PURPLE', 'lila');
+DEFINE('_JOOMLACOMMENT_RED', 'piros');
+DEFINE('_JOOMLACOMMENT_SILVER', 'ezüst');
+DEFINE('_JOOMLACOMMENT_TEAL', 'zöldeskék');
+DEFINE('_JOOMLACOMMENT_WHITE', 'fehér');
+DEFINE('_JOOMLACOMMENT_YELLOW', 'sárga');
+
+DEFINE('_JOOMLACOMMENT_SIZE', 'nagyság');
+DEFINE('_JOOMLACOMMENT_TINY', 'apró');
+DEFINE('_JOOMLACOMMENT_SMALL', 'kicsi');
+DEFINE('_JOOMLACOMMENT_MEDIUM', 'közepes');
+DEFINE('_JOOMLACOMMENT_LARGE', 'nagy');
+DEFINE('_JOOMLACOMMENT_HUGE', 'óriás');
+
+DEFINE('_JOOMLACOMMENT_QUOTE', 'Felejj');
+DEFINE('_JOOMLACOMMENT_REPLY', 'Hozzászólás');
+DEFINE('_JOOMLACOMMENT_EDIT', 'Módosíts');
+DEFINE('_JOOMLACOMMENT_DELETE', 'Törölj');
+
+DEFINE('_JOOMLACOMMENT_UBB_WROTE', 'írta:');
+DEFINE('_JOOMLACOMMENT_UBB_QUOTE', 'Citáció:');
+DEFINE('_JOOMLACOMMENT_UBB_CODE', 'Kód:');
+
+DEFINE('_JOOMLACOMMENT_FORMVALIDATE', 'Kérem, írjon hozzászólást.');
+DEFINE('_JOOMLACOMMENT_MSG_DELETE', 'Törölni akarja ezt a hozzászólást?');
+DEFINE('_JOOMLACOMMENT_SAVINGFAILED', 'A hozzászólást nem sikerült megmenteni!');
+DEFINE('_JOOMLACOMMENT_EDITINGFAILED', 'A hozzászólást nem sikerült módosítani!');
+DEFINE('_JOOMLACOMMENT_DELETINGFAILED', 'A hozzászólást nem sikerült törölni!');
+
+DEFINE('_JOOMLACOMMENT_ONLYREGISTERED', 'Hozzászólást csupán a bejegyzet felhasználó tehet hozzá!');
+DEFINE('_JOOMLACOMMENT_ANONYMOUS', 'Névtelen');
+
+DEFINE('_JOOMLACOMMENT_ADDNEW', 'Hozzáadás');
+DEFINE('_JOOMLACOMMENT_DELETEALL', 'Összes hozzászólás törlése');
+DEFINE('_JOOMLACOMMENT_MSG_DELETEALL', 'Biztosan törölni akarod az összes csatolt hozzászólást?');
+DEFINE('_JOOMLACOMMENT_RSS', 'RSS');
+
+DEFINE('_JOOMLACOMMENT_SEARCH', 'Keresés');
+DEFINE('_JOOMLACOMMENT_PROMPT_KEYWORD','Keresett kifejezés');
+DEFINE('_JOOMLACOMMENT_SEARCH_ANYWORDS','Bármelyik szó');
+DEFINE('_JOOMLACOMMENT_SEARCH_ALLWORDS','Összes szó');
+DEFINE('_JOOMLACOMMENT_SEARCH_PHRASE','Pontos kifejezés');
+DEFINE('_JOOMLACOMMENT_NOSEARCHMATCH', 'A keresési feltételeknek egy fórum, és egy téma sem felelt meg.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCH', '%d találat.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCHES', '%d találat.');
+
+DEFINE('_JOOMLACOMMENT_BEFORE_APPROVAL', 'A hozzászólás bekerült a moderálási várakozási sorba, csak elfogadása után jelenik majd meg a webhelyen.');
+?>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+    <name>Form Contacto</name>
+    <author>Ismael Aguiar</author>
+    <version>1.0.0</version>
+    <description>Envio de Formulario por email</description>
+    <files>
+        <filename>mod_contact_form.xml</filename>
+        <filename module="mod_contact_form">mod_contact_form.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+    </files>
+    <config>
+    </config>
+</extension>

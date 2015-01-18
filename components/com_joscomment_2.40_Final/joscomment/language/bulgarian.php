@@ -1,0 +1,72 @@
+<?php
+DEFINE('_JOOMLACOMMENT_COMMENTS', 'Коментари');
+DEFINE('_JOOMLACOMMENT_COMMENTS_1', 'Коментари');
+DEFINE('_JOOMLACOMMENT_COMMENTS_2_4', 'Коментари');
+
+DEFINE('_JOOMLACOMMENT_WRITECOMMENT', 'Коментирай');
+DEFINE('_JOOMLACOMMENT_EDITCOMMENT', 'Промяна на коментар');
+DEFINE('_JOOMLACOMMENT_UBBCODE', 'UBBCode:');
+DEFINE('_JOOMLACOMMENT_ENTERNAME', 'Име:');
+DEFINE('_JOOMLACOMMENT_ENTERTITLE', 'Заглавие:');
+DEFINE('_JOOMLACOMMENT_SENDFORM', 'Коментирай');
+DEFINE('_JOOMLACOMMENT_BY', 'от');
+
+DEFINE('_JOOMLACOMMENT_COLOR', 'цвят');
+DEFINE('_JOOMLACOMMENT_AQUA', 'aqua');
+DEFINE('_JOOMLACOMMENT_BLACK', 'black');
+DEFINE('_JOOMLACOMMENT_BLUE', 'blue');
+DEFINE('_JOOMLACOMMENT_FUCHSIA', 'fuchsia');
+DEFINE('_JOOMLACOMMENT_GRAY', 'gray');
+DEFINE('_JOOMLACOMMENT_GREEN', 'green');
+DEFINE('_JOOMLACOMMENT_LIME', 'lime');
+DEFINE('_JOOMLACOMMENT_MAROON', 'maroon');
+DEFINE('_JOOMLACOMMENT_NAVY', 'navy');
+DEFINE('_JOOMLACOMMENT_OLIVE', 'olive');
+DEFINE('_JOOMLACOMMENT_PURPLE', 'purple');
+DEFINE('_JOOMLACOMMENT_RED', 'red');
+DEFINE('_JOOMLACOMMENT_SILVER', 'silver');
+DEFINE('_JOOMLACOMMENT_TEAL', 'teal');
+DEFINE('_JOOMLACOMMENT_WHITE', 'white');
+DEFINE('_JOOMLACOMMENT_YELLOW', 'yellow');
+
+DEFINE('_JOOMLACOMMENT_SIZE', 'размер');
+DEFINE('_JOOMLACOMMENT_TINY', 'тънък');
+DEFINE('_JOOMLACOMMENT_SMALL', 'малък');
+DEFINE('_JOOMLACOMMENT_MEDIUM', 'среден');
+DEFINE('_JOOMLACOMMENT_LARGE', 'голям');
+DEFINE('_JOOMLACOMMENT_HUGE', 'огромен');
+
+DEFINE('_JOOMLACOMMENT_QUOTE', 'Цитат');
+DEFINE('_JOOMLACOMMENT_REPLY', 'Отговор');
+DEFINE('_JOOMLACOMMENT_EDIT', 'Промяна');
+DEFINE('_JOOMLACOMMENT_DELETE', 'Изтриване');
+
+DEFINE('_JOOMLACOMMENT_UBB_WROTE', 'писа:');
+DEFINE('_JOOMLACOMMENT_UBB_QUOTE', 'Цитат:');
+DEFINE('_JOOMLACOMMENT_UBB_CODE', 'Код:');
+
+DEFINE('_JOOMLACOMMENT_FORMVALIDATE', 'Моля въведете коментара си.');
+DEFINE('_JOOMLACOMMENT_MSG_DELETE', 'Сигурен(а) ли сте, че искате да изтриете този коментар?');
+DEFINE('_JOOMLACOMMENT_SAVINGFAILED', 'Грешка при добавяне на коментара!');
+DEFINE('_JOOMLACOMMENT_EDITINGFAILED', 'Грешка при редактиране на коментара!');
+DEFINE('_JOOMLACOMMENT_DELETINGFAILED', 'Грешка при изтриване на коментара!');
+
+DEFINE('_JOOMLACOMMENT_ONLYREGISTERED', 'Само регистрираните могат да коментират!');
+DEFINE('_JOOMLACOMMENT_ANONYMOUS', 'Гост');
+
+DEFINE('_JOOMLACOMMENT_ADDNEW', 'Добавяне на нов');
+DEFINE('_JOOMLACOMMENT_DELETEALL', 'Изтрива всички');
+DEFINE('_JOOMLACOMMENT_MSG_DELETEALL', 'Сигурен(а) ли сте, че искате да изтриете ВСИЧКИ коментари?');
+DEFINE('_JOOMLACOMMENT_RSS', 'RSS');
+
+DEFINE('_JOOMLACOMMENT_SEARCH', 'Търсене');
+DEFINE('_JOOMLACOMMENT_PROMPT_KEYWORD', 'Търсене по ключова дума');
+DEFINE('_JOOMLACOMMENT_SEARCH_ANYWORDS', 'Която и да е дума');
+DEFINE('_JOOMLACOMMENT_SEARCH_ALLWORDS', 'Всички думи');
+DEFINE('_JOOMLACOMMENT_SEARCH_PHRASE', 'Точната фраза');
+DEFINE('_JOOMLACOMMENT_NOSEARCHMATCH', 'Няма резултати от търсенето Ви.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCH', 'Резултат съвпадащ с търсенето Ви: %d .');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCHES', 'Резултати съвпадащи с търсенето Ви: %d .');
+
+DEFINE('_JOOMLACOMMENT_BEFORE_APPROVAL', 'Вашият коментар първо ще бъде прегледан и одобрен от Администраторите преди да бъде публикуван.');
+?>

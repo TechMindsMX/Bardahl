@@ -1,0 +1,13 @@
+#facebook, #twitter, #google{
+    display: inline-block;
+    width: 105px !important;
+}
+.img-left, .img-right{
+    display: inline-block;
+}
+.img-left img{
+    margin: -50px 0 0 !important;
+}
+#Mod151{
+    margin-top: -20px;
+}

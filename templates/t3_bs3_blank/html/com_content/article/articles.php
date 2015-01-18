@@ -62,9 +62,9 @@ $imagenes = json_decode($item->images);
     </div>
 <br>
    <div class="texto-header">
-       <h3 class="module-title landig-tab">
+       <h1 class="module-title landig-tab">
           <span> <?php echo $item->title; ?></span>
-       </h3>
+       </h1>
     </div>
     <br>
 	<div class="col-md-7 texto-producto">
@@ -80,4 +80,3 @@ $imagenes = json_decode($item->images);
     </div>
 
 </div>
-<br><br><br>

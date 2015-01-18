@@ -1,0 +1,58 @@
+/**
+ * ------------------------------------------------------------------------
+ * Plugin ContactForm for Joomla! 1.7 - 2.5
+ * ------------------------------------------------------------------------
+ * @copyright   Copyright (C) 2011-2012 Chartiermedia.com - All Rights Reserved.
+ * @license     GNU/GPLv3, http://www.gnu.org/copyleft/gpl.html
+ * @author:     Sebastien Chartier
+ * @link:       http://www.chartiermedia.com
+ * ------------------------------------------------------------------------
+ *
+ * @package	Joomla.Plugin
+ * @subpackage  ContactForm
+ * @version     1.12 (February 20, 2012)
+ * @since	1.7
+ */
+
+#maincolumn, #maincolumn_left, #maincolumn_right, #maincolumn_full {
+}
+
+.notification p {	padding: 16px 16px 16px 42px;	text-shadow: 0px 1px 0px rgba(255,255,255,0.65);}
+
+.notification p strong {	color: #303030;	font-weight: bold;}
+
+.notification.success {	background-color: #dde6ba;	border-color: #d0e289 #c6d881 #b8cb71;	background: -moz-linear-gradient(top,		#fff,		#e6efc2 2%,		#d9e2b7	);	background: -webkit-gradient(linear, left top, left bottom,		from(#fff),		color-stop(0.02, #e6efc2),		to(#d9e2b7)	);	background: linear-gradient(top,		#fff,		#e6efc2 2%,		#d9e2b7	);
+
+	filter: PROGID:DXImageTransform.Microsoft.Gradient(StartColorStr='#e6efc2',EndColorStr='#d9e2b7');}
+
+
+
+
+div.cfp_contact_form{
+}
+
+div.cfp_contact_form .invalid{
+    border: solid 1px #f00;
+}
+
+div.cfp_label{
+    margin: 6px 0 5px 2px;
+}
+
+span.cfp_desc {
+    display: none;
+    margin: 0 0 0 10px;
+}
+
+div.cfp_field{
+    clear:both;
+    padding:0;
+}
+
+div.cfp_submit{
+    margin-top: 20px;
+}
+
+textarea.message{
+    max-width: 100%;
+}

@@ -13,62 +13,57 @@ class busquedaModelbusqueda extends JModelItem {
         parent::__construct();
     }
 
-	public function getBusquedatag(){
+
+    public function getBusquedatag(){
         $tag    = $this->inputVars['etiqueta'];
         $db		= JFactory::getDbo();
-		$query = $db->getQuery( true );
+        $query = $db->getQuery( true );
 
-		$query->select( $db->quoteName( 'id' ) )
-		      ->from( $db->quoteName( '#__tags' ) )
-		      ->where( $db->quoteName( 'alias' ) . ' = ' . $db->quote( $tag ) );
+        $query->select( $db->quoteName( 'id' ) )
+              ->from( $db->quoteName( '#__tags' ) )
+              ->where( $db->quoteName( 'alias' ) . ' = ' . $db->quote( $tag ) );
 
-		$db->setQuery( $query );
-		$queryTagId = $db->loadResult();
+        $db->setQuery( $query );
+        $queryTagId = $db->loadResult();
 
-		if ( $db->getAffectedRows() === 0 ) {
-			return null;
-		}
+        if ( $db->getAffectedRows() === 0 ) {
+            return null;
+        }
 
-		$query = $db->getQuery( true );
-		$query->select( $db->quoteName( 'content_item_id' ) )
-		      ->from( $db->quoteName( '#__contentitem_tag_map' ) )
-		      ->where( $db->quoteName( 'tag_id' ) . ' = ' . $queryTagId );
+        $query = $db->getQuery( true );
+        $query->select( $db->quoteName( array('a.id', 'b.content_item_id' )) )
+              ->from( $db->quoteName( '#__content', 'a' ) )
+              ->join('INNER', $db->quoteName('#__contentitem_tag_map', 'b') . ' ON ('.$db->quoteName('content_item_id').' = '.$db->quoteName('id').' AND '. $db->quoteName('tag_id').' = '. $queryTagId .' )')
+              ->where( $db->quoteName('state') . ' = 1');
 
         $db->setQuery($query);
 
         $results = $db->loadObjectList();
 
-		foreach ( $results as $key => $value ) {
+        foreach ( $results as $key => $value ) {
 
             $query 	= $db->getQuery(true);
 
-            $query->select('introtext, title, Images, alias, id, catid')
+            $query->select('*')
                   ->from($db->quoteName('#__content'))
-	            ->where( $db->quoteName( 'id' ) . ' = ' . $db->quote( $value->content_item_id ) );
+                  ->where( $db->quoteName( 'id' ) . ' = ' . $db->quote( $value->content_item_id ) .' AND ' . $db->quoteName('state') . ' = 1');
 
             $db->setQuery($query);
 
             $result = $db->loadObject();
 
             self::getFieldsAttach($value);
-            $value->title       = $result->title;
-            $value->introtext   = $result->introtext;
-            $value->images      = json_decode($result->Images);
-            $value->Itemid      = $result->catid;
-            $value->id          = $result->id;
-            $value->alias       = $result->alias;
+            $result->images      = json_decode($result->images);
+
+            $results[$key] = $result;
         }
 
         return $results;
-	}
-
+    }
     public function getBusquedamodulo(){
-
 
         $array=explode('-', $this->inputVars['kilometraje']);
         $compare    =$array[0];
-
-
 
         $primero = array(
             '47',
@@ -139,7 +134,7 @@ class busquedaModelbusqueda extends JModelItem {
         $query->select('tableb.title, tablea.value')
             ->from($db->quoteName('#__fieldsattach_values', 'tablea'))
             ->join('INNER', $db->quoteName('#__fieldsattach', 'tableb').'ON ('.$db->quoteName('tablea.fieldsid') . ' = ' . $db->quoteName('tableb.id').')')
-	        ->where( $db->quoteName( 'tablea.articleid' ) . ' = ' . $db->quote( $objeto->id ) );
+	        ->where( $db->quoteName( 'tablea.articleid' ) . ' = ' . $db->quote( $objeto->content_item_id ) );
         $db->setQuery($query);
 
         $results = $db->loadObjectList();

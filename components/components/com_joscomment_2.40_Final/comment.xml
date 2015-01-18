@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component" version="1.0.0">
+  <name>comment</name>
+  <author>Frantisek Hliva</author>
+  <creationDate>19.09.2006</creationDate>
+  <copyright>Copyright(C) Frantisek Hliva. Todos los derechos reservados</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>absolutcavo@gmail.com</authorEmail>
+  <authorUrl>cavo.co.nr</authorUrl>
+  <version>2.40</version>
+  <description>
+    <![CDATA[
+    <table cellpadding="4" cellspacing="0" border="0" width="50%">
+      <tr>
+        <td>
+          <p>Copyright (C) 2006 Frantisek Hliva. All rights reserved.</p>
+          License http://www.gnu.org/copyleft/gpl.html GNU/GPL, see LICENSE.php          
+          <p>Author: Cavo(Frantisek Hliva)</p>
+          Other Developers: Luke Jackson, Roman Kolbabek, Funkoolow, Hellbound
+          <p>Versión en Español de la administración: MakSonico</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="./../components/com_comment/joscomment/images/logo.jpeg">
+        </td>
+      </tr>
+      </table>
+     ]]>
+  </description>
+  <administration>
+    <files>
+      <filename>plugin/joscomment.php</filename>
+      <filename>plugin/joscomment.xml</filename>
+      <filename>library.comment.php</filename>
+      <filename>class.config.comment.php</filename>
+      <filename>admin.comment.php</filename>
+      <filename>admin.comment.html.php</filename>
+      <filename>toolbar.comment.php</filename>
+      <filename>toolbar.comment.html.php</filename>
+    </files>
+    <menu>!JoomlaComment 2.40</menu>
+    <submenu>
+      <menu task="comments">Moderar comentarios</menu>
+      <menu task="settings">Configuración</menu>
+      <menu task="about">Acerca de...</menu>
+    </submenu>
+  </administration>
+  <files>
+    <filename>comment.php</filename>
+    <filename>config.comment.php</filename>
+    <filename>joscomment/board.php</filename>
+    <filename>joscomment/captcha.php</filename>
+    <filename>joscomment/form.php</filename>
+    <filename>joscomment/jscript.php</filename>
+    <filename>joscomment/menu.php</filename>
+    <filename>joscomment/properties.php</filename>
+    <filename>joscomment/post.php</filename>
+    <filename>joscomment/search.php</filename>
+    <filename>joscomment/security.php</filename>
+    <filename>joscomment/support.php</filename>
+    <filename>joscomment/strutils.php</filename>
+    <filename>joscomment/template.php</filename>
+    <filename>joscomment/tree.php</filename>
+    <filename>joscomment/ubbcode.php</filename>
+    <filename>joscomment/utils.php</filename>
+    <filename>joscomment/visual.php</filename>
+    <filename>joscomment/emoticons/default/index.php</filename>
+    <filename>joscomment/emoticons/default/images/icon_arrow.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_biggrin.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_confused.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_cool.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_cry.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_eek.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_evil.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_exclaim.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_frown.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_idea.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_lol.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_mad.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_mrgreen.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_neutral.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_question.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_razz.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_redface.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_rolleyes.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_sad.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_smile.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_surprised.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_twisted.gif</filename>
+    <filename>joscomment/emoticons/default/images/icon_wink.gif</filename>      
+    <filename>joscomment/emoticons/green/index.php</filename>
+    <filename>joscomment/emoticons/green/images/sm_bigeek.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_biggrin.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_confused.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_cool.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_cry.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_dead.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_mad.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_razz.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_rolleyes.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_sigh.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_sleep.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_smile.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_upset.gif</filename>
+    <filename>joscomment/emoticons/green/images/sm_wink.gif</filename>    
+    <filename>joscomment/jscripts/client.js</filename>
+    <filename>joscomment/language/english.php</filename>
+    <filename>joscomment/language/slovak.php</filename>
+    <filename>joscomment/language/czech.php</filename>
+    <filename>joscomment/language/italian.php</filename>
+    <filename>joscomment/language/dutch.php</filename>
+    <filename>joscomment/language/hungarian.php</filename>
+    <filename>joscomment/language/persian.php</filename>
+    <filename>joscomment/language/germanf.php</filename>
+    <filename>joscomment/language/germani.php</filename>
+    <filename>joscomment/language/bulgarian.php</filename>
+    <filename>joscomment/language/macedonian.php</filename>
+    <filename>joscomment/language/norwegian.php</filename>
+    <filename>joscomment/language/turkish.php</filename>
+    <filename>joscomment/language/spanish.php</filename>
+    <filename>joscomment/language/greek.php</filename>
+    <filename>joscomment/language/brazilian_portuguese.php</filename>
+    <filename>joscomment/images/busy.gif</filename>
+    <filename>joscomment/images/logo.jpeg</filename>
+    <filename>joscomment/images/voting_no.png</filename>
+    <filename>joscomment/images/voting_yes.png</filename>
+    <filename>joscomment/images/ubb_icons.php</filename>
+    <filename>joscomment/images/ubb_bold.gif</filename>
+    <filename>joscomment/images/ubb_code.gif</filename>
+    <filename>joscomment/images/ubb_image.gif</filename>
+    <filename>joscomment/images/ubb_italicize.gif</filename>
+    <filename>joscomment/images/ubb_quote.gif</filename>
+    <filename>joscomment/images/ubb_underline.gif</filename>
+    <filename>joscomment/images/ubb_url.gif</filename>
+    <filename>joscomment/captcha/bg1.png</filename>
+    <filename>joscomment/captcha/bg2.png</filename>
+    <filename>joscomment/captcha/bg3.png</filename>
+    <filename>joscomment/captcha/century.ttf</filename>
+    <filename>joscomment/templates/default/index.html</filename>
+    <filename>joscomment/templates/default/css/template_css.css</filename>
+    <filename>joscomment/templates/default/images/body1.gif</filename>
+    <filename>joscomment/templates/default/images/body2.gif</filename>
+    <filename>joscomment/templates/default/images/dot.gif</filename>
+    <filename>joscomment/templates/default/images/dotv.gif</filename>
+    <filename>joscomment/templates/default/images/head.png</filename>
+    <filename>joscomment/templates/default/images/sectiontableheader.png</filename>
+    <filename>joscomment/templates/default/images/user.png</filename>   
+    <filename>joscomment/templates/default-red/index.html</filename>
+    <filename>joscomment/templates/default-red/css/template_css.css</filename>
+    <filename>joscomment/templates/default-red/images/body1.gif</filename>
+    <filename>joscomment/templates/default-red/images/body2.gif</filename>
+    <filename>joscomment/templates/default-red/images/dot.gif</filename>
+    <filename>joscomment/templates/default-red/images/dotv.gif</filename>
+    <filename>joscomment/templates/default-red/images/head.png</filename>
+    <filename>joscomment/templates/default-red/images/sectiontableheader.png</filename>
+    <filename>joscomment/templates/default-red/images/user.png</filename>    
+    <filename>joscomment/templates/akostyle/index.html</filename>
+    <filename>joscomment/templates/akostyle/css/template_css.css</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_icons.php</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_bold.gif</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_code.gif</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_image.gif</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_italicize.gif</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_quote.gif</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_underline.gif</filename>
+    <filename>joscomment/templates/akostyle/images/ubb_url.gif</filename>
+  </files>
+  <install>
+    <queries>
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__comment_captcha` (
+        `ID` int(11) NOT NULL auto_increment,
+        `insertdate` datetime NOT NULL default '0000-00-00 00:00:00',
+        `referenceid` varchar(100) NOT NULL default '',
+        `hiddentext` varchar(100) NOT NULL default '',
+        PRIMARY KEY (`ID`)) type=MyISAM;
+      </query>
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__comment_voting` (
+        `id` INT(10) NOT NULL default '0',
+        `ip` VARCHAR(15) NOT NULL default '',
+        `time` INTEGER NOT NULL default '0') type=MyISAM;
+      </query>
+    </queries>
+  </install>
+  <installfile>install.comment.php</installfile>
+  <uninstallfile>uninstall.comment.php</uninstallfile>
+</mosinstall>

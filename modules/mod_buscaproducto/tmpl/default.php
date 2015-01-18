@@ -73,13 +73,16 @@ $jinput = JFactory::getApplication ()->input;
             <option value="200001">más de 200,001 kms</option>
         </select>
         <br>
-        </fieldset>
         <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
         <p id="encuentra-producto" align="right">
             <input id="buscar" type='image' name='enviar'align="right" src="templates/t3_bs3_blank/images/site/btn_buscar.png" />
+
         </p>
-        <img id="auto"  src="templates/t3_bs3_blank/images/site/mustang.png">
+
     </form>
+</div>
+<div class="auto">
+    <img id="auto"  src="templates/t3_bs3_blank/images/site/mustang.png">
 </div>
 <div id="fb-root"></div>
 <script>

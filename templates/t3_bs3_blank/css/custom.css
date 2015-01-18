@@ -18,10 +18,13 @@ body {
 }
 #number{
     color: white;
-    letter-spacing: 9px;
-    margin: 0 0 0 142px;
+    letter-spacing: 3px;
+    margin: 0 0 0 93px;
 }
 
+.busqueda-uso p{
+    margin: 10px;
+}
 .recomendados{
     height: 430px;
     margin: -473px 0 0 13px;
@@ -62,16 +65,14 @@ body {
 }
 #t3-header {
     background-image: url("../../../images/site/top_menu.png");
-    height: 45px;
-    margin: 0 0 0 -15px;
-    width: 102.5%;
+    height: 40px;
+    width: 1300px;
 }
 
 .head-search {
-    font-size: 21px;
+    font-size: 22px;
     font-weight: normal;
-    margin-left: 624px;
-    #margin-left: 604px ;
+    margin-left: 581px;
     margin-top: -30px;
     width: 712px;
 }
@@ -86,25 +87,25 @@ body {
     opacity: 1;
 }
 .busqueda-uso{
-    margin: -458px 0 0 4px;
+    margin-top: -452px;
     position: absolute;
     width: 904px;
 }
+.busqueda-uso .module-title span {
+    text-transform: capitalize;
+}
+
 .category-desc a{
     color: #000000;
 }
 #line-menu{
-    margin: 12px 0 0 114%;
+    margin: 24px 0 0 129%;
     position: absolute;
-}
-#line-menu >img{
-    height: 3.5em;
-    width: 55em;
 }
 .head-search ul li {
     display: inline-block;
     font-size: 66%;
-    margin-left: 9px;
+    margin-left: 7px;
 }
 
 div.head-search ul li a.icono-redes {
@@ -166,9 +167,7 @@ div.head-search ul li a.icono-redes {
 }
 /*HEADER*/
 nav.t3-mainnav{
-    color: white;
-    height: 100px;
-    width: 100%;
+    height: 82px;
 }
 
 div.t3-navbar{
@@ -185,12 +184,6 @@ div.t3-navbar{
     margin-top: -25px;
 }
 
-
-.t3-navbar2{
-    margin: 11px -9.8% 0 398px;
-}
-
-
 .navbar-nav > li > a {
     padding-bottom: 5px;
     padding-top: 5px;
@@ -200,16 +193,14 @@ div.t3-navbar{
 .navbar-nav > li:focus{
     color: #ffd500;
 }
-.navbar-nav > li{
-    padding: 0 2px;
 
-}
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3, .texto-header > h3 {
     background-image: url("../images/site/line_up.png");
     background-position: -41px center;
     background-repeat: no-repeat;
     line-height: 2em;
     text-align: left;
+    padding: 0 12px;
 }
 .module-title >span {
     margin: 0 0 0 14px;
@@ -221,14 +212,14 @@ div.t3-navbar{
     font-weight: 400;
     background-color: #ffffff;
     padding: 23px;
-    width: 113%;
+    width: 1296px;
     text-align: justify;
 }
 
 .contacto-text{
     background-color: #ffffff;
     padding: 23px;
-    width: 110%;
+    width:     1300px;
     font-family: Maven pro;
 }
 .contacto-text > a {
@@ -263,16 +254,17 @@ div.titulo-dorado {
     width: 100%;;
 }
 
-div.titulo-dorado > h3, div.category-desc > h3, div.head-category > h2{
+div.titulo-dorado > h3, div.category-desc > h1, div.head-category > h2{
     background-image: url("../images/site/line_up.png");
     background-position: -41px center;
     background-repeat: no-repeat;
     background-size: 55% auto;
     color: #000000;
+    font-size: 30px;
     font-weight: bold;
     line-height: 2em;
     text-align: left;
-    margin: 38px 0 0 -18px;
+    margin: 38px 0 0 -13px;
     padding: 0 0 0 28px;
 
 }
@@ -292,7 +284,6 @@ div.category-desc > p{
 }
 .t3-content{
     display: inline-block;
-    margin: 0 0 0 2px;
     padding: 0;
     width: 100%;
 }
@@ -320,14 +311,14 @@ div.category-desc > p{
 /*BODY*/
 div.t3-wrapper{
     background-color: black;
-    background-image: url("../images//site/backbardahl.jpg");
+    background-image: url("../images/site/backbardahl.jpg");
     background-repeat: repeat;
     position: relative;
 }
 
 #t3-mainbody{
-    margin: -1%;
-    max-width: 100%;
+    margin: 0;
+    padding-top: 0;
 }
 
 /*AQUI SE MARCA EL SLIDER DE HOME*/
@@ -338,22 +329,6 @@ div.moduleleft{
     color: #000000;
 }
 
-/*CONTIENE LOS DOS MODULOS MOSTRADOS EN LA DERECHA BUSCAR PRODUCTO Y BARDALH EN TU VIDA*/
-/*
-#cabecera{
-    color: white;
-    font-size:19pt;
-    text-align: center;
-    box-shadow:0 0 50px black;
-    background-image: url("../images/plecadorada.png") ;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 50px;
-    margin-top: -15px;
-    position: relative;
-}*/
-
-
 div.home{
     display: inline-block;
     width: 600px;
@@ -362,19 +337,17 @@ div.home{
 
 #div_buscar{
     font-size: 9pt;
-    height: 470px;
     line-height: 10px;
-    margin: 37px 0 0 45%;
-    position: absolute;
-    z-index: 1;
+    margin: 52px 0 0 120px;
 }
 
 #form_buscar{
     margin: 0 0 0 0;
+    width: 222px;
 }
 div.container_left .row #name0{
     padding: 0;
-    width: 66.6%;
+    width: 958px;
 }
 #back_producto{
     height: 100%;
@@ -392,14 +365,15 @@ h2 {
 div.container_left .row #name1{
     height: 501px;
     margin: -20px 0 0 -8px;
-    width: 33%;
+    width: 350px;
 }
 .container_left{
     background-image: url("../../../images/site/img-back-banner-bardahl.png");
     background-repeat: no-repeat;
-    margin: -17px 0 0 -15px;
-    width: 103%;
     }
+.container_left .row{
+    margin: auto;
+}
 .articlelanding-page{
     float: left;
     margin: -39.3% 0 0 -5px;
@@ -481,14 +455,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     font-family: "Maven Pro";
 
 }
-/*
-.modulelanding-page,.modulelanding-page2 {
-    background-color: #ffffff;
-    height: 482px;
-    margin: -6px 0 0;
-    max-width: 1920px;
-    width: 100%;
-}*/
+
 #line_position{
     margin: -3.5em 0 0 -1em;
     position: absolute;
@@ -508,12 +475,11 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     width: 100%;
 }
 
-#auto{
-    float: left;
-    height: 38%;
-    margin: -1% -79%;
-    width: 134%;
+.auto{
+    margin: 24px -36px;
+    width: 10px;
 }
+
 #buscar{
     margin: inherit;
 }
@@ -526,14 +492,18 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     color: #000000;
     font-weight: bold;
     line-height: 2em;
-    margin: -11px 0 0 -7px;
+    margin: -40px 0 0 6px;
 
 }
 
 #encuentra-producto input {
-    margin: -5px -9px;
+    margin: -11px -18px;
 }
 
+.container_right .row{
+    margin: auto;
+
+}
 /*/MODULOS PAGINA PRINCIPAL/*/
 .breadcrumb{
     background-color: transparent;
@@ -593,7 +563,7 @@ ul.noti-event-home {
 
 #cuadro-right{
     display: inline-block;
-    margin: 0 0 0 172px;
+    margin: 0 0 0 154px;
     position: absolute;
     width: 574px;
 }
@@ -605,15 +575,14 @@ ul.noti-event-home {
     width: 31%;
 }
 #segundo #cuadro-center{
-    margin: -24% 0 0 40.3%;
-    position: absolute;
-    width: 34.1%;
+    margin: 0 54px;
+    display: inline-block;
+    width: 398px;
 }
 #segundo #cuadro-right{
     display: inline-block;
-    margin: 3.3% 0 0 45.1%;
-    position: absolute;
-    width: 34%;
+    margin: 39px 0 0 -10px;
+    width: 398px;
 }
 
 .flex-viewport{
@@ -700,7 +669,7 @@ ul.noti-event-home {
 .contacto_boton{
     background-color: #ffd500;
     height: 38px;
-    margin: -53px 0 0 741px;
+    margin: -59px 0 0 741px;
     width: 103px;
     transform: skew(-20deg, 0deg);
     -ms-transform: skew(-20deg, 0deg); /* IE 9 */
@@ -732,26 +701,18 @@ ul.noti-event-home {
 }
 .div-contacto .texto-promociones{
     padding: 0;
-
 }
-
+.div-contacto{
+    margin: 30px 0;
+}
+.header-contacto{
+    margin: -524px 0 0 20px;
+}
 
 #cal_container{
     height: 450px;
     display: block;
     width: 690px;
-}
-#Cal_2013{
-    background-image: url("../images/plecadorada.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    display: inline-block;
-    font-size: 34px;
-    height: 282px;
-    margin-left: 19px;
-    margin-top: 15px;
-    text-align: center;
-    width: 276px;
 }
 
 #lbl_artrel{
@@ -765,18 +726,7 @@ ul.noti-event-home {
     text-align: center;
     width: 194px;
     }
-#Cal_2014{
-   background-image: url("../images/plecadorada.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    display: inline-block;
-    font-size: 34px;
-    height: 150px;
-    margin-left: 61px;
-    margin-top: 15px;
-    text-align: center;
-    width: 276px;
-}
+
 #fondo{
     background-image: url("../images/plecadorada.png");
     background-repeat: no-repeat;
@@ -801,6 +751,7 @@ ul.noti-event-home {
     text-align: center;
     width: 356px;
 }
+
 /*CONTACTOS*/
 #sender_name {
     height: 30px;
@@ -850,6 +801,7 @@ ul.noti-event-home {
     text-align: center;
     width: 217px;
 }
+
 #lbl_fusion2 {
     background-image: url("../images/site/line_up.png");
     background-repeat: no-repeat;
@@ -1002,24 +954,21 @@ ul.noti-event-home {
 }
 .redes{
     display: inline-flex;
-    font-size: 18px;
-    margin: 527px 0 0 85px;
+    margin: 34px 0 0 -18px;
+    width: 353px;
+    z-index: 1000;
     position: relative;
-    width: 400px;
-    z-index: 1;
 }
 #facebook{
-    width: 29.5%;
+    width: 124px;
 }
 #twitter{
-    width: 28%;
+    width: 120px;
 }
 
 .flexslider {
-    height: 69%;
-    margin: 52px 0 0 42px !important;
-    max-height: 363px;
-    width: 882px;
+    margin: 52px 0 0 17px !important;
+    width: 902px;
 }
 .img-left img{
     display: inline-block;
@@ -1043,8 +992,8 @@ ul.noti-event-home {
     height: 300px;
     width: 500px;
 }
-#img-calendario{
-    width: auto;
+#img-calendario a img {
+    width: 1297px;
 }
 #tbl_auto{
    background-color: #2f2f2f;
@@ -1183,10 +1132,9 @@ div.t3-footnav {
 #contacto {
     font-size: 15px;
     line-height: 1.9;
+    margin: -36px auto;
 }
-.t3-module.contacto {
-    width: 330%;
-}
+
 .t3-footnav .vertical {
     display: inline-block;
     margin-left: 1em;
@@ -1295,8 +1243,6 @@ nav.wrap {
     padding: 0;
 }
 
-
-
 .wrap .container >ul >li{
     display: inline-block;
 }
@@ -1310,7 +1256,8 @@ nav.wrap {
 .latestnewstu_vida{
     display: inline-block;
     height: 14em;
-    width: 24em;
+    margin: auto 8px;
+    width: 23em;
 }
 
 .img-descarga{
@@ -1331,7 +1278,8 @@ nav.wrap {
 
 .calendar-video{
     height: 33.1em;
-    margin: -665px 0 0 -36px;
+    margin: -623px 0 0 -36px;
+    width: 900px;
 }
 
 .calendar-img{
@@ -1348,16 +1296,17 @@ nav.wrap {
 }
 .customleft{
     background-color: #ffffff;
-    margin-top: 6px;
-    padding: 1%;
+    margin-top: 1px;
+    padding: 12px;
     font-family: "Maven Pro" !important;
     font-weight: 400;
 }
 /*********************CREACION DE TABLA DIV************************************/
-.Table
-{
+.Table {
     display: table;
     background-color: white;
+    margin: 15px auto;
+    width: 797px;
 }
 .Table .Row
 {
@@ -1379,8 +1328,15 @@ nav.wrap {
     margin: 43px 0 0 24px;
 }
 .texto-promociones{
-    width: 103%;
+    padding: 0;
+    width: 1300px;
 }
+.texto-contacto{
+    padding: 0;
+    width: 1300px;
+    margin: 20px auto;
+}
+
 .conteiner-slider{
     background-color: white;
     margin: -61px 0 0;
@@ -1425,9 +1381,6 @@ nav.wrap {
     text-shadow: 2px 2px #666;
 }
 
-
-
-
 .h3_categ, .prod_name {
     margin-left: 15px;
 }
@@ -1445,7 +1398,6 @@ nav.wrap {
     position: absolute;
     width: 916px;
 }
-
 
 .texto-producto h3 {
     font-size: 18px;
@@ -1560,23 +1512,20 @@ h1.article-title {
 .t3-megamenu {
     font-style: normal;
     font-weight: 400;
-    margin: 2.9% 19%;
-    width: 513px;
+    margin: 28px 547px;
 }
 
 .t3-megamenu .nav{
     margin: 0;
-    width: 717px;
+    width: 677px;
 }
 
-#line{
+
+#line > img {
     margin-left: -15px;
     margin-top: -9px;
     position: absolute;
-}
-
-#line >img{
-    width: 1332px;
+    width: 1300px;
 }
 #img_left2{
     margin-left: 98.5%;
@@ -1610,16 +1559,18 @@ div#calif {
 
 .colum-right{
     font-family: Maven Pro;
-    margin: 149px 0 0 95%;
+    margin: 569px 877px;
     position: absolute;
-    width: 453px;
+    width: 426px;
 }
 #calif{
     width: 160px !important;
 }
 
 .img-prod{
-    margin: -3px 0 0;
+    margin: 7px 2px;
+    position: absolute;
+    width: 900px;
 }
 
 .img-producto {
@@ -1734,12 +1685,11 @@ div#calif {
 
 @media screen and (max-width : 319px){
     body{
-        display: block;
+        display: none;
     }
 }
 
 /*********************IPHONE5*****************************/
-
 
 
 @media  screen
@@ -1764,7 +1714,7 @@ and (max-width : 480px) {
     }
     .articlelanding-page .base-desc {
         font-size: 11px;
-        margin: -40% 0 0 2%;
+        margin: -73% 0 0 2%;
     }
     /*******************HEADER***********************/
     #t3-header {
@@ -1809,6 +1759,12 @@ and (max-width : 480px) {
     }
     /*******************HEADER**********************/
     /*******************MENU************************/
+    .Cell {
+        display: inline-block!important;
+    }
+    .Row{
+        display: block!important;
+    }
 .t3-navbar2{
     display: none;
 }
@@ -1928,10 +1884,11 @@ and (max-width : 480px) {
     }
     .articlelanding-page {
         float: left;
-        margin: -813px 0 0 14px;
+        margin: -686px 0 0 14px;
         width: 95%;
         position: absolute;
     }
+
     #t3-content {
         width: 100%;
         margin: 20px 0 0 2px;
@@ -1950,7 +1907,7 @@ and (max-width : 480px) {
         position: absolute;
     }
     .table-responsive .col-md-5 {
-        margin: -330% 0 0 -13px;
+        margin: -320% 0 0 -13px;
         width: 109%;
         position: absolute;
     }
@@ -2108,7 +2065,7 @@ and (max-width : 480px) {
         width: 100%;
     }
     .boton_envio {
-        margin: -149px 0 0 100px !important;
+        margin: -66px 0 0 100px !important;
         position: absolute;
     }
     .data >table >tbody>tr >td >label {
@@ -2180,8 +2137,8 @@ and (max-width : 480px) {
     }
     /*********************END CREACION DE TABLA DIV********************************/
     .busqueda-uso {
-        height: 311px;
-        margin: -882px 0 0 4px;
+        height: 310px;
+        margin: -877px 0 0 4px;
         overflow: hidden;
         text-overflow: ellipsis;
         width: 295px;
@@ -2317,7 +2274,10 @@ and (max-width : 480px) {
         font-size: 9pt;
         line-height: 10px;
         margin: 11px 0 0;
-        z-index: 1;
+        z-index: 0;
+    }
+    .img-producto {
+        z-index: 100;
     }
     #contacto {
         font-size: 17px;
@@ -2334,1104 +2294,6 @@ and (max-width : 480px) {
     }
 }
 
-@media screen
-and (min-width: 481px)
-and (max-width: 800px)
-{
-    body{
-        max-width: 650px;
-        font-size: 12px;
-    }
-    .table-responsive {
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border:none;
-        -webkit-overflow-scrolling: touch;
-    }
-    .texto-producto  {
-        background-color: #ffffff;
-        padding: 23px;
-        width: 654px;
-    }
-    .promocion-text{
-        background-color: #ffffff;
-        padding: 23px;
-        width: 640px;
-    }
-
-    .promocion-text table tbody tr td img{
-        display: block;
-    }
-    #line-menu, #img_left2{
-        display: block;
-    }
-    .homelink img {
-        margin: -21px 0 0 -24px;
-        position: absolute;
-        width: 149px;
-    }
-    .container_left {
-        background-image: url("../../../images/site/img-back-banner-bardahl.png");
-        background-repeat: no-repeat;
-        margin: -17px 0 0 -15px;
-        width: 665px;
-        background-size: 665px 453px;
-    }
-    /*******************HEADER***********************/
-    .col-sm-4 {
-        width: 100%;
-    }
-    #t3-header {
-        margin: 0 0 0 -15px;
-        width: 102.5%;
-    }
-
-    .nav-stacked{
-        padding-left: 202px;
-    }
-
-    .icemegamenu{
-        display: none;
-    }
-    .head-search ul li {
-        font-size: 11px;
-        margin-left: 1px;
-        margin-top: 15px;
-    }
-
-    #line-menu {
-        margin: 4px 0 0 77px;
-        position: absolute;
-    }
-    #line-menu > img {
-        height: 55px;
-        width: 630px;
-    }
-    #img_left >img{
-        display: none;
-    }
-
-    #line >img {
-        width: 100%;
-    }
-
-    .t3-megamenu {
-        font-style: normal;
-        font-weight: 400;
-        margin: 5px 0 0 -251px;
-        position: absolute;
-        width: 473px;
-    }
-    .dropdown-menu {
-        left: -263px!important;
-        margin-left: 0;
-        top: auto;
-    }
-    .navbar-nav > li {
-        padding: 0;
-    }
-    .head-search {
-        font-weight: normal;
-        margin-left: -20px;
-        margin-top: -5.9%;
-        width: 691px;
-    }
-    #img_left2 {
-        margin-left: 615px;
-        margin-top: 12px;
-        position: absolute;
-    }
-    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
-
-         display: none;
-     }
-    /*******************HEADER**********************/
-    /*******************ENCUENTRA TU ACEITE********/
-    #div_buscar h3 {
-        color: #000000;
-        font-weight: bold;
-        line-height: 1em;
-        margin: -11px 0 0 -7px;
-        font-size: 14px;
-    }
-    input[type="text"], .validate-email {
-        background: white;
-        width: 123px;
-        height: 19px;
-    }
-    #kilometraje {
-        background-color: #ffffff;
-        height: 30px;
-        width: 121px;
-    }
-    #div_buscar {
-        font-size: 9pt;
-        line-height: 10px;
-        margin: 61px 0 0 85px;
-        position: absolute;
-        z-index: 1;
-    }
-    .redes {
-        display: block;
-        font-size: 18px;
-        margin: 497px 0 0 -35%;
-        position: relative;
-        width: 360px;
-
-    }
-
-    #facebook {
-        width: 29.5%;
-        display: inline-block;
-    }
-    #twitter {
-        width: 29.5%;
-        display: inline-block;
-    }
-    #google {
-        width: 29.5%;
-        display: inline-block;
-    }
-    #encuentra-producto input {
-        margin: -5px -53px;
-    }
-    #auto {
-        height: 124px;
-        margin: 15% -76px;
-        width: 154px;
-    }
-    .marca {
-        font-size: 34px;
-    }
-    .modelo {
-        font-size: 24px;
-    }
-    .year {
-        font-size: 16px;
-    }
-    .kilometraje {
-        font-size: 17px;
-    }
-
-    div.titulo-dorado > h3, div.category-desc > h3, div.head-category > h2 {
-        background-image: url("../images/site/line_up.png");
-        background-position: -41px center;
-        background-repeat: no-repeat;
-        background-size: 80% auto;
-        color: #000000;
-        font-weight: 400;
-        line-height: 3em;
-        text-align: left;
-        margin: 38px 0 0 -18px;
-        padding: 0px 0 0 11px;
-        font-size: 16px;
-    }
-    .cat-article {
-        background-color: #ffffff;
-        margin-bottom: 14px;
-        width: 186px;
-        margin-left: 0;
-    }
-    .article-catimg, .article_image> img {
-        height: 133px;
-        margin: 0 0 0 31px;
-        width: 141px;
-    }
-    .pleca-dorado {
-        background-image: url("../images/site/pleca_titulos.png");
-        background-position: 0 10px;
-        background-repeat: no-repeat;
-        background-size: 186px 51px;
-        line-height: 1em;
-    }
-    .cat-article .pleca-dorado {
-        padding: 21px 6px;
-    }
-    .pleca-dorado div {
-        color: black;
-        font-family: Oswald;
-        font-weight: normal;
-        height: 56px;
-        text-shadow: 0 1px 4px #333;
-        vertical-align: middle;
-    }
-    .recomendados {
-        height: 430px;
-        margin: -953px 0 0 20px;
-        width: 93%;
-        POSITION: absolute;
-    }
-    .articlelanding-page {
-        float: left;
-        margin: -492px 0 0 -2px;
-        width: 486px;
-        position: absolute;
-    }
-    #t3-content {
-        width: 100%;
-        margin: 20px 0 0 2px;
-    }
-    #article_conteiner {
-        background-color: #ffffff;
-        display: inline-block;
-        height: 162px;
-        margin-left: 5px;
-        margin-top: 22px;
-        width: 210px;
-    }
-    .head-category {
-        margin: -275% 0 0 20.1px;
-        width: 93%;
-        position: absolute;
-    }
-    .table-responsive .col-md-5 {
-        margin: -290% 0 0 -13px;
-        width: 109%;
-        position: absolute;
-    }
-    .img-producto {
-        margin: -1px 0 0 0px;
-        width: 50%;
-    }
-    .div_icons_prod {
-        margin: 0;
-        text-align: center;
-        width: 46%;
-    }
-    .txt-producto {
-        width: 100%;
-    }
-    .msg_ok {
-        margin: -24px 0 0 2px;
-    }
-    .head-category .category-desc {
-        margin: 0 0 0 -11px;
-        font-size: 11px;
-        width: 285px;
-    }
-    .no-article {
-
-        width: 100%;
-    }
-    /***************ENCUENTRA TU ACEITE***********/
-    /********************CUADROS LADING************/
-    #cuadro-left {
-        display: block;
-        padding-right: 5px;
-        width: 25.5%;
-
-    }
-    #cuadro-right {
-        display: inline-block;
-        width: 300px;
-        position: relative;
-        margin: 11px 0 0 70px;
-        height: 236px;
-    }
-    #menu-landing-1 {
-        background-image: url("../images/site/pleca_titulos.png");
-        background-repeat: no-repeat;
-        background-size: 142% auto;
-        width: 295px;
-        text-align: center;
-    }
-
-    #img-lading{
-        background-color: transparent;
-    }
-    #img-lading > a> img {
-        width: 294px;
-        margin: 0;
-    }
-
-    #segundo #cuadro-left {
-        display: inline-block;
-        margin: 0;
-        width: 230px;
-        position: relative;
-    }
-    .container_right .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #segundo #cuadro-left #img-lading >a >img, #segundo #cuadro-center  #img-lading >a >img,#segundo #cuadro-right #img-lading >a >img{
-        width: 191px;
-    }
-    .containter-table {
-        display: table;
-        padding: 0;
-        width: 695px;
-    }
-    #segundo {
-        display: block;
-        height: 124px;
-    }
-    div.row .t3-sidebar-2, .t3-sidebar-right {
-        margin: 0 0 0 -8.5px;
-        /* width: 100%; */
-        padding: 0;
-    }
-    #segundo #cuadro-center {
-        display: inline-block;
-        position: relative;
-        width: 217px;
-        margin: 0 0 0 13px;
-    }
-    #segundo #cuadro-right {
-        display: inline-block;
-        width: 230px;
-        position: relative;
-        margin: 0;
-    }
-
-    #menu-landing-2 {
-        width: 191px;
-        text-align: center;
-        padding: 8px;
-        margin-bottom: 15px;
-        height: 47px;
-        background-size: 191px 52px;
-        overflow: hidden;
-    }
-    #menu-landing-2 >a {
-        color: #000000;
-        font-size: 115%;
-        font-style: normal;
-        font-weight: 400;
-    }
-    /********************CUADROS LADING************/
-    .flexslider {
-        height: 343px;
-        margin: 44px 0 0 42px !important;
-        width: 439px;
-    }
-    #cuadro-left {
-        display: inline-block;
-        padding-right: 5px;
-        width: 300px;
-    }
-    /*********************FOOTER************************/
-    .t3-footnav div div .nav-stacked {
-        padding: 0;
-    }
-    .t3-footnav .col-sm-4{
-        width: 20%;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .t3-footnav .col-sm-6 {
-        width: 0%;
-    }
-    div#footer_images img {
-        height: 42px;
-    }
-    #contacto {
-        font-size: 12px;
-        line-height: 1.9;
-    }
-    div.t3-footnav {
-        padding: 0;
-        margin-left: 0;
-    }
-    /*********************FOOTER******END***************/
-   /*************************NOSOTROS*******************/
-    .img_prod img {
-        height: 329px;
-        margin: -70% 0 0 1%;
-        /* max-height: 359px; */
-        width: 448px;
-    }
-    /*************************NOSOTROS*******************/
-    .back{
-        display: none;
-    }
-    /*************************CONTACTO********************/
-    .data {
-        background-color: #ffffff;
-        width: 447px;
-    }
-    .contact>textarea {
-         background-color: #ffffff;
-         height: 137px;
-         width: 260px;
-     }
-    #idtext {
-        width: 123px;
-    }
-    label {
-        font-weight: normal;
-        font-size: 86%;
-    }
-    .contacto_boton {
-        background-color: #ffd500;
-        height: 30px;
-        margin: -61px 0 0 361px;
-        width: 59px;
-        transform: skew(-20deg, 0deg);
-        -ms-transform: skew(-20deg, 0deg);
-        -webkit-transform: skew(-20deg, 0deg);
-    }
-    .form-inter {
-        margin: -492px 0 0 17px;
-        position: absolute;
-    }
-    .contacto-text {
-        background-color: #ffffff;
-        padding: 23px;
-        width: 98%;
-    }
-    .Cell {
-        display: table-cell;
-        font-weight: 400;
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 15px;
-    }
-    .form-contacto {
-        width: 433px;
-    }
-    /*************************CONTACTO********************/
-    /**************************BARDAHL EN TU VIDA *********************************/
-    .customlanding-page2 {
-        margin: 33px 0 0 45px;
-    }
-    #lbl_au {
-        font-size: 14px;
-        width: 146px;
-        margin: 16px 0 0;
-    }
-    #cuadro_vida >a >img {
-        width: 100px;
-
-    }
-    #cuadro_tu_vida {
-        height: 101px;
-        width: 78px;
-        background-color: white;
-    }
-    #cuadro_vida .tractor{
-        margin: -8px 0 0;
-    }
-    .latestnewstu_vida {
-
-        width: 215px;
-    }
-    #img-tu-vida {
-        height: 10em;
-        width: 206px;
-    }
-    #div-tu-vida {
-        width: 206px;
-    }
-    #div-tu-vida >span {
-        display: inline-block;
-        line-height: normal;
-        margin: 13px;
-        width: 181px;
-        overflow: hidden;
-    }
-    /**************************BARDAHL EN TU VIDA *********************************/
-    /****************************CALENDARIO****************************************/
-
-    .calendar-video{
-        margin: -466px 0 0 1.3%;
-        position: absolute;
-        width: 446px;
-        height: 321px;
-    }
-
-    .img-descarga {
-        background-color: #696969;
-        margin: 0;
-        width: 654px;
-    }    .calendar-img{
-        display: block;
-
-    }
-    .img-cal{
-        display: inline-block;
-        margin: 0 0 0 103px;
-    }
-
-    .calendar-video > iframe{
-        margin: 0 0 0 -3px;
-        width: 449px;
-        height: 339px;
-    }
-    .customleft{
-        background-color: #ffffff;
-        margin-top: 6px;
-        padding: 1%;
-    }
-    /****************************CALENDARIO****************************************/
-    .article_titl {
-        line-height: 5em;
-    }
-}
-
-
-
-/* Desktops and laptops ----------- */
-@media  screen
-and (min-width: 801px)
-and (max-width: 1024px){
-    body{
-        max-width: 750px;
-        font-size: 12px;
-    }
-    /*******************HEADER***********************/
-    .row .col-sm-4 {
-        width: 100%;
-    }
-    #t3-header {
-        margin: 0 0 0 -15px;
-        width: 765px;
-        height: 38px;
-    }
-
-
-    .icemegamenu{
-        display: none;
-    }
-    .head-search ul li {
-        font-size: 11px;
-        margin-left: 1px;
-        margin-top: 15px;
-    }
-
-    #line-menu {
-        margin: 6px 0 0 182px;
-        position: absolute;
-    }
-    #line-menu > img {
-        height: 55px;
-        width: 620px
-    }
-
-    #line >img {
-        width: 100%;
-    }
-    #line{
-        margin-left: -15px;
-        margin-top: -11px;
-        position: absolute;
-    }
-    .t3-megamenu .mega-align-justify > .dropdown-menu {
-        left: -213px;
-        margin-left: 0;
-        top: auto;
-    }
-    .t3-megamenu {
-        font-style: normal;
-        margin: 7px 0 0 -165px;
-        position: absolute;
-
-    }
-    .navbar-nav > li {
-        padding: 0;
-    }
-    .head-search {
-        font-weight: normal;
-        margin-left: 285px;
-        margin-top: -5.9%;
-        width: 683px;
-    }
-    #img_left2 {
-        margin-left: 712px;
-        margin-top: 12px;
-        position: absolute;
-    }
-    #img_left{
-        margin-left: 211px;
-        margin-top: 12px;
-    }
-    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
-
-        display: none;
-    }
-    .homelink >img{
-        margin: -26px 0 0 -25px;
-        position: absolute;
-    }
-    /*******************HEADER**********************/
-    .table-responsive {
-        -ms-overflow-style: -ms-autohiding-scrollbar;
-        border:none;
-        -webkit-overflow-scrolling: touch;
-    }
-    .texto-producto  {
-        background-color: #ffffff;
-        padding: 23px;
-        width: 755px;
-    }
-    .relation{
-        display: none;
-    }
-    .promocion-text{
-        background-color: #ffffff;
-        padding: 23px;
-        width: 640px;
-    }
-
-    .promocion-text table tbody tr td img{
-        display: block;
-    }
-    #line-menu, #img_left2{
-        display: block;
-    }
-    .homelink img {
-        margin: -21px 0 0 ;
-        position: absolute;
-        width: 149px;
-    }
-    .container_left {
-        margin: -17px 0 0 -15px;
-        width: 765px;
-        background-size: 765px 407px;
-    }
-
-    /*******************ENCUENTRA TU ACEITE********/
-    #div_buscar h3 {
-        color: #000000;
-        font-weight: bold;
-        line-height: 1em;
-        margin: -11px 0 0 -7px;
-        font-size: 14px;
-    }
-    input[type="text"], .validate-email {
-        background: white;
-        width: 123px;
-        height: 22px;
-    }
-    #kilometraje {
-        background-color: #ffffff;
-        height: 30px;
-        width: 121px;
-    }
-    #div_buscar {
-        font-size: 9pt;
-        line-height: 10px;
-        margin: 40px 0 0 116px;
-        position: absolute;
-        z-index: 1;
-    }
-    .redes {
-        display: block;
-        font-size: 18px;
-        margin: 439px 0 0 -37px;
-        position: relative;
-        width: 360px;
-
-    }
-
-    #facebook {
-        width: 29.5%;
-        display: inline-block;
-    }
-    #twitter {
-        width: 29.5%;
-        display: inline-block;
-    }
-    #google {
-        width: 29.5%;
-        display: inline-block;
-    }
-    #encuentra-producto input {
-        margin: -5px -53px;
-    }
-    #auto {
-        height: 135px;
-        margin: 14px -108px;
-        width: 181px;
-    }
-    .marca {
-        font-size: 34px;
-    }
-    .modelo {
-        font-size: 24px;
-    }
-    .year {
-        font-size: 16px;
-    }
-    .kilometraje {
-        font-size: 17px;
-    }
-
-    div.titulo-dorado > h3, div.category-desc > h3, div.head-category > h2 {
-        background-image: url("../images/site/line_up.png");
-        background-position: -41px center;
-        background-repeat: no-repeat;
-        background-size: 365px;
-        color: #000000;
-        font-weight: 400;
-        line-height: 2em;
-        text-align: left;
-        margin: 38px 0 0 -18px;
-        padding: 0px 0 0 11px;
-        font-size: 16px;
-    }
-    .cat-article {
-        background-color: #ffffff;
-        margin-bottom: 14px;
-        width: 186px;
-        margin-left: 0;
-    }
-    .article_image> img {
-        height: 133px;
-        margin: 0 0 0 52px;
-        width: 141px;
-    }
-    .article-catimg{
-        height: 133px;
-        margin: 0 0 0 20px;
-        width: 141px;
-    }
-
-    .article_titl {
-        line-height: 5em;
-    }
-    .pleca-dorado {
-        background-image: url("../images/site/pleca_titulos.png");
-        background-position: 0 10px;
-        background-repeat: no-repeat;
-        background-size: 186px 51px;
-        line-height: 1em;
-    }
-    .cat-article .pleca-dorado {
-        padding: 21px 6px;
-        min-height: 0;
-        height: 45px;
-    }
-    .pleca-dorado div {
-        color: black;
-        font-family: Oswald;
-        font-weight: normal;
-        height: 56px;
-        text-shadow: 0 1px 4px #333;
-        vertical-align: middle;
-        overflow: hidden;
-        text-align: center;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-    .recomendados {
-        height: 430px;
-        margin: -953px 0 0 20px;
-        width: 93%;
-        POSITION: absolute;
-    }
-    .articlelanding-page {
-        float: left;
-        margin: -385px 0 0 -5px;
-        width: 95%;
-        position: absolute;
-    }
-    #t3-content {
-        width: 100%;
-        margin: -79px 0 0 2px;
-    }
-    #article_conteiner {
-        background-color: #ffffff;
-        display: inline-block;
-        height: 160px;
-        margin-left: 6px;
-        margin-top: 22px;
-        width: 242px;
-    }
-    .head-category {
-        margin: -275% 0 0 20.1px;
-        width: 93%;
-        position: absolute;
-    }
-    .table-responsive .col-md-5 {
-        margin: -290% 0 0 -13px;
-        width: 109%;
-        position: absolute;
-    }
-    .img-producto {
-        margin: -1px 0 0 0px;
-        width: 50%;
-    }
-    .div_icons_prod {
-        margin: 0;
-        text-align: center;
-        width: 46%;
-    }
-    .txt-producto {
-        width: 100%;
-    }
-    .msg_ok {
-        margin: -24px 0 0 2px;
-    }
-    .head-category .category-desc {
-        margin: 0 0 0 -11px;
-        font-size: 11px;
-        width: 285px;
-    }
-    .no-article {
-
-        width: 100%;
-    }
-    /***************ENCUENTRA TU ACEITE***********/
-    /********************CUADROS LADING************/
-    #cuadro-left {
-        display: block;
-        padding-right: 5px;
-        width: 25.5%;
-
-    }
-    #cuadro-right {
-        margin: 2px 0 0 104px;
-        height: 236px;
-        position: absolute;
-    }
-    #menu-landing-1 {
-        background-image: url("../images/site/pleca_titulos.png");
-        background-repeat: no-repeat;
-        background-size: 142% auto;
-        width: 360px;
-        text-align: center;
-    }
-
-    #img-lading{
-        background-color: transparent;
-    }
-    #img-lading > a> img {
-        width: 360px;
-        margin: 0;
-    }
-
-    #segundo #cuadro-left {
-        display: inline-block;
-        margin: 0;
-        width: 255px;
-        position: relative;
-    }
-    .container_right .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    #segundo #cuadro-left #img-lading >a >img, #segundo #cuadro-center  #img-lading >a >img,#segundo #cuadro-right #img-lading >a >img{
-        width: 235px;
-    }
-    .containter-table {
-        display: table;
-        padding: 0;
-        width: 695px;
-    }
-    #segundo {
-        display: block;
-        height: 164px;
-        margin-top: 40px;
-        width: 766px;
-    }
-    div.row .t3-sidebar-2, .t3-sidebar-right {
-        margin: -63px 0 0 -8.5px;
-        /* width: 100%; */
-        padding: 0;
-    }
-    #segundo #cuadro-center {
-        display: inline-block;
-        position: relative;
-        width: 257px;
-        margin: 0 0 0 13px;
-    }
-    #segundo #cuadro-right {
-        display: inline-block;
-        width: 230px;
-        position: relative;
-        margin: 0;
-    }
-
-    #menu-landing-2 {
-        width: 237px;
-        text-align: center;
-        padding: 13px;
-        margin-bottom: 15px;
-        height: 47px;
-        background-size: 247px 52px;
-        overflow: hidden;
-    }
-    #menu-landing-2 >a {
-        color: #000000;
-        font-size: 115%;
-        font-style: normal;
-        font-weight: 400;
-    }
-    /********************CUADROS LADING************/
-    .flexslider {
-        height: 292px;
-        margin: 57px 0 0px 24px !important;
-        width: 530px;
-    }
-    #cuadro-left {
-        display: inline-block;
-        padding-right: 5px;
-        width: 300px;
-    }
-    /*********************FOOTER************************
-    .t3-footnav div div .nav-stacked {
-        padding: 0;
-    }*/
-    .t3-footnav .col-sm-4{
-        width: 19%;
-        padding-left: 0;
-        padding-right: 0;
-        padding-top: 12px;
-    }
-    #t3-footer {
-        height: 252px;
-    }
-    .t3-footnav .col-sm-6 {
-        width: 20%;
-    }
-    div#footer_images img {
-        height: 42px;
-    }
-    #contacto {
-        font-size: 12px;
-        line-height: 1.9;
-    }
-    div.t3-footnav {
-        padding: 0;
-        margin-left: 0;
-    }
-   /*********************FOOTER******END***************/
-    /*************************NOSOTROS*******************/
-    .img_prod img {
-        height: 300px;
-        margin: -368px 0 0 1px;
-        /* max-height: 359px; */
-        width: 522px    ;
-    }
-    /*************************NOSOTROS*******************/
-
-    /*************************CONTACTO********************/
-    .data {
-        background-color: #ffffff;
-        width: 447px;
-    }
-    .contact>textarea {
-        background-color: #ffffff;
-        height: 137px;
-        width: 260px;
-    }
-    #idtext {
-        width: 123px;
-    }
-    label {
-        font-weight: normal;
-        font-size: 86%;
-    }
-    .contacto_boton {
-        background-color: #ffd500;
-        height: 30px;
-        margin: -61px 0 0 361px;
-        width: 59px;
-        transform: skew(-20deg, 0deg);
-        -ms-transform: skew(-20deg, 0deg);
-        -webkit-transform: skew(-20deg, 0deg);
-    }
-    .form-inter {
-        margin: -404px 0 0 1px;
-        position: absolute;
-    }
-    .contacto-text {
-        background-color: #ffffff;
-        padding: 23px;
-        width: 98%;
-    }
-    .Cell {
-        display: table-cell;
-        font-weight: 400;
-        padding-left: 0;
-        padding-right: 0;
-        font-size: 15px;
-    }
-    .form-contacto {
-        width: 571px;
-    }
-    /*************************CONTACTO********************/
-    /**************************BARDAHL EN TU VIDA *********************************/
-    .customlanding-page2 {
-        margin: 33px 0 0 45px;
-    }
-    #lbl_au {
-        font-size: 14px;
-        width: 146px;
-        margin: 16px 0 0;
-    }
-    #cuadro_vida >a >img {
-        width: 100px;
-
-    }
-    #cuadro_tu_vida {
-        height: 101px;
-        width: 78px;
-        background-color: white;
-    }
-    #cuadro_vida .tractor{
-        margin: -8px 0 0;
-    }
-    .latestnewstu_vida {
-
-        width: 215px;
-    }
-    #img-tu-vida {
-        height: 10em;
-        width: 206px;
-    }
-    #div-tu-vida {
-        width: 206px;
-    }
-    #div-tu-vida >span {
-        display: inline-block;
-        line-height: normal;
-        margin: 13px;
-        width: 181px;
-        overflow: hidden;
-    }
-    /**************************BARDAHL EN TU VIDA *********************************/
-    /****************************CALENDARIO****************************************/
-
-    .calendar-video{
-        margin: -466px 0 0 1.3%;
-        position: absolute;
-        width: 446px;
-        height: 321px;
-    }
-
-    .img-descarga {
-        background-color: #696969;
-        margin: 0;
-        width: 654px;
-    }    .calendar-img{
-             display: block;
-
-         }
-    .img-cal{
-        display: inline-block;
-        margin: 0 0 0 103px;
-    }
-
-    .calendar-video > iframe{
-        margin: 0 0 0 -3px;
-        width: 449px;
-        height: 339px;
-    }
-    .customleft{
-        background-color: #ffffff;
-        margin-top: 6px;
-        padding: 1%;
-    }
-    /****************************CALENDARIO****************************************/
-}
-
-/* Large screens ----------- */
-@media only screen
-and (min-width : 1824px) {
-
-}
-
 /***************************************MEDIA QUERY PARA DISPOSITIVOS DIFERENTES*************/
 /*********************************************IE9, IE10, IE11*************************************************/
 @media screen and (min-width:0\0) {
@@ -3439,5 +2301,6 @@ and (min-width : 1824px) {
         display: inline-block;
         width: 100px;
     }
+
 }
 /*********************************************IE9, IE10, IE11*************************************************/

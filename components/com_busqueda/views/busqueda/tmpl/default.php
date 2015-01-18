@@ -12,7 +12,7 @@ if ( is_null( $this->data ) ) {
 	?>
     <?php if(isset($_POST['year'])){?>
         <div class="category-desc base-desc recomendados">
-            <h3> Te recomendamos estos productos para tu</h3>
+            <h1> Te recomendamos estos productos para tu</h1>
             <div class="marca">
                 <?php echo $_POST['marca']; ?>
             </div>
@@ -33,30 +33,12 @@ if ( is_null( $this->data ) ) {
     <br>
     <?php
     if(isset($_GET['etiqueta'])){
-        switch($_GET['etiqueta']){
-            case 'automovil':
-                $etiqueta='Automovil';
-                break;
-            case 'camion':
-                $etiqueta='Camion';
-                break;
-            case 'trailer':
-                $etiqueta='Trailer';
-                break;
-            case 'motocicleta':
-                $etiqueta='Motocicleta';
-                break;
-            case 'lancha':
-                $etiqueta='Lancha';
-                break;
-            case 'tractor':
-                $etiqueta='Tractor';
-                break;
-        }
     ?>
 
+
+
         <div class="busqueda-uso">
-            <h3 class="module-title"><span><?php echo $etiqueta; ?></span></h3>
+            <h1 class="module-title"><span><?php echo $_GET['etiqueta']; ?></span></h1>
             <p>Dentro de gama de productos contamos con lubricantes, aditivos para motor, aditivos para gasolina, líquidos de frenos, grasas automotrices, anticongelantes, productos especializados y cosméticos para diferentes tipos de vehículos.</p>
             <p>A continuación aparecen los productos que te recomendamos de acuerdo a tu selección.  En caso de preguntas o dudas específicas, envíanos un mensaje a través de nuestra sección de contacto y con gusto te asesoraremos.</p>
         </div>
@@ -68,11 +50,11 @@ if ( is_null( $this->data ) ) {
 		<?php
 		foreach ( $data as $key => $value ) {
 			$imagenes = $value->images;
-            $value->path;
-            $url= JRoute::_( $value->path.'/'.$value->id.'-'.$value->alias);
+
+            $newUrl = JRoute::_('index.php?option=com_content&view=article&catid='.$value->catid.'&id='.$value->id);
 
 			echo '<div class="cat-article">
-				<a href="'.$url.'">
+				<a href="'.$newUrl.'">
 					<img class="article-catimg" src="' . $imagenes->image_fulltext . '">
 						<span class="pleca-dorado"><div>' . $value->title . '</div></span>
 				</a>

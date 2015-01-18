@@ -1,0 +1,42 @@
+ver. 1.1.10
+
+- bug fix: fixed js error in cases where no tinymce
+
+ver. 1.1.9
+
+-bug fix: return the double jquery error message
+
+ver. 1.1.8
+
+- bug fix: fixed preview, added showbiz-plugins to the preview window.
+
+ver. 1.1.7
+
+- bug fix: added themepunch.plugins to js include, without it the showbiz didn't worked.
+
+ver. 1.1.6
+
+- update: updated showbiz-plugin to the latest version from wordpress
+
+ver. 1.1.5
+
+- bug fix: added compatability for ck editor
+- bug fix: fixed images with spaces display in slide settings.
+
+ver. 1.1.4
+
+- feature: added excerpt global limit and strip tags options
+- change: the templates now installed from files and not from sql file
+- bug fix: fixed caption style template a bit
+
+ver. 1.1.3
+
+- additino: added custom intro text
+
+ver. 1.1.2
+
+- bug fix: fixed editor bug , changed to default editor.
+
+ver. 1.1
+
+- made some joomla specific improvements

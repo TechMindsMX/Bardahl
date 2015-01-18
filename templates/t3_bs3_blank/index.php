@@ -5,6 +5,7 @@
 <![endif]-->
 <link href="//fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css">
 <link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Maven+Pro:400normal,500normal,700normal,900normal|Open+Sans:400normal|Oswald:400normal|Droid+Sans:400normal|Lato:400normal|Ubuntu:400normal|Pacifico:400normal|Josefin+Slab:400normal|Raleway:400normal|Roboto:400normal|PT+Sans:400normal&subset=all">
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 
@@ -17,6 +18,20 @@
 	ga('create', 'UA-57971202-1', 'auto');
 
 	ga('send', 'pageview');
+
+
+		var exploreer=isSafari();
+		if(exploreer==true){
+			var powerdocScript 	= document.createElement('link');
+			powerdocScript.rel 	= 'stylesheet';
+			powerdocScript.type	= 'text/css';
+			powerdocScript.href = 'http://www.bardahl.com.mx/templates/t3_bs3_blank/css/sf_custom.css';
+			document.getElementsByTagName('head')[0].appendChild(powerdocScript);
+		}
+
+	function isSafari() {
+		return /^((?!chrome).)*safari/i.test(navigator.userAgent);
+	}
 </script>
 
 <?php

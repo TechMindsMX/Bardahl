@@ -1,0 +1,72 @@
+<?php
+DEFINE('_JOOMLACOMMENT_COMMENTS','Коментари');
+DEFINE('_JOOMLACOMMENT_COMMENTS_1','Коментари');
+DEFINE('_JOOMLACOMMENT_COMMENTS_2_4','Коментари');
+
+DEFINE('_JOOMLACOMMENT_WRITECOMMENT','Напиши коментар');
+DEFINE('_JOOMLACOMMENT_EDITCOMMENT','Измени коментар');
+DEFINE('_JOOMLACOMMENT_UBBCODE','UBB Код:');
+DEFINE('_JOOMLACOMMENT_ENTERNAME','Име:');
+DEFINE('_JOOMLACOMMENT_ENTERTITLE','Наслов:');
+DEFINE('_JOOMLACOMMENT_SENDFORM','Прати');
+DEFINE('_JOOMLACOMMENT_BY','од');
+
+DEFINE('_JOOMLACOMMENT_COLOR','боја');
+DEFINE('_JOOMLACOMMENT_AQUA','плава');
+DEFINE('_JOOMLACOMMENT_BLACK','црна');
+DEFINE('_JOOMLACOMMENT_BLUE','сива');
+DEFINE('_JOOMLACOMMENT_FUCHSIA','фуксија');
+DEFINE('_JOOMLACOMMENT_GRAY','сиво');
+DEFINE('_JOOMLACOMMENT_GREEN','зелена');
+DEFINE('_JOOMLACOMMENT_LIME','лимон');
+DEFINE('_JOOMLACOMMENT_MAROON','костенлив');
+DEFINE('_JOOMLACOMMENT_NAVY','темно-син');
+DEFINE('_JOOMLACOMMENT_OLIVE','маслинест');
+DEFINE('_JOOMLACOMMENT_PURPLE','пурпурен');
+DEFINE('_JOOMLACOMMENT_RED','црвен');
+DEFINE('_JOOMLACOMMENT_SILVER','сребрена');
+DEFINE('_JOOMLACOMMENT_TEAL','големи');
+DEFINE('_JOOMLACOMMENT_WHITE','бел');
+DEFINE('_JOOMLACOMMENT_YELLOW','жолт');
+
+DEFINE('_JOOMLACOMMENT_SIZE','големина');
+DEFINE('_JOOMLACOMMENT_TINY','ситни');
+DEFINE('_JOOMLACOMMENT_SMALL','мали');
+DEFINE('_JOOMLACOMMENT_MEDIUM','среден');
+DEFINE('_JOOMLACOMMENT_LARGE','голем');
+DEFINE('_JOOMLACOMMENT_HUGE','огромен');
+
+DEFINE('_JOOMLACOMMENT_QUOTE','Цитат');
+DEFINE('_JOOMLACOMMENT_REPLY','Одговор');
+DEFINE('_JOOMLACOMMENT_EDIT','Измени');
+DEFINE('_JOOMLACOMMENT_DELETE','Избриши');
+
+DEFINE('_JOOMLACOMMENT_UBB_WROTE','пишувал:');
+DEFINE('_JOOMLACOMMENT_UBB_QUOTE','Цитат:');
+DEFINE('_JOOMLACOMMENT_UBB_CODE','Код:');
+
+DEFINE('_JOOMLACOMMENT_FORMVALIDATE','Ве молиме внесте го коментарот.');
+DEFINE('_JOOMLACOMMENT_MSG_DELETE','Дали сте сигурни дека сакате да го избришете овој коментар?');
+DEFINE('_JOOMLACOMMENT_SAVINGFAILED','Не може да се испрати коментарот!');
+DEFINE('_JOOMLACOMMENT_EDITINGFAILED','Не може да се измени коментарот!');
+DEFINE('_JOOMLACOMMENT_DELETINGFAILED','Не може да се избрише коментарот!');
+
+DEFINE('_JOOMLACOMMENT_ONLYREGISTERED','Само регестираните корисници можат да внесуваат коментари.');
+DEFINE('_JOOMLACOMMENT_ANONYMOUS','Анонимен');
+
+DEFINE('_JOOMLACOMMENT_ADDNEW','Додади ново');
+DEFINE('_JOOMLACOMMENT_DELETEALL','Избриши се');
+DEFINE('_JOOMLACOMMENT_MSG_DELETEALL','Дали сте сигурни дека сакате да ги избришете сите коментари?');
+DEFINE('_JOOMLACOMMENT_RSS','RSS');
+
+DEFINE('_JOOMLACOMMENT_SEARCH','Пребарај');
+DEFINE('_JOOMLACOMMENT_PROMPT_KEYWORD','Зборови за пребарување');
+DEFINE('_JOOMLACOMMENT_SEARCH_ANYWORDS','Секој збор');
+DEFINE('_JOOMLACOMMENT_SEARCH_ALLWORDS','Сите зборови');
+DEFINE('_JOOMLACOMMENT_SEARCH_PHRASE','Точна фраза');
+DEFINE('_JOOMLACOMMENT_NOSEARCHMATCH','Нема постови или наслови при ова пребарување.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCH','Пребарувањето  %d одоговара.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCHES','Пребарувањата %d одговараат.');
+
+DEFINE('_JOOMLACOMMENT_BEFORE_APPROVAL','Вашиот коментар чека за модерација од страна на администратот за да биде одобрен.');
+?>

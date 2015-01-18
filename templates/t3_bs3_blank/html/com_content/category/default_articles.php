@@ -40,9 +40,9 @@ $url=$url['0'];
 
 echo '
     <div class="module-inner">
-        <h3 class="module-title ">
+        <h1 class="module-title ">
             <span>'.$title.'</span>
-        </h3>
+        </h1>
     </div>
     <br/>';
 $listOrder = $this->escape($this->state->get('list.ordering'));

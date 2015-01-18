@@ -1,0 +1,37 @@
+@media  screen
+and (min-width : 320px)
+and (max-width : 480px) {
+    .table-responsive .col-md-5 {
+        margin: -56% 0 0 -13px !important;
+    }
+
+
+    .head-category {
+        margin: -28% 0 0 20px !important;
+    }
+
+
+    .articlelanding-page {
+        margin: -697px 0 0 14px;
+    }
+
+    .redes {
+        display: block;
+        font-size: 18px;
+        margin: 509px 0 0 -3%;
+        position: relative;
+        width: 136%;
+    }
+    #facebook {
+        display: inline-block;
+        width: 29.5%;
+    }
+    #twitter {
+        display: inline-block;
+        width: 29.5%;
+    }
+    #google {
+        display: inline-block;
+        width: 29.5%;
+    }
+}

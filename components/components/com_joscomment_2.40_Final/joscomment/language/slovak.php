@@ -1,0 +1,72 @@
+<?php
+DEFINE('_JOOMLACOMMENT_COMMENTS', 'Komentárov');
+DEFINE('_JOOMLACOMMENT_COMMENTS_1', 'Komentár');
+DEFINE('_JOOMLACOMMENT_COMMENTS_2_4', 'Komentáre');
+
+DEFINE('_JOOMLACOMMENT_WRITECOMMENT', 'Pridať komentár');
+DEFINE('_JOOMLACOMMENT_EDITCOMMENT', 'Editovať komentár');
+DEFINE('_JOOMLACOMMENT_UBBCODE', 'UBBKód:');
+DEFINE('_JOOMLACOMMENT_ENTERNAME', 'Meno:');
+DEFINE('_JOOMLACOMMENT_ENTERTITLE', 'Názov:');
+DEFINE('_JOOMLACOMMENT_SENDFORM', 'Odoslať');
+DEFINE('_JOOMLACOMMENT_BY', 'od');
+
+DEFINE('_JOOMLACOMMENT_COLOR', 'farba');
+DEFINE('_JOOMLACOMMENT_AQUA', 'svetlomodrá');
+DEFINE('_JOOMLACOMMENT_BLACK', 'čierna');
+DEFINE('_JOOMLACOMMENT_BLUE', 'modrá');
+DEFINE('_JOOMLACOMMENT_FUCHSIA', 'ružová');
+DEFINE('_JOOMLACOMMENT_GRAY', 'šedá');
+DEFINE('_JOOMLACOMMENT_GREEN', 'zelená');
+DEFINE('_JOOMLACOMMENT_LIME', 'svetlozelená');
+DEFINE('_JOOMLACOMMENT_MAROON', 'hnedá');
+DEFINE('_JOOMLACOMMENT_NAVY', 'tmavomodrá');
+DEFINE('_JOOMLACOMMENT_OLIVE', 'olivová');
+DEFINE('_JOOMLACOMMENT_PURPLE', 'purpurová');
+DEFINE('_JOOMLACOMMENT_RED', 'červená');
+DEFINE('_JOOMLACOMMENT_SILVER', 'strieborná');
+DEFINE('_JOOMLACOMMENT_TEAL', 'tyrkysová');
+DEFINE('_JOOMLACOMMENT_WHITE', 'biela');
+DEFINE('_JOOMLACOMMENT_YELLOW', 'žltá');
+
+DEFINE('_JOOMLACOMMENT_SIZE', 'veľkosť');
+DEFINE('_JOOMLACOMMENT_TINY', 'drobné');
+DEFINE('_JOOMLACOMMENT_SMALL', 'malé');
+DEFINE('_JOOMLACOMMENT_MEDIUM', 'stredné');
+DEFINE('_JOOMLACOMMENT_LARGE', 'veľké');
+DEFINE('_JOOMLACOMMENT_HUGE', 'obrovské');
+
+DEFINE('_JOOMLACOMMENT_QUOTE', 'Reaguj');
+DEFINE('_JOOMLACOMMENT_REPLY', 'Odpovedať');
+DEFINE('_JOOMLACOMMENT_EDIT', 'Editovať');
+DEFINE('_JOOMLACOMMENT_DELETE', 'Zmazať');
+
+DEFINE('_JOOMLACOMMENT_UBB_WROTE', 'napísal:');
+DEFINE('_JOOMLACOMMENT_UBB_QUOTE', 'Citácia:');
+DEFINE('_JOOMLACOMMENT_UBB_CODE', 'Kód:');
+
+DEFINE('_JOOMLACOMMENT_FORMVALIDATE', 'Prosím vložte aspoň text komentára.');
+DEFINE('_JOOMLACOMMENT_MSG_DELETE', 'Naozaj chcete vymazať tento komentár?');
+DEFINE('_JOOMLACOMMENT_SAVINGFAILED', 'Príspevok sa nepodarilo uložiť!');
+DEFINE('_JOOMLACOMMENT_EDITINGFAILED', 'Príspevok sa nepodarilo editovať!');
+DEFINE('_JOOMLACOMMENT_DELETINGFAILED', 'Príspevok sa nepodarilo zmazať!');
+
+DEFINE('_JOOMLACOMMENT_ONLYREGISTERED', 'Len registrovaní užívatelia môžu pridať komentár!');
+DEFINE('_JOOMLACOMMENT_ANONYMOUS', 'Anonymný');
+
+DEFINE('_JOOMLACOMMENT_ADDNEW', 'Pridať Nový');
+DEFINE('_JOOMLACOMMENT_DELETEALL', 'Smazať všetky');
+DEFINE('_JOOMLACOMMENT_MSG_DELETEALL', 'Naozaj chcete odstrániť všetky komentáre?');
+DEFINE('_JOOMLACOMMENT_RSS', 'RSS');
+
+DEFINE('_JOOMLACOMMENT_SEARCH', 'Vyhľadávanie');
+DEFINE('_JOOMLACOMMENT_PROMPT_KEYWORD','Hľadané slovo');
+DEFINE('_JOOMLACOMMENT_SEARCH_ANYWORDS','Akékoľvek slovo');
+DEFINE('_JOOMLACOMMENT_SEARCH_ALLWORDS','Všetky slová');
+DEFINE('_JOOMLACOMMENT_SEARCH_PHRASE','Presnú frázu');
+DEFINE('_JOOMLACOMMENT_NOSEARCHMATCH', 'Žiadna téma alebo príspevok neboli nájdené podľa zvolených kritérií.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCH', 'Bol nájdený %d výsledok hľadania.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCHES', 'Bolo nájdených %d výsledkov hľadania.');
+
+DEFINE('_JOOMLACOMMENT_BEFORE_APPROVAL', 'Váš komentár je pripravený na schválenie administrátormi webu a bude zverejnený po schválení.');
+?>

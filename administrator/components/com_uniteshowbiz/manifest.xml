@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade" client="admin">
+    <name>com_uniteshowbiz</name>
+    <creationDate>August 2012</creationDate>
+    <author>Unite CMS</author>
+    <copyright>Copyright (C) 2012 UniteCMS.net, All rights reserved.</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>support@unitecms.net</authorEmail>
+    <authorUrl>http://www.unitecms.net</authorUrl>
+    <version>1.1.10</version>
+	
+    <description>
+        Showbiz extension and module installation success!
+    </description>
+	
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">sql/install.sql</file>
+        </sql>
+    </install>
+	
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">sql/uninstall.sql</file>
+        </sql>
+    </uninstall>
+		
+    <media destination="com_uniteshowbiz" folder="media">
+        <filename>index.html</filename>
+        <folder>cache</folder>
+        <folder>assets</folder>
+    </media>
+	
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>controller.php</filename>
+        <filename>uniteshowbiz.php</filename>
+    </files>
+	
+    <administration>
+    	
+        <menu>COM_UNITESHOWBIZ</menu>
+        <submenu>
+            <menu link="option=com_uniteshowbiz&amp;view=sliders" view="templates">COM_UNITESHOWBIZ_SLIDERS</menu> 
+            <menu link="option=com_uniteshowbiz&amp;view=templates" view="templates">COM_UNITESHOWBIZ_SKIN_EDITOR</menu> 
+            <menu link="option=com_uniteshowbiz&amp;view=templates&amp;navigation=1" view="templates">COM_UNITESHOWBIZ_SKIN_NAV_EDITOR</menu>            
+        </submenu>
+		
+        <files folder="admin">
+            <filename>uniteshowbiz.php</filename>
+            <filename>controller.php</filename>
+            <filename>includes.php</filename>
+            <filename>install.php</filename>
+            <filename>config.xml</filename>
+            <filename>release_log.txt</filename>
+            <filename>index.html</filename>
+			
+            <folder>assets</folder>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>init_data</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>unitejoomla</folder>
+            <folder>settings</folder>
+            <folder>views</folder>
+        </files>
+        
+    </administration>
+	
+    <modules>
+        <module folder="modules" module="mod_unite_showbiz" name="Unite Showbiz" />
+    </modules>
+	
+    <scriptfile>install.php</scriptfile>
+	
+</extension>

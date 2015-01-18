@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_VISFORMS_VISFORMSDATA_VIEW_DEFAULT_TITLE" option="COM_VISFORMS_VISFORMSDATA_VIEW_DATA_OPTION">
+		<message>
+			<![CDATA[COM_VISFORMS_VISFORMSDATA_VIEW_DATA_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+    <fieldset name="request"
+	addfieldpath="administrator/components/com_visforms/models/fields"
+	>
+     
+	  <field name="id" type="modal_visdata"
+				description="COM_VISFORMS_CHOOSE_FORM_DESC"
+				label="COM_VISFORMS_CHOOSE_FORM"
+				required="true"
+			/>
+	<field name="layout"
+				type="hidden"
+				default="data"
+			/>
+	</fieldset>	
+  </fields>  
+	
+		
+		<config><fields name="params"><fieldset name="basic" label="COM_VISFORMS_ATTRIB_VISFORMSDATA_SETTINGS">
+			<field name="show_columnheader" type="radio" default="1" label="Column Headers" description="Show/Hide the Column Headers">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+			<field name="show_tableborder" type="radio" default="1" label="Table Borders" description="Show/Hide the Table Borders">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</field>
+            <field name="display_num" type="list"
+				default="20"
+				description="JGLOBAL_NUMBER_ITEMS_LIST_DESC"
+				label="JGLOBAL_NUMBER_ITEMS_LIST_LABEL">
+				<option value="5">J5</option>
+				<option value="10">J10</option>
+				<option value="15">J15</option>
+				<option value="20">J20</option>
+				<option value="25">J25</option>
+				<option value="30">J30</option>
+				<option value="50">J50</option>
+				<option value="100">J100</option>
+				<option value="0">JALL</option>
+		</field>
+        <field name="sortorder" 
+                type="visdatasortorder" 
+                label="COM_VISOFRMS_VIEW_VISDATA_SORTORDER"
+                description="COM_VISOFRMS_VIEW_VISDATA_SORTORDER_DESC"
+                addfieldpath="/administrator/components/com_visforms/models/fields"
+         />
+		</fieldset></fields></config>
+</metadata>

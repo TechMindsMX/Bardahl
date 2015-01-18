@@ -1,0 +1,73 @@
+<?php
+// Author: Marcos Vinicius Becker
+DEFINE('_JOOMLACOMMENT_COMMENTS', 'Comentários');
+DEFINE('_JOOMLACOMMENT_COMMENTS_1', 'Comentários');
+DEFINE('_JOOMLACOMMENT_COMMENTS_2_4', 'Comentários');
+
+DEFINE('_JOOMLACOMMENT_WRITECOMMENT', 'Escrever comentário');
+DEFINE('_JOOMLACOMMENT_EDITCOMMENT', 'Editar comentário');
+DEFINE('_JOOMLACOMMENT_UBBCODE', 'UBBCode:');
+DEFINE('_JOOMLACOMMENT_ENTERNAME', 'Nome:');
+DEFINE('_JOOMLACOMMENT_ENTERTITLE', 'Título:');
+DEFINE('_JOOMLACOMMENT_SENDFORM', 'Enviar');
+DEFINE('_JOOMLACOMMENT_BY', 'por');
+
+DEFINE('_JOOMLACOMMENT_COLOR', 'Cor');
+DEFINE('_JOOMLACOMMENT_AQUA', 'aqua');
+DEFINE('_JOOMLACOMMENT_BLACK', 'preto');
+DEFINE('_JOOMLACOMMENT_BLUE', 'azul');
+DEFINE('_JOOMLACOMMENT_FUCHSIA', 'rosa');
+DEFINE('_JOOMLACOMMENT_GRAY', 'cinza');
+DEFINE('_JOOMLACOMMENT_GREEN', 'verde');
+DEFINE('_JOOMLACOMMENT_LIME', 'limao');
+DEFINE('_JOOMLACOMMENT_MAROON', 'marrom');
+DEFINE('_JOOMLACOMMENT_NAVY', 'azul escuro');
+DEFINE('_JOOMLACOMMENT_OLIVE', 'oliva');
+DEFINE('_JOOMLACOMMENT_PURPLE', 'roxo');
+DEFINE('_JOOMLACOMMENT_RED', 'vermelho');
+DEFINE('_JOOMLACOMMENT_SILVER', 'prata');
+DEFINE('_JOOMLACOMMENT_TEAL', 'verde escuro');
+DEFINE('_JOOMLACOMMENT_WHITE', 'branco');
+DEFINE('_JOOMLACOMMENT_YELLOW', 'amarelo');
+
+DEFINE('_JOOMLACOMMENT_SIZE', 'Tamanho');
+DEFINE('_JOOMLACOMMENT_TINY', 'minúsculo');
+DEFINE('_JOOMLACOMMENT_SMALL', 'pequeno');
+DEFINE('_JOOMLACOMMENT_MEDIUM', 'médio');
+DEFINE('_JOOMLACOMMENT_LARGE', 'grande');
+DEFINE('_JOOMLACOMMENT_HUGE', 'enorme');
+
+DEFINE('_JOOMLACOMMENT_QUOTE', 'Citaçao');
+DEFINE('_JOOMLACOMMENT_REPLY', 'Resposta');
+DEFINE('_JOOMLACOMMENT_EDIT', 'Editar');
+DEFINE('_JOOMLACOMMENT_DELETE', 'Deletar');
+
+DEFINE('_JOOMLACOMMENT_UBB_WROTE', 'escreveu:');
+DEFINE('_JOOMLACOMMENT_UBB_QUOTE', 'Citaçao:');
+DEFINE('_JOOMLACOMMENT_UBB_CODE', 'Código:');
+
+DEFINE('_JOOMLACOMMENT_FORMVALIDATE', 'É necessário escrever um comentário.');
+DEFINE('_JOOMLACOMMENT_MSG_DELETE', 'Tem certeza que deseja deletar este comentário?');
+DEFINE('_JOOMLACOMMENT_SAVINGFAILED', 'Falha ao enviar comentário!');
+DEFINE('_JOOMLACOMMENT_EDITINGFAILED', 'Falha ao editar comentário!');
+DEFINE('_JOOMLACOMMENT_DELETINGFAILED', 'Falha ao deletar comentário!');
+
+DEFINE('_JOOMLACOMMENT_ONLYREGISTERED', 'Somente usuários registrados podem escrever comentários!');
+DEFINE('_JOOMLACOMMENT_ANONYMOUS', 'Anônimo');
+
+DEFINE('_JOOMLACOMMENT_ADDNEW', 'Adicionar');
+DEFINE('_JOOMLACOMMENT_DELETEALL', 'Deletar todos');
+DEFINE('_JOOMLACOMMENT_MSG_DELETEALL', 'Tem certeza que deseja deletar todos os comentários?');
+DEFINE('_JOOMLACOMMENT_RSS', 'RSS');
+
+DEFINE('_JOOMLACOMMENT_SEARCH', 'Pesquisar');
+DEFINE('_JOOMLACOMMENT_PROMPT_KEYWORD', 'Pesquisa por palavra chave');
+DEFINE('_JOOMLACOMMENT_SEARCH_ANYWORDS', 'Algumas palavras');
+DEFINE('_JOOMLACOMMENT_SEARCH_ALLWORDS', 'Todas as palavras');
+DEFINE('_JOOMLACOMMENT_SEARCH_PHRASE', 'Frase exata');
+DEFINE('_JOOMLACOMMENT_NOSEARCHMATCH', 'Nao foi encontrado nada em sua pesquisa.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCH', 'Sua pesquisa retornou %d resultado.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCHES', 'Sua pesquisa retornou %d resultados.');
+
+DEFINE('_JOOMLACOMMENT_BEFORE_APPROVAL', 'Seu comentário será publicado assim que for aprovado pela administraçao do website.');
+?>

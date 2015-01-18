@@ -1,0 +1,73 @@
+<?php
+// Author: Peter Swemmelaar
+DEFINE('_JOOMLACOMMENT_COMMENTS', 'Commentaar');
+DEFINE('_JOOMLACOMMENT_COMMENTS_1', 'Commentaar');
+DEFINE('_JOOMLACOMMENT_COMMENTS_2_4', 'Commentaar');
+
+DEFINE('_JOOMLACOMMENT_WRITECOMMENT', 'Schrijf commentaar');
+DEFINE('_JOOMLACOMMENT_EDITCOMMENT', 'Wijzig commentaar');
+DEFINE('_JOOMLACOMMENT_UBBCODE', 'UBBCode:');
+DEFINE('_JOOMLACOMMENT_ENTERNAME', 'Naam:');
+DEFINE('_JOOMLACOMMENT_ENTERTITLE', 'Onderwerp:');
+DEFINE('_JOOMLACOMMENT_SENDFORM', 'Zenden');
+DEFINE('_JOOMLACOMMENT_BY', 'door');
+
+DEFINE('_JOOMLACOMMENT_COLOR', 'kleur');
+DEFINE('_JOOMLACOMMENT_AQUA', 'aqua');
+DEFINE('_JOOMLACOMMENT_BLACK', 'zwart');
+DEFINE('_JOOMLACOMMENT_BLUE', 'blauw');
+DEFINE('_JOOMLACOMMENT_FUCHSIA', 'fuchsia');
+DEFINE('_JOOMLACOMMENT_GRAY', 'grijs');
+DEFINE('_JOOMLACOMMENT_GREEN', 'groen');
+DEFINE('_JOOMLACOMMENT_LIME', 'limoen');
+DEFINE('_JOOMLACOMMENT_MAROON', 'maroon');
+DEFINE('_JOOMLACOMMENT_NAVY', 'navy');
+DEFINE('_JOOMLACOMMENT_OLIVE', 'olive');
+DEFINE('_JOOMLACOMMENT_PURPLE', 'paars');
+DEFINE('_JOOMLACOMMENT_RED', 'rood');
+DEFINE('_JOOMLACOMMENT_SILVER', 'zilver');
+DEFINE('_JOOMLACOMMENT_TEAL', 'teal');
+DEFINE('_JOOMLACOMMENT_WHITE', 'wit');
+DEFINE('_JOOMLACOMMENT_YELLOW', 'geel');
+
+DEFINE('_JOOMLACOMMENT_SIZE', 'grootte');
+DEFINE('_JOOMLACOMMENT_TINY', 'tiny');
+DEFINE('_JOOMLACOMMENT_SMALL', 'small');
+DEFINE('_JOOMLACOMMENT_MEDIUM', 'medium');
+DEFINE('_JOOMLACOMMENT_LARGE', 'large');
+DEFINE('_JOOMLACOMMENT_HUGE', 'huge');
+
+DEFINE('_JOOMLACOMMENT_QUOTE', 'Quote');
+DEFINE('_JOOMLACOMMENT_REPLY', 'Antwoorden');
+DEFINE('_JOOMLACOMMENT_EDIT', 'Wijzig');
+DEFINE('_JOOMLACOMMENT_DELETE', 'Verwijder');
+
+DEFINE('_JOOMLACOMMENT_UBB_WROTE', 'schreef:');
+DEFINE('_JOOMLACOMMENT_UBB_QUOTE', 'Quote:');
+DEFINE('_JOOMLACOMMENT_UBB_CODE', 'Code:');
+
+DEFINE('_JOOMLACOMMENT_FORMVALIDATE', 'U dient minimaal wat commentaar te schrijven.');
+DEFINE('_JOOMLACOMMENT_MSG_DELETE', 'Weet u zeker dat u dit commentaar wilt verwijderen?');
+DEFINE('_JOOMLACOMMENT_SAVINGFAILED', 'Het zenden van commentaar is mislukt!');
+DEFINE('_JOOMLACOMMENT_EDITINGFAILED', 'Het wijzigen van het commentaar is mislukt!');
+DEFINE('_JOOMLACOMMENT_DELETINGFAILED', 'Het verwijderen van het commentaar is mislukt!');
+
+DEFINE('_JOOMLACOMMENT_ONLYREGISTERED', 'Alleen geregistreerde gebruikers mogen commentaar plaatsen!');
+DEFINE('_JOOMLACOMMENT_ANONYMOUS', 'Anoniem');
+
+DEFINE('_JOOMLACOMMENT_ADDNEW', 'Toevoegen');
+DEFINE('_JOOMLACOMMENT_DELETEALL', 'Alle berichten verwijderen');
+DEFINE('_JOOMLACOMMENT_MSG_DELETEALL', 'Weet je zeker dat je alle commentaar wilt verwijderen?');
+DEFINE('_JOOMLACOMMENT_RSS', 'RSS');
+
+DEFINE('_JOOMLACOMMENT_SEARCH', 'Zoeken');
+DEFINE('_JOOMLACOMMENT_PROMPT_KEYWORD','Zoekwoord');
+DEFINE('_JOOMLACOMMENT_SEARCH_ANYWORDS','Om het even welk woord');
+DEFINE('_JOOMLACOMMENT_SEARCH_ALLWORDS','Alle woorden');
+DEFINE('_JOOMLACOMMENT_SEARCH_PHRASE','Exacte zin');
+DEFINE('_JOOMLACOMMENT_NOSEARCHMATCH', 'Er zijn geen resultaten die voldoen aan je zoekopdracht.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCH', '%d resultaat gevonden.');
+DEFINE('_JOOMLACOMMENT_SEARCHMATCHES', '%d resultaten gevonden.');
+
+DEFINE('_JOOMLACOMMENT_BEFORE_APPROVAL', 'Uw commentaar wacht op de goedkeuring van een administrator en zal pas na goedkeuring gepubliceerd worden.');
+?>
