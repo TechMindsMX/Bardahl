@@ -9,6 +9,7 @@ body {
     font-style: normal;
     margin: 0 auto;
     max-width: 1300px;
+    min-width: 1300px;
     width: 100%;
     font-weight: 300;
 }
@@ -488,6 +489,9 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 #encuentra-producto {
     text-align: center;
 }
+.table .table {
+    background-color: #ffffff;
+}
 
 #div_buscar  h3{
     color: #000000;
@@ -512,6 +516,10 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
     z-index: 1;
     margin: 16px;
     text-transform: capitalize;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 99%;
+    padding: 0;
 }
 
 .breadcrumb a{
@@ -1306,7 +1314,6 @@ nav.wrap {
     display: table;
     background-color: white;
     margin: 15px auto;
-    width: 797px;
 }
 .Table .Row
 {
@@ -1319,7 +1326,14 @@ nav.wrap {
     font-weight: 400;
     padding-left: 5px;
     padding-right: 5px;
+}
+.tienda{
+    width: 200px;
+    text-align: left;
+}
 
+.direccion{
+    width: 700px;
 }
 .fila0 { background-color: #b6cef0;}
 .fila1 { background-color: #E1E8F1;}
@@ -1501,7 +1515,10 @@ h1.article-title {
 .t3-megamenu {
     font-style: normal;
     font-weight: 400;
-    margin: 28px 547px;
+    margin: 28px 47.5%;
+}
+.cat-children{
+    visibility: hidden;
 }
 
 .t3-megamenu .nav{
@@ -1558,6 +1575,13 @@ div#calif {
 
 .img-prod{
     margin: 7px 2px;
+    position: absolute;
+    width: 900px;
+}
+
+.img_blog img {
+    margin: -431px 0 0 1%;
+    max-height: 359px;
     position: absolute;
     width: 900px;
 }
@@ -1686,6 +1710,21 @@ and (min-width : 320px)
 and (max-width : 480px) {
     body{
         max-width: 300px;
+        min-width: 300px;
+    }
+    .container_left .row {
+        margin: 18px auto;
+    }
+    .img-prod {
+        margin: 10px -4px;
+        position: relative;
+        width: 100%;
+    }
+
+
+    div.category-desc > h1, div.head-category > h2 {
+        width: 100%;
+        background-size: cover;
     }
     .table-responsive {
         -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -1748,15 +1787,10 @@ and (max-width : 480px) {
     }
     /*******************HEADER**********************/
     /*******************MENU************************/
-    .Cell {
-        display: inline-block!important;
-    }
-    .Row{
-        display: block!important;
-    }
 .t3-navbar2{
     display: none;
 }
+
 .head-search .hidden{
     display: block !important;
     visibility: visible !important;
@@ -1804,27 +1838,27 @@ and (max-width : 480px) {
     .redes {
         display: block;
         font-size: 18px;
-        margin: 509px 0 0 -3%;
+        margin: 0 auto;
         position: relative;
-        width: 136%;
+        width: 109%;
 
     }
     #facebook {
-        width: 29.5%;
+        width: 38.5%;
         display: inline-block;
     }
     #twitter {
-        width: 29.5%;
+        width: 36.5%;
         display: inline-block;
     }
     #google {
-        width: 29.5%;
+        width: 20.5%;
         display: inline-block;
     }
     #auto {
-        height: 153px;
-        margin: 11% -18px;
-        width: 287px;
+
+        margin: auto 18px;
+
     }
     .marca {
         font-size: 34px;
@@ -1880,7 +1914,10 @@ and (max-width : 480px) {
 
     #t3-content {
         width: 100%;
-        margin: 20px 0 0 2px;
+        margin: 20px auto;
+    }
+    .texto-promociones{
+        width: 100%;
     }
     #article_conteiner {
         background-color: #ffffff;
@@ -1891,7 +1928,7 @@ and (max-width : 480px) {
         width: 300px;
     }
     .head-category {
-        margin: -296% 0 0 20.1px;
+        margin: -285% 0 0 17.1px;
         width: 93%;
         position: absolute;
     }
@@ -1905,8 +1942,8 @@ and (max-width : 480px) {
         visibility: hidden;
     }
     .img-producto {
-        margin: 0 0 0 37px;
-        width: 75%;
+        margin: 0 0 0 30px;
+        width: 234px;
     }
     .div_icons_prod {
         margin: 0;
@@ -1939,13 +1976,18 @@ and (max-width : 480px) {
     }
     /***************MODULOS HEAD******************/
     .video_top iframe{
-        width: 272px;
-        height: 336px;
+        width: 243px;
+        height: 313px;
     }
+
+
+
+
     .texto-producto .jqDnR p img{
-        background: url("../../../images/img-bardahlfusion-movil.jpg") no-repeat scroll 0 0 / 257px auto rgba(0, 0, 0, 0);
-        box-sizing: border-box;
         display: block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url("../../../images/calendario/2015/img-bardahlfusion-movil.jpg") no-repeat scroll 0 0 / 257px auto rgba(0, 0, 0, 0);
         padding-left: 328px;
     }
 
@@ -2111,6 +2153,16 @@ and (max-width : 480px) {
         margin-left: -15px;
         margin-top: -13px;
         margin-bottom: 0;
+        width: 100%;
+    }
+    .tienda{
+        width: 100px;
+    }
+    .direccion{
+        width: 133px;
+    }
+    .table .table {
+        background-color: #ffffff;
     }
     .Table .Row
     {
@@ -2118,8 +2170,7 @@ and (max-width : 480px) {
     }
     .Cell
     {
-        display: table-cell;
-        font-size: 9px;
+        display: inline-block;
         font-weight: 300;
         padding-left: 0;
         padding-right: 3px;
@@ -2181,12 +2232,14 @@ and (max-width : 480px) {
     /************************CALENDARIO********END*********************************/
     /**************************BARDAHL EN TU VIDA *********************************/
     .customlanding-page2 {
-        margin: 33px 0 0 45px;
+        margin: 56px 0 0 15px;
+        width: 100%;
+        height: 350px;
     }
     #lbl_au {
         display: none;
     }
-    #cuadro_vida >a >img {
+    #cuadro_vida >a >img, #cuadro_vida_trac a img {
         width: 50px;
 
     }
@@ -2195,8 +2248,20 @@ and (max-width : 480px) {
         width: 78px;
         background-color: white;
     }
-    #cuadro_vida .tractor{
-        margin: -8px 0 0;
+    #cuadro_vida_trac{
+        margin: 48px 0 0 34px;
+    }
+    #img-tu-vida {
+        width: 100%;
+    }
+    .latestnewstu_vida {
+        width: 95%;
+    }
+    #div-tu-vida {
+        width: 100%;
+    }
+    .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3, .texto-header > h3 {
+        padding: 0;
     }
 
     /**************************BARDAHL EN TU VIDA *********************************/
@@ -2238,6 +2303,7 @@ and (max-width : 480px) {
         width: 99%;
         background-color: white;
         margin: -186px 0 0 1px;
+        background-image: none;
     }
 
     div.container_left .row #name0 {
@@ -2247,16 +2313,19 @@ and (max-width : 480px) {
     }
 
     div.container_left .row #name1 {
-        width: 91%;
         background-color: white;
-        margin: 94% 0 0 15px;
-
+        width: 100%;
+        margin: 423px auto;
+        height: 14px;
     }
 
     .flexslider {
-        height: 282px;
-        margin: 54px 0 0 17px !important;
-        width: 113%;
+        margin: 47px 0 0 9px !important;
+        width: 109%;
+        height: 330px;
+    }
+    .flex-viewport {
+        height: 342px;
     }
 
     #div_buscar {
@@ -2264,9 +2333,6 @@ and (max-width : 480px) {
         line-height: 10px;
         margin: 11px 0 0;
         z-index: 0;
-    }
-    .img-producto {
-        z-index: 100;
     }
     #contacto {
         font-size: 17px;
@@ -2293,3 +2359,23 @@ and (max-width : 480px) {
 
 }
 /*********************************************IE9, IE10, IE11*************************************************/
+
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .head-category {
+        margin: -293% 0 0 20px !important;
+    }
+
+    .img-prod {
+        margin: 30px 0.5px;
+    }
+
+
+    .img_blog img {
+        margin: -828px 0 0 1% !important;
+        position: absolute !important;
+        width: 98% !important;
+    }
+
+}
