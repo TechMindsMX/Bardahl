@@ -43,7 +43,7 @@ $jinput = JFactory::getApplication ()->input;
 </script>
 
 <div id='div_buscar'>
-    <form id="form_buscar"  name='form1' action='/index.php?option=com_busqueda' method='post' enctype='multipart/form-data'
+    <form id="form_buscar"  name='form1' action='index.php?option=com_busqueda' method='post' enctype='multipart/form-data'
           xmlns="http://www.w3.org/1999/html">
         <label for="titulo">
             <h3> Encuentra tu Aceite</h3>
@@ -76,7 +76,6 @@ $jinput = JFactory::getApplication ()->input;
         <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
         <p id="encuentra-producto" align="right">
             <input id="buscar" type='image' name='enviar'align="right" src="templates/t3_bs3_blank/images/site/btn_buscar.png" />
-
         </p>
 
     </form>
@@ -84,7 +83,6 @@ $jinput = JFactory::getApplication ()->input;
 <div class="auto">
     <img id="auto"  src="templates/t3_bs3_blank/images/site/mustang.png">
 </div>
-<div id="fb-root"></div>
 <script>
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -93,6 +91,7 @@ $jinput = JFactory::getApplication ()->input;
         js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
+</div>
 <div class="redes">
     <div id="facebook">
         <div class="fb-like" data-href="http://bardahl.com.mx/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
@@ -123,4 +122,4 @@ $jinput = JFactory::getApplication ()->input;
             })();
         </script>
     </div>
-</div>
+

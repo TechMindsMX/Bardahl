@@ -23,8 +23,27 @@ if ( is_null( $this->data ) ) {
                Año:<?php echo ' '.$_POST['year']; ?>
             </div>
             <div class="kilometraje">
-                <?php echo $_POST['kilometraje']; ?>
+                <?php echo $_POST['kilometraje']; ?> Kms
             </div>
+            <div class="conocer">¿Quieres conocer más sobre las caracteristicas y productos recomendados para tu vehículo?</div>
+<br>
+            <form class="contacto" method="post">
+                <div class="data">
+                    <table>
+                        <tbody><tr>
+                            <td>Correo Electrónico: </td>
+                            <td><input type="text" name="email" class="email" id="idtext"></td>
+                            <td><input type="button" onclick="envio()" value="Enviar" class="pdf_boton"></td>
+                            <td>Ver ejemplo</td>
+                        </tr>
+
+                        </tbody></table>
+                </div>
+                <br>
+            </form>
+
+
+
         </div>
      <?php } ?>
     <div>
@@ -51,7 +70,7 @@ if ( is_null( $this->data ) ) {
 		foreach ( $data as $key => $value ) {
 			$imagenes = $value->images;
 
-            $newUrl = JRoute::_('index.php?option=com_content&view=article&catid='.$value->catid.'&id='.$value->id);
+           $newUrl = ''; # JRoute::_('index.php?option=com_content&view=article&catid='.$value->catid.'&id='.$value->id);
 
 			echo '<div class="cat-article">
 				<a href="'.$newUrl.'">

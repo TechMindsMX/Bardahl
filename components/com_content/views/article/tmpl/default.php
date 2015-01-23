@@ -43,7 +43,7 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 	<?php endif; ?>
 	<?php if ($params->get('show_title') || $params->get('show_author')) : ?>
 	<div class="page-header">
-		<h2 itemprop="name">
+		<h1 itemprop="name">
 			<?php if ($params->get('show_title')) : ?>
 				<?php if ($params->get('link_titles') && !empty($this->item->readmore_link)) : ?>
 					<a href="<?php echo $this->item->readmore_link; ?>" itemprop="url"> <?php echo $this->escape($this->item->title); ?></a>
@@ -51,7 +51,7 @@ if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->
 					<?php echo $this->escape($this->item->title); ?>
 				<?php endif; ?>
 			<?php endif; ?>
-		</h2>
+		</h1>
 		<?php if ($this->item->state == 0) : ?>
 			<span class="label label-warning"><?php echo JText::_('JUNPUBLISHED'); ?></span>
 		<?php endif; ?>

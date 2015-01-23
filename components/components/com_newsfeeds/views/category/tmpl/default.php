@@ -22,9 +22,9 @@ $pageClass = $this->params->get('pageclass_sfx');
 		</h1>
 	<?php endif; ?>
 	<?php if ($this->params->get('show_category_title', 1)) : ?>
-		<h2>
+		<h1>
 			<?php echo JHtml::_('content.prepare', $this->category->title, '', 'com_newsfeeds.category.title'); ?>
-		</h2>
+		</h1>
 	<?php endif; ?>
 
 	<?php if ($this->params->get('show_tags', 1) && !empty($this->category->tags->itemTags)) : ?>

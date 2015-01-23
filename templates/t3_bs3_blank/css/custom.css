@@ -14,6 +14,15 @@ body {
     font-weight: 300;
 }
 
+.t3-wrapper #t3-header .row .col-sm-4{
+    width: 100%;
+}
+
+.title-producto{
+    margin: -421px 0;
+    position: absolute;
+}
+
 .video_top{
     margin: 56px 0 0 29px;
 }
@@ -38,25 +47,39 @@ body {
     width: 113%;
 }
 
+.conocer{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.pdf_boton {
+    background-color: #f9cf00;
+    height: 38px;
+    margin: -12px 28px;
+    position: relative;
+    transform: skew(-20deg, 0deg);
+    width: 103px;
+}
 .marca{
-    font-size: 79px;
+    font-size: 59px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .modelo{
-    font-size: 40px;
+    font-size: 33px;
     font-weight: 400;
+    text-transform: capitalize;
 }
 
 .year{
     font-size: 28px;
     font-weight: 400;
-    margin: 9px 0 0;
 }
 .kilometraje{
     font-size: 29px;
     font-weight: 400;
-    margin: 17px 0 0;
 }
 
 #kilometraje{
@@ -100,7 +123,7 @@ body {
     color: #000000;
 }
 #line-menu{
-    margin: 24px 0 0 129%;
+    margin: 24px 0 0 44%;
     position: absolute;
 }
 .head-search ul li {
@@ -120,18 +143,18 @@ div.head-search ul li a.icono-redes {
     color: white;
 }
 .nav >li >a:hover {
-    background-color: #FFD500;
+    background-color: #F9CF00;
     color: black;
 }
 .presentaciones{
     background-color: transparent;
-    color: #ffd500;
+    color: #F9CF00;
     font-size: 24px;
     font-weight: 400;
     padding: 0 125px;
 }
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus, .head-search li.item-191 > a, .head-search li.item-191 > a:hover, li.item-191 {
-    background-color: #ffd500;
+    background-color: #F9CF00;
     color: black;
     background-image: none;
 }
@@ -140,14 +163,14 @@ div.head-search ul li a.icono-redes {
 .animate >ul >li.active >a
 
 {
-    background-color: #ffd500;
+    background-color: #F9CF00;
     color: #000000;
     -ms-transform: skew(-20deg, 0deg); /* IE 9 */
     -webkit-transform: skew(-20deg, 0deg); /* Chrome, Safari, Opera */
     transform: skew(-20deg, 0deg);
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    background-color: #ffd500;
+    background-color: #F9CF00;
     color: black;
     height: 31px;
 }
@@ -192,7 +215,7 @@ div.t3-navbar{
 
 
 .navbar-nav > li:focus{
-    color: #ffd500;
+    color: #F9CF00;
 }
 
 .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3, .texto-header > h3 {
@@ -221,8 +244,12 @@ div.t3-navbar{
 .contacto-text{
     background-color: #ffffff;
     padding: 23px;
-    width:     1300px;
+    width:     100%;
     font-family: Maven pro;
+}
+
+.contacto-text .Table{
+    width: 100%;
 }
 .contacto-text > a {
     color: #000000;
@@ -262,7 +289,7 @@ div.titulo-dorado > h3, div.category-desc > h1, div.head-category > h2{
     background-repeat: no-repeat;
     background-size: 55% auto;
     color: #000000;
-    font-size: 30px;
+    font-size: 23px;
     font-weight: bold;
     line-height: 2em;
     text-align: left;
@@ -346,6 +373,13 @@ div.home{
 #form_buscar{
     margin: 0 0 0 0;
     width: 222px;
+}
+.t3-navhelper{
+    display: none;
+}
+
+.wrap .container{
+    width: 100%;
 }
 div.container_left .row #name0{
     padding: 0;
@@ -443,8 +477,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .btn-primary {
-    background-color: #ffd500;
-    border-color: #ffd500;
+    background-color: #F9CF00;
+    border-color: #F9CF00;
     color: #ffffff;
 }
 .contact-2{
@@ -665,7 +699,7 @@ ul.noti-event-home {
 }
 
 .boton_envio{
-    background-color: #ffd500;
+    background-color: #F9CF00;
     height: 38px;
     margin: 10px 0 0 687px;
     width: 103px;
@@ -675,9 +709,9 @@ ul.noti-event-home {
 }
 
 .contacto_boton{
-    background-color: #ffd500;
+    background-color: #F9CF00;
     height: 38px;
-    margin: -59px 0 0 741px;
+    margin: -25px 0 0 741px;
     width: 103px;
     transform: skew(-20deg, 0deg);
     -ms-transform: skew(-20deg, 0deg); /* IE 9 */
@@ -714,7 +748,7 @@ ul.noti-event-home {
     margin: 30px 0;
 }
 .header-contacto{
-    margin: -524px 0 0 20px;
+    margin: -433px 0 0 20px;
 }
 
 #cal_container{
@@ -1025,7 +1059,7 @@ div.row .t3-sidebar-2, .t3-sidebar-right {
 
 .t3-sidebar-2 div.t3-module, .t3-sidebar-right div.t3-module, {
     background-image: url("../images/plecadorada.png");
-    background-color: #ffd500;
+    background-color: #F9CF00;
 }
 
 
@@ -1099,7 +1133,7 @@ div.t3-footnav{
     margin-left: 15px;
 }
 #Mod103{
-  background-color: #FFD500;
+  background-color: #F9CF00;
     height: 180px;
 }
 div.t3-footnav .t3-module {
@@ -1286,7 +1320,7 @@ nav.wrap {
 
 .calendar-video{
     height: 33.1em;
-    margin: -623px 0 0 -36px;
+    margin: -572px 0 0 -36px;
     width: 900px;
 }
 
@@ -1348,7 +1382,7 @@ nav.wrap {
 .texto-contacto{
     padding: 0;
     width: 1300px;
-    margin: 20px auto;
+    margin: 99px auto;
 }
 
 .conteiner-slider{
@@ -1421,7 +1455,7 @@ nav.wrap {
 
 /*Categorias*/
 .article-catimg, .article_image> img{
-    height: 180px;
+    height: 218px;
     margin: 0 auto;
     display: block;
 }
@@ -1539,7 +1573,7 @@ h1.article-title {
     position: absolute;
 }
 .calendar-descarga{
-    width: 1326px;
+    width: 100%;
     margin: 0 0 0 -23px;
 }
 
@@ -1574,7 +1608,7 @@ div#calif {
 }
 
 .img-prod{
-    margin: 7px 2px;
+    margin: -372px 2px;
     position: absolute;
     width: 900px;
 }
@@ -1713,42 +1747,95 @@ and (max-width : 480px) {
         min-width: 300px;
     }
     .container_left .row {
-        margin: 18px auto;
+       margin: 18px auto;
     }
     .img-prod {
+        background-color: white;
         margin: 10px -4px;
+        padding: 13px;
         position: relative;
         width: 100%;
     }
+    .t3-mainbody {
+        padding-bottom: 0;
+    }
 
-
+    .carrazo-texto .jqDnR .flexslider {
+        height: auto;
+        width: 500px;
+    }
     div.category-desc > h1, div.head-category > h2 {
+        background-position: -14px center;
+        background-size: 327px auto;
+        font-size: 16px;
         width: 100%;
-        background-size: cover;
+        margin: auto;
     }
     .table-responsive {
         -ms-overflow-style: -ms-autohiding-scrollbar;
         border:none;
         -webkit-overflow-scrolling: touch;
     }
+
+
+    .header-contacto {
+        background-color: white;
+        margin: auto;
+    }
+
+
     .texto-producto, .promocion-text {
         background-color: #ffffff;
-        padding: 23px;
+        padding: 0px;
         width: 100%;
     }
     .homelink img {
-        margin: -193px 0 0 25px;
-        position: absolute;
+        margin: auto;
+        position: relative;
     }
     .articlelanding-page .base-desc {
         font-size: 11px;
         margin: -73% 0 0 2%;
     }
+
+    .productos-form {
+        width: 100%;
+    }
     /*******************HEADER***********************/
+    nav.t3-mainnav {
+        margin: -94px 0;
+        position: absolute;
+    }
+    #img-calendario{
+        display: none;
+    }
+
+    .img-calendario{
+        display: block !important;
+        visibility: visible !important;
+    }
+    .img-calendario img{
+        width: 100%;
+    }
+    .texto-producto{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .calendar-descarga{
+        margin: 0 0 0 -10px;
+        width: 107%;
+    }
+
+    #showbiz_1_2.showbiz-container {
+
+        min-width: 100% !important;
+    }
+
+
     #t3-header {
-        background-image:none;
-        height: 106px;
-        margin: 0 0 0 -15px;
+        background-image: none;
+        height: 76px;
         width: 104.5%;
     }
     .head-search ul li {
@@ -1781,14 +1868,31 @@ and (max-width : 480px) {
     .head-search {
         font-weight: normal;
         margin-left: 0;
-        margin-top: -5.9%;
         width: 100%;
-        height: 167px;
+        margin-top: auto;
     }
     /*******************HEADER**********************/
     /*******************MENU************************/
 .t3-navbar2{
     display: none;
+}
+
+.texto-contacto {
+    margin: auto;
+}
+
+.title-producto {
+    height: 45px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    text-overflow: ellipsis;
+
+}
+
+.t3-sidebar .module-title, .module-title, div.titulo-dorado > h3, .texto-header > h3 {
+    background-image: none;
+    background-color: #F9CF00;
 }
 
 .head-search .hidden{
@@ -1832,16 +1936,34 @@ and (max-width : 480px) {
         float:right;
         font-size:40px;
     }
-
+    .video_top {
+        margin: auto;
+        padding: 1px;
+    }
     /*******************MENU************************/
     /*******************ENCUENTRA TU ACEITE********/
+    .t3-navhelper{
+        display: block;
+    }
+    .container_left .t3-spotlight-1 #name1{
+        display: none;
+    }
+
     .redes {
         display: block;
         font-size: 18px;
         margin: 0 auto;
+        padding: 15px;
         position: relative;
-        width: 109%;
+        width: 100%;
 
+    }
+    #encuentra-producto input {
+        margin: auto -81px;
+    }
+    .auto {
+        margin: 37px -30px;
+        width: 10px;
     }
     #facebook {
         width: 38.5%;
@@ -1874,17 +1996,18 @@ and (max-width : 480px) {
     }
 
     div.titulo-dorado > h3, div.category-desc > h3, div.head-category > h2 {
-        background-image: url("../images/site/line_up.png");
+      /* background-image: url("../images/site/line_up.png");
         background-position: -41px center;
         background-repeat: no-repeat;
         background-size: 146% auto;
         color: #000000;
-        /* font-weight: 400; */
+        /* font-weight: 400;
         line-height: 3em;
-        /* text-align: left; */
+        /* text-align: left;
         margin: 38px 0 0 -18px;
         padding: 0px 0 0 11px;
-        font-size: 16px;
+        font-size: 16px;*/
+        margin: auto;
     }
     .cat-article {
         background-color: #ffffff;
@@ -1900,10 +2023,10 @@ and (max-width : 480px) {
         line-height: 4em;
     }
     .recomendados {
-        height: 430px;
-        margin: -953px 0 0 20px;
-        width: 93%;
-        POSITION: absolute;
+        background-color: white;
+        margin: 0;
+        position: relative;
+        width: 100%;
     }
     .articlelanding-page {
         float: left;
@@ -1914,7 +2037,7 @@ and (max-width : 480px) {
 
     #t3-content {
         width: 100%;
-        margin: 20px auto;
+
     }
     .texto-promociones{
         width: 100%;
@@ -1928,9 +2051,9 @@ and (max-width : 480px) {
         width: 300px;
     }
     .head-category {
-        margin: -285% 0 0 17.1px;
-        width: 93%;
-        position: absolute;
+        background-color: white;
+        margin: 0;
+        width: 100%;
     }
     .table-responsive .col-md-5 {
         margin: -320% 0 0 -13px;
@@ -1952,14 +2075,20 @@ and (max-width : 480px) {
     }
     .txt-producto {
         width: 100%;
+        padding-bottom: 1px;
+        padding-top: 1px;
+    }
+
+
+    .t3-module {
+        margin-bottom: 0;
     }
     .msg_ok {
         margin: -24px 0 0 2px;
     }
     .head-category .category-desc {
-        margin: 0 0 0 -11px;
-        font-size: 11px;
-        width: 285px;
+        padding: 8px;
+        width: 100%;
     }
     .no-article {
 
@@ -1976,11 +2105,12 @@ and (max-width : 480px) {
     }
     /***************MODULOS HEAD******************/
     .video_top iframe{
-        width: 243px;
-        height: 313px;
+        width: 100%;
     }
 
-
+.jqDnR{
+    padding: 14px;
+}
 
 
     .texto-producto .jqDnR p img{
@@ -2012,7 +2142,7 @@ and (max-width : 480px) {
         background-image: url("../images/site/pleca_titulos.png");
         background-repeat: no-repeat;
         background-size: 142% auto;
-        width: 295px;
+        width: 299px;
         text-align: center;
     }
 
@@ -2020,7 +2150,7 @@ and (max-width : 480px) {
         background-color: transparent;
     }
     #img-lading > a> img {
-        width: 294px;
+        width: 299px;
         margin: 0;
     }
 
@@ -2078,17 +2208,18 @@ and (max-width : 480px) {
         width: 94px;
     }
     .data{
+        margin: auto;
         padding: 7px;
-        width: 309px;
+        width: 100%;
     }
 
     .contact-textarea > textarea {
         height: 150px;
-        width: 309px;
+        width: 100%;
     }
 
     .ultimo{
-        width: 309px;
+        width: 100%
     }
 
     .msg {
@@ -2112,12 +2243,14 @@ and (max-width : 480px) {
         width: 141px;
     }
     .contacto_boton {
-        height: 32px;
-        margin: -37px 0 0 139px;
-        width: 87px;
+       margin: -36px 0 0 185px;
     }
 
-    .contacto-text {
+    .contacto-text .Table {
+        width: 100%;
+    }
+    .texto-contacto {
+        padding: 0;
         width: 100%;
     }
     /********************CONTACTO******************/
@@ -2150,8 +2283,6 @@ and (max-width : 480px) {
     .Table
     {
         display: table;
-        margin-left: -15px;
-        margin-top: -13px;
         margin-bottom: 0;
         width: 100%;
     }
@@ -2176,13 +2307,15 @@ and (max-width : 480px) {
         padding-right: 3px;
     }
     /*********************END CREACION DE TABLA DIV********************************/
+
     .busqueda-uso {
-        height: 310px;
-        margin: -877px 0 0 4px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        width: 295px;
+         padding: 1px;
+        margin: 0;
+        position: relative;
+        background-color: #ffffff;
+        width: 100%;
     }
+
     /************************CALENDARIO********************************************/
     .calendar-video iframe{
         width: 286px;
@@ -2191,7 +2324,8 @@ and (max-width : 480px) {
         margin: -184px 0 0 -16px;
     }
     .calendar-fondos{
-        margin: 0 0 0 -23px;
+        margin: auto;
+        width: 100%;
     }
     .t3-module.contacto {
         width: 100%;
@@ -2232,24 +2366,30 @@ and (max-width : 480px) {
     /************************CALENDARIO********END*********************************/
     /**************************BARDAHL EN TU VIDA *********************************/
     .customlanding-page2 {
-        margin: 56px 0 0 15px;
+        margin: 0;
         width: 100%;
-        height: 350px;
     }
     #lbl_au {
         display: none;
     }
     #cuadro_vida >a >img, #cuadro_vida_trac a img {
-        width: 50px;
+        width: 83px;
 
     }
     #cuadro_tu_vida {
-        height: 101px;
-        width: 78px;
         background-color: white;
+        height: 101px;
+        width: 93px;
     }
+
+    #cuadro_vida {
+        margin: 0 9px;
+        position: relative;
+    }
+
     #cuadro_vida_trac{
-        margin: 48px 0 0 34px;
+        margin: 0;
+        position: relative;
     }
     #img-tu-vida {
         width: 100%;
@@ -2261,7 +2401,7 @@ and (max-width : 480px) {
         width: 100%;
     }
     .t3-sidebar .module-title, .module-title, div.titulo-dorado > h3, .texto-header > h3 {
-        padding: 0;
+        padding: 5px;
     }
 
     /**************************BARDAHL EN TU VIDA *********************************/
@@ -2301,15 +2441,13 @@ and (max-width : 480px) {
     }
     .container_left {
         width: 99%;
-        background-color: white;
-        margin: -186px 0 0 1px;
+
         background-image: none;
     }
 
     div.container_left .row #name0 {
         padding: 0;
-        width: 87.9%;
-        position: absolute;
+        width: 100%;
     }
 
     div.container_left .row #name1 {
@@ -2320,13 +2458,10 @@ and (max-width : 480px) {
     }
 
     .flexslider {
-        margin: 47px 0 0 9px !important;
-        width: 109%;
-        height: 330px;
+        margin: 0 !important;
+        width: 100% !important;
     }
-    .flex-viewport {
-        height: 342px;
-    }
+
 
     #div_buscar {
         font-size: 9pt;
@@ -2343,9 +2478,15 @@ and (max-width : 480px) {
      display: none;
     }
     div.row .t3-sidebar-2, .t3-sidebar-right {
-        margin: 0px 0 0 4px;
-        width: 99%;
+        margin: 0;
         padding: 0;
+        width: 100%;
+    }
+    .t3-navhelper .container {
+        background-color: white;
+        margin: auto;
+        padding: 15px;
+        width: 100%;
     }
 }
 
