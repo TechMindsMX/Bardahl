@@ -71,7 +71,6 @@ $jinput = JFactory::getApplication ()->input;
                 datos = JSON.stringify(data);
                 console.log(datos);
                 jQuery('#form_buscar').append("<input type='hidden' name='dataPdf' value='"+datos+"'>");
-
             },
             error: function () {
                 alert('Se ha producido un error');

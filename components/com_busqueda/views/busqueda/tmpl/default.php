@@ -20,7 +20,7 @@ if ( is_null( $this->data ) ) {
 	?>
     <?php if(isset($_POST['year'])){?>
         <div class="category-desc base-desc recomendados">
-            <h1> Te recomendamos estos productos para tu</h1>
+            <h1> Te recomendamos estos productos para tu:</h1>
             <div class="marca">
                 <?php echo $_POST['marca']; ?>
             </div>
@@ -61,9 +61,6 @@ if ( is_null( $this->data ) ) {
     <?php
     if(isset($_GET['etiqueta'])){
     ?>
-
-
-
         <div class="busqueda-uso">
             <h1 class="module-title"><span><?php echo $_GET['etiqueta']; ?></span></h1>
             <p>Dentro de gama de productos contamos con lubricantes, aditivos para motor, aditivos para gasolina, líquidos de frenos, grasas automotrices, anticongelantes, productos especializados y cosméticos para diferentes tipos de vehículos.</p>
