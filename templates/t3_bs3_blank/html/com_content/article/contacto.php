@@ -32,12 +32,10 @@ $imagenes = json_decode($item->images);
 <div class="div-contacto">
     <div class="forma_contacto">
        <div class="header-contacto">
+           <div class="form-contacto">
+               ¿Quieres ponerte en contacto con nosotros? Mándanos un mensaje y nos pondremos en contacto contigo lo más pronto posible para resolver tus dudas o inquietudes.
+           </div>
         <form method="post" class="contacto">
-            <br><br><br>
-                <div class="form-contacto">
-                    ¿Quieres ponerte en contacto con nosotros? Mándanos un mensaje y nos pondremos en contacto contigo lo más pronto posible para resolver tus dudas o inquietudes.
-                </div>
-            <br>
                 <div class="data">
                     <table>
                         <tr>
@@ -71,7 +69,7 @@ $imagenes = json_decode($item->images);
                         </tr>
                     </table>
                 </div>
-                <br/>
+
                 <div class="ultimo">
                     <img src="images/ajax.gif" class="ajaxgif hide" />
                     <div class="msg"></div>
@@ -121,8 +119,6 @@ $imagenes = json_decode($item->images);
             }
         </script>
     </div>
-    <br>
-    <br>
     <div class="col-md-7 texto-contacto">
         <?php echo $item->introtext; ?>
     </div>

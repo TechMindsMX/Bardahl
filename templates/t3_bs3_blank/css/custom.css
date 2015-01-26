@@ -512,7 +512,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 .auto{
-    margin: 24px -36px;
+    margin: -17px -36px;
     width: 10px;
 }
 

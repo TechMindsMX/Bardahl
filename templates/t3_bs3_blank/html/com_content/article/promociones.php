@@ -30,16 +30,6 @@ $item = $this->item;
 $imagenes = json_decode($item->images);
 ?>
 <div class="promociones">
-    <div class="img_prod">
-
-        <?php if(isset($imagenes->image_intro) and $imagenes->image_intro<>'' ){
-           echo "<img src=".$imagenes->image_intro.">";
-        }
-        ?>
-
-    </div>
-    <br>
-    <br>
     <div class="col-md-7 texto-promociones">
         <?php echo $item->introtext; ?>
     </div>

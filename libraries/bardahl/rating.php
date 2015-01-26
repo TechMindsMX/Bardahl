@@ -118,5 +118,28 @@ class blog {
 
         return $results;
     }
+}
+class busqueda{
 
+    public function getModelo($marca){
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $query->select('distinctrow Modelo')
+            ->from('tbl_name')
+            ->where($db->quoteName('Armadora').' ="'.$marca['S2nw93'].'"' );
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+        return $result;
+    }
+
+    public function getsubModelo($modelo){
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $query->select('distinctrow Version')
+            ->from('tbl_name')
+            ->where($db->quoteName('Modelo').' ="'.$modelo['modelo'].'"' );
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+        return $result;
+    }
 }

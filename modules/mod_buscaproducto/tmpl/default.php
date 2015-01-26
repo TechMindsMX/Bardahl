@@ -9,19 +9,23 @@
 //defined ('_JEXEC') or die;
 JHtml::_ ('bootstrap.tooltip');
 $jinput = JFactory::getApplication ()->input;
+
 ?>
 <script type="text/javascript" src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script>
-    var marcaArray   = new Array();
-    var modeloArray   = new Array();
+    var marcaArray    = new Array();
+    var modeloArray   = '';
+    var modelos       = new Array();
+    var marca         = '';
+    var modelo        = '';
     <?php
+
             foreach ($marca as $key => $value) {
-                echo 'marcaArray['.$key.'] = "'.$value->Armadora.'";'."\n";
+                echo 'marcaArray['.$key.'] = "'.$value.'";'."\n";
             }
-            foreach ($modelo as $key => $value) {
-                echo 'modeloArray['.$key.'] = "'.$value->Modelo.'";'."\n";
-            }
-        ?>
+
+    ?>
+
     var typeaheadSettings = {
         source: function () {
             return marcaArray;
@@ -29,17 +33,54 @@ $jinput = JFactory::getApplication ()->input;
         minLength:1
     };
 
-    var typeaheadS = {
-        source: function () {
-            return modeloArray;
-        },
-        minLength:1
-    };
+
+
+    jQuery('#modelo').change(function (){
+        var valor = jQuery('#modelo option:selected').text();
+        jQuery('#submodelo').html('');
+        var peticion = jQuery.ajax({
+            url: 'index.php?option=com_busqueda&task=getsubModelo&format=raw',
+            type: 'POST',
+            data: {modelo: valor},
+            success: function (respuesta) {
+                jQuery.each(respuesta, function(index, value){
+                    jQuery('#submodelo').append('<option value="'+value.Version+'">'+value.Version+'</option>');
+                });
+            },
+            error: function () {
+                alert('Se ha producido un error');
+            }
+        });
+
+        });
+
+
+
+    jQuery('#marca').change(function () {
+        var valor = jQuery('#marca').val();
+        jQuery('#modelo').html('');
+        var peticion = jQuery.ajax({
+            url: 'index.php?option=com_busqueda&task=getModelo&format=raw',
+            type: 'POST',
+            data: {S2nw93: valor},
+            success: function (respuesta) {
+            jQuery.each(respuesta, function(index, value){
+                jQuery('#modelo').append('<option value="'+value.Modelo+'">'+value.Modelo+'</option>');
+            });
+            },
+            error: function () {
+                alert('Se ha producido un error');
+            }
+        });
+    });
 
     jQuery(document).ready(function() {
         jQuery('.typeahead').typeahead(typeaheadSettings);
-        jQuery('.typeahead2').typeahead(typeaheadS);
     });
+
+
+
+
 </script>
 
 <div id='div_buscar'>
@@ -51,13 +92,22 @@ $jinput = JFactory::getApplication ()->input;
         <label for="marca">
             Marca:
         </label><br>
-        <input type='text' name='marca' value='' class="typeahead" autocomplete="off" id='search' required/>
+            <input type='text' name='marca' value='' class="typeahead" autocomplete="off" id='marca' required/>
         <div id="display">
         </div><br>
         <label for="modelo">
             Modelo:
         </label><br>
-        <input type='text' name='modelo' value='' class="typeahead2" autocomplete="off"  id='search' required/><br>
+        <select class="typeahead" id="modelo" name="modelo" >
+            <optgroup label="Selecciona la Marca de tu auto..."/>
+        </select><br>
+        <label for="Version">
+            Version:
+        </label><br>
+        <select class="typeahead" id="submodelo" name="submodelo">
+            <optgroup label="Selecciona primero la Marca..."/>
+        </select><br>
+
         <label for="year">
             Año:
         </label><br>

@@ -1,5 +1,5 @@
 <?php
-
+defined( '_JEXEC' ) or die( 'Restricted access' );
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];
 $mensaje = $_POST['mensaje'];

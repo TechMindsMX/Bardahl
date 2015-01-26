@@ -3,6 +3,14 @@ defined( '_JEXEC' ) or die( 'Restricted access' );
 
 jimport( 'joomla.form.validation' );
 jimport( 'joomla.html.html.bootstrap' );
+?>
+<script>
+
+</script>
+<?php
+
+
+
 
 if ( is_null( $this->data ) ) {
 	echo '	<div id="container" style="display: block"><p>No se encontraron resultados</p></div>';

@@ -1,1 +1,65 @@
-<?php/** * @package     Joomla.Site * @subpackage  Layout * * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved. * @license     GNU General Public License version 2 or later; see LICENSE.txt */defined('_JEXEC') or die;// Create a shortcut for params.$params = $this->item->params;JHtml::addIncludePath(JPATH_COMPONENT.'/helpers/html');$canEdit = $this->item->params->get('access-edit');$info    = $params->get('info_block_position', 0);?><?php if ($this->item->state == 0 || strtotime($this->item->publish_up) > strtotime(JFactory::getDate())	|| ((strtotime($this->item->publish_down) < strtotime(JFactory::getDate())) && $this->item->publish_down != '0000-00-00 00:00:00' )) : ?>	<div class="system-unpublished"><?php endif; ?><?php echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); ?><?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>	<?php echo JLayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item, 'print' => false)); ?><?php endif; ?><?php if ($params->get('show_tags') && !empty($this->item->tags->itemTags)) : ?>	<?php echo JLayoutHelper::render('joomla.content.tags', $this->item->tags->itemTags); ?><?php endif; ?><?php // Todo Not that elegant would be nice to group the params ?><?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author') ); ?><?php if ($useDefList && ($info == 0 || $info == 2)) : ?>	<?php echo JLayoutHelper::render('joomla.content.info_block.block', array('item' => $this->item, 'params' => $params, 'position' => 'above')); ?><?php endif; ?><?php echo JLayoutHelper::render('joomla.content.intro_image', $this->item); ?><?php if (!$params->get('show_intro')) : ?>	<?php echo $this->item->event->afterDisplayTitle; ?><?php endif; ?><?php echo $this->item->event->beforeDisplayContent; ?> <?php echo $this->item->introtext; ?><?php if ($useDefList && ($info == 1 || $info == 2)) : ?>	<?php echo JLayoutHelper::render('joomla.content.info_block.block', array('item' => $this->item, 'params' => $params, 'position' => 'below')); ?><?php  endif; ?><?php if ($params->get('show_readmore') && $this->item->readmore) :	if ($params->get('access-view')) :		$link = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));	else :		$menu = JFactory::getApplication()->getMenu();		$active = $menu->getActive();		$itemId = $active->id;		$link1 = JRoute::_('index.php?option=com_users&view=login&Itemid=' . $itemId);		$returnURL = JRoute::_(ContentHelperRoute::getArticleRoute($this->item->slug, $this->item->catid));		$link = new JUri($link1);		$link->setVar('return', base64_encode($returnURL));	endif; ?>	<?php echo JLayoutHelper::render('joomla.content.readmore', array('item' => $this->item, 'params' => $params, 'link' => $link)); ?><?php endif; ?><?php if ($this->item->state == 0 || strtotime($this->item->publish_up) > strtotime(JFactory::getDate())	|| ((strtotime($this->item->publish_down) < strtotime(JFactory::getDate())) && $this->item->publish_down != '0000-00-00 00:00:00' )) : ?></div><?php endif; ?><?php echo $this->item->event->afterDisplayContent; ?>
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  com_content
+ *
+ * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+$class = ' class="first"';
+JHtml::_('bootstrap.tooltip');
+$lang	= JFactory::getLanguage();
+if (count($this->items[$this->parent->id]) > 0 && $this->maxLevelcat != 0) :
+    ?>
+    <?php foreach($this->items[$this->parent->id] as $id => $item) : ?>
+    <?php
+    if ($this->params->get('show_empty_categories_cat') || $item->numitems || count($item->getChildren())) :
+        if (!isset($this->items[$this->parent->id][$id + 1]))
+        {
+            $class = ' class="last"';
+        }
+        ?>
+        <div <?php echo $class; ?> >
+            <?php $class = ''; ?>
+            <h3 class="page-header item-title">
+                <a href="<?php echo JRoute::_(ContentHelperRoute::getCategoryRoute($item->id));?>">
+                    <?php echo $this->escape($item->title); ?></a>
+                <?php if ($this->params->get('show_cat_num_articles_cat') == 1) :?>
+                    <span class="badge badge-info tip hasTooltip" title="<?php echo JHtml::tooltipText('COM_CONTENT_NUM_ITEMS'); ?>">
+						<?php echo $item->numitems; ?>
+					</span>
+                <?php endif; ?>
+                <?php if (count($item->getChildren()) > 0 && $this->maxLevelcat > 1) : ?>
+                    <a href="#category-<?php echo $item->id;?>" data-toggle="collapse" data-toggle="button" class="btn btn-mini pull-right"><span class="icon-plus"></span></a>
+                <?php endif;?>
+            </h3>
+            <?php if ($this->params->get('show_description_image') && $item->getParams()->get('image')) : ?>
+                <img src="<?php echo $item->getParams()->get('image'); ?>"/>
+            <?php endif; ?>
+            <?php if ($this->params->get('show_subcat_desc_cat') == 1) :?>
+                <?php if ($item->description) : ?>
+                    <div class="category-desc">
+                        <?php echo JHtml::_('content.prepare', $item->description, '', 'com_content.categories'); ?>
+                    </div>
+                <?php endif; ?>
+            <?php endif; ?>
+
+            <?php if (count($item->getChildren()) > 0 && $this->maxLevelcat > 1) :?>
+                <div class="collapse fade" id="category-<?php echo $item->id;?>">
+                    <?php
+                    $this->items[$item->id] = $item->getChildren();
+                    $this->parent = $item;
+                    $this->maxLevelcat--;
+                    echo $this->loadTemplate('items');
+                    $this->parent = $item->getParent();
+                    $this->maxLevelcat++;
+                    ?>
+                </div>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
+<?php endforeach; ?>
+<?php endif; ?>

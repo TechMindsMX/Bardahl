@@ -15,9 +15,9 @@ defined('_JEXEC') or die;
 
     </div>
     <div class="module-inner">
-        <h3 class="module-title ">
+        <h1 class="module-title ">
             <span>Tipos de producto</span>
-        </h3>
+        </h1>
     </div>
 
 <?php

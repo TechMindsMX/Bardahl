@@ -53,4 +53,30 @@ class busquedaController extends JControllerLegacy {
         $data       = $getBlog->getBlog($data);
         echo json_encode($data);
     }
+
+    public function getModelo(){
+
+        $filtro     = array('S2nw93' => 'STRING');
+        $marca		= $this->input_data->getArray($filtro);
+        $getd       = new busqueda();
+        $data       = $getd->getModelo($marca);
+        $document   = JFactory::getDocument();
+
+        $document->setMimeEncoding('application/json');
+
+        echo json_encode($data);
+    }
+
+    public function getsubModelo(){
+
+        $filtro     = array('modelo' => 'STRING');
+        $marca		= $this->input_data->getArray($filtro);
+        $getd       = new busqueda();
+        $data       = $getd->getsubModelo($marca);
+        $document   = JFactory::getDocument();
+
+        $document->setMimeEncoding('application/json');
+
+        echo json_encode($data);
+    }
 }

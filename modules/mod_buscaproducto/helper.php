@@ -43,11 +43,12 @@ class ModBuscaProductoHelper{
 
         $query->select('distinctrow Armadora')
             ->from('tbl_name');
-
         $db->setQuery($query);
         $result = $db->loadObjectList('');
-
-        return $result;
+        foreach ($result as $key => $value) {
+            $data[]=$value->Armadora;
+        }
+        return $data;
 
     }
     function getModelo(){
@@ -55,7 +56,7 @@ class ModBuscaProductoHelper{
         $db = JFactory::getDbo();
         $query = $db->getQuery(true);
 
-        $query->select('distinctrow Modelo')
+        $query->select('distinctrow Armadora, Modelo')
             ->from('tbl_name');
 
         $db->setQuery($query);

@@ -59,35 +59,36 @@ $score = $rating->getRating($item->id);
         });
     });
 </script>
-<div class="clearfix"></div>
-<div class="texto-header">
+<div class="title-producto">
     <h1 class="module-title ">
-        Información de Producto
+        <?php echo $item->title;   ?>
     </h1>
 </div>
-<div class="clearfix">&nbsp;</div>
 <div class="table-responsive">
-    <div class="col-md-5">
-        <div class="img-prod">
-            <br/>
-            <br/>
-            <h1 class="module-title ">
-                <?php echo $item->title;   ?>
-            </h1>
-            <img class="img-producto" src="<?php echo $imagenes->image_fulltext; ?>">
-            <div class="div_icons_prod">
-                <div class="title-uso">Tipos de uso:</div>
-                <div class="img-uso">
-                    <?php
-                    foreach($item->iconos_de_uso as $value){
-                        ?>
-                        <img class="iconos_prod" src="<?php echo $value->image1; ?>" />&nbsp;
-                    <?php
-                    }
+    <div class="img-prod">
+
+
+        <img class="img-producto" src="<?php echo $imagenes->image_fulltext; ?>">
+        <div class="div_icons_prod">
+            <div class="title-uso">Tipos de uso:</div>
+            <div class="img-uso">
+                <?php
+                foreach($item->iconos_de_uso as $value){
                     ?>
-                </div>
+                    <img class="iconos_prod" src="<?php echo $value->image1; ?>" />&nbsp;
+                <?php
+                }
+                ?>
             </div>
         </div>
+    </div>
+    <div class="texto-header">
+        <h1 class="module-title ">
+            Información de Producto
+        </h1>
+    </div>
+    <div class="col-md-5">
+
         <div class="colum-right">
             <div id="lbl_fusion2">
                 <a target="_blank" href="images/hoja-de-seguridad/<?php echo $item->hoja_de_seguridad ?>">

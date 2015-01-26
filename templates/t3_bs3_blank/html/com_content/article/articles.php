@@ -51,22 +51,21 @@ $imagenes = json_decode($item->images);
 ?>
 
 <div class="table-responsive">
+
+           <?php if ($imagenes->image_intro){ ?>
     <div class="img_prod">
-           <?php if ($imagenes->image_intro){ ?> <img src="<?php
+               <img src="<?php
 
             echo $imagenes->image_intro;
-
-
             ?>">
+        </div><br>
         <?php } ?>
-    </div>
-<br>
+
    <div class="texto-header">
        <h1 class="module-title landig-tab">
           <span> <?php echo $item->title; ?></span>
        </h1>
     </div>
-    <br>
 	<div class="col-md-7 texto-producto">
 
         <?php echo $item->introtext; ?>
