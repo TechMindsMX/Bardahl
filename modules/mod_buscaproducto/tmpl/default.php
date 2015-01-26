@@ -50,9 +50,35 @@ $jinput = JFactory::getApplication ()->input;
             error: function () {
                 alert('Se ha producido un error');
             }
-        });
 
         });
+
+    });
+
+    jQuery('#submodelo').change(function (){
+        var marca = jQuery('#marca').val();
+        var valor = jQuery('#modelo option:selected').text();
+        var submodelo = jQuery('#submodelo option:selected').text();
+        jQuery.ajax({
+            url: 'index.php?option=com_busqueda&task=getdata&format=raw',
+            type: 'POST',
+            data: {
+                marca:      marca,
+                modelo:     valor,
+                version:  submodelo
+            },
+            success: function (data) {
+                datos = JSON.stringify(data);
+                console.log(datos);
+                jQuery('#form_buscar').append("<input type='hidden' name='dataPdf' value='"+datos+"'>");
+
+            },
+            error: function () {
+                alert('Se ha producido un error');
+            }
+
+        });
+    });
 
 
 

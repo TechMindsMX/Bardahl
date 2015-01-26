@@ -142,4 +142,15 @@ class busqueda{
         $result = $db->loadObjectList('');
         return $result;
     }
+
+    public function getdata($data){
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $query->select('*')
+            ->from('tbl_name')
+            ->where($db->quoteName('Armadora').' ="'.$data['marca'].'"'.' and '.$db->quoteName('Modelo').' ="'.$data['modelo'].'" and '.$db->quoteName('Version').' ="'.$data['version'].'"' );
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+        return $result;
+    }
 }
