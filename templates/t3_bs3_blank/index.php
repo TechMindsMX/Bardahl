@@ -18,20 +18,6 @@
 	ga('create', 'UA-57971202-1', 'auto');
 
 	ga('send', 'pageview');
-
-
-		var exploreer=isSafari();
-		if(exploreer==true){
-			var powerdocScript 	= document.createElement('link');
-			powerdocScript.rel 	= 'stylesheet';
-			powerdocScript.type	= 'text/css';
-			powerdocScript.href = 'http://www.bardahl.com.mx/templates/t3_bs3_blank/css/sf_custom.css';
-			document.getElementsByTagName('head')[0].appendChild(powerdocScript);
-		}
-
-	function isSafari() {
-		return /^((?!chrome).)*safari/i.test(navigator.userAgent);
-	}
 </script>
 
 <?php
