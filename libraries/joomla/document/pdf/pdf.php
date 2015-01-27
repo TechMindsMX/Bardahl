@@ -70,6 +70,7 @@ class JDocumentpdf extends JDocumentHTML
         require_once($file);
         // Default settings are a portrait layout with an A4 configuration using millimeters as units
         $this->engine =new DOMPDF();
+
         return true;
     }
 

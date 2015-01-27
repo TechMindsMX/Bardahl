@@ -1767,7 +1767,7 @@ and (max-width : 480px) {
     div.category-desc > h1, div.head-category > h2 {
         background-position: -14px center;
         background-size: 327px auto;
-        font-size: 16px;
+        font-size: 23px;
         width: 100%;
         margin: auto;
     }
@@ -1795,7 +1795,11 @@ and (max-width : 480px) {
     }
     .articlelanding-page .base-desc {
         font-size: 11px;
-        margin: -73% 0 0 2%;
+        margin: auto;
+        height: auto;
+    }
+    .category-desc p{
+        padding: 11px;
     }
 
     .productos-form {
@@ -2029,10 +2033,11 @@ and (max-width : 480px) {
         width: 100%;
     }
     .articlelanding-page {
+        background-color: white;
         float: left;
-        margin: -686px 0 0 14px;
-        width: 95%;
-        position: absolute;
+        margin: auto;
+        position: relative;
+        width: 100%;
     }
 
     #t3-content {
@@ -2043,11 +2048,11 @@ and (max-width : 480px) {
         width: 100%;
     }
     #article_conteiner {
-        background-color: #ffffff;
+        background-color: white;
         display: inline-block;
-        height: 221px;
+        height: auto;
         margin-left: 0;
-        margin-top: 22px;
+        margin-top: 13px;
         width: 300px;
     }
     .head-category {
@@ -2055,6 +2060,22 @@ and (max-width : 480px) {
         margin: 0;
         width: 100%;
     }
+
+
+    .article_titl {
+        background-position: 0 5px;
+        background-repeat: no-repeat;
+        background-size: 129% auto;
+        line-height: 3em;
+        margin: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    .div_icons_prod{
+        display: none;
+    }
+
     .table-responsive .col-md-5 {
         margin: -320% 0 0 -13px;
         width: 109%;
@@ -2257,6 +2278,16 @@ and (max-width : 480px) {
     /****************************MENU**********************************************/
     nav {
         border-bottom: 0;
+    }
+    .breadcrumb {
+        display: none;
+        visibility: hidden;
+    }
+
+    .img_blog img {
+        width: 300px;
+        margin: auto;
+        position: relative;;
     }
     nav ul {
 

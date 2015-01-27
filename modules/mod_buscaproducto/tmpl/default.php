@@ -39,7 +39,7 @@ $jinput = JFactory::getApplication ()->input;
         var valor = jQuery('#modelo option:selected').text();
         jQuery('#submodelo').html('');
         var peticion = jQuery.ajax({
-            url: 'index.php?option=com_busqueda&task=getsubModelo&format=raw',
+            url: '/index.php?option=com_busqueda&task=getsubModelo&format=raw',
             type: 'POST',
             data: {modelo: valor},
             success: function (respuesta) {
@@ -60,7 +60,7 @@ $jinput = JFactory::getApplication ()->input;
         var valor = jQuery('#modelo option:selected').text();
         var submodelo = jQuery('#submodelo option:selected').text();
         jQuery.ajax({
-            url: 'index.php?option=com_busqueda&task=getdata&format=raw',
+            url: '/index.php?option=com_busqueda&task=getdata&format=raw',
             type: 'POST',
             data: {
                 marca:      marca,
@@ -85,7 +85,7 @@ $jinput = JFactory::getApplication ()->input;
         var valor = jQuery('#marca').val();
         jQuery('#modelo').html('');
         var peticion = jQuery.ajax({
-            url: 'index.php?option=com_busqueda&task=getModelo&format=raw',
+            url: '/index.php?option=com_busqueda&task=getModelo&format=raw',
             type: 'POST',
             data: {S2nw93: valor},
             success: function (respuesta) {

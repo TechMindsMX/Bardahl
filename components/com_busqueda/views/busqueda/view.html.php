@@ -2,11 +2,11 @@
 defined('_JEXEC') or die('Restricted access');
 
 jimport('joomla.application.component.view');
-jimport('integradora.gettimone');
 
 class busquedaViewbusqueda extends JViewLegacy {
 
 	function display($tpl = null){
+
 		$app 				= JFactory::getApplication();
 		$data				= $app->input->getArray();
 
