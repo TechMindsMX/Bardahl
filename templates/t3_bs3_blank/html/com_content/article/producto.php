@@ -58,6 +58,7 @@ $score = $rating->getRating($item->id);
             path  : ruta
         });
     });
+
 </script>
 <div class="title-producto">
     <h1 class="module-title ">
@@ -123,45 +124,16 @@ $score = $rating->getRating($item->id);
     </div>
 
     <div class="productos-form">
-        <form method="post" class="contacto">
-            <fieldset>
-                <br/>
-                <h3 class="module-title ">
-                    <span>Comenta este Producto</span>
-                </h3>
-                <br/>
-                <div class="data">
-                    <table>
-                        <tr>
-                            <td>
-                                <label id="label-form">Nombre:</label>
-                            </td>
-                            <td>
-                                <input id="idtext" type="text" class="nombre" name="nombre" />
-                            </td>
+        <div class="fb-comments" data-href="http://www.bardahl.com.mx" data-width="868" data-numposts="10" data-colorscheme="light"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&appId=468581553288902&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
 
-                            <td>
-                                <label id="label-form">Email:</label>
-                            </td>
-                            <td>
-                               <input  id="idtext" type="text" class="email" name="email" />
-                            </td>
-
-                        </tr>
-
-                    </table>
-                </div>
-                <br/>
-                <div class="contact-textarea"><textarea id="contacto-area" cols="30" rows="5" class="mensaje" name="mensaje" ></textarea></div>
-                <div class="ultimo">
-                    <img src="images/ajax.gif" class="ajaxgif hide" />
-                    <div class="msg"></div>
-                    <input type="button" class="boton_envio" value="Enviar" onclick="envio()"/>
-                </div>
-            </fieldset>
-        </form>
-        <div class="Table" id="Table"></div>
-        <script>
             function getblog(){
                 var idarticle = 'article='+ <?php echo $item->id ?>;
                 jQuery.ajax({
@@ -188,41 +160,6 @@ $score = $rating->getRating($item->id);
                         }
                     });
                 }
-
-                function envio(){
-                var nombre = jQuery(".nombre").val();
-                var email = jQuery(".email").val();
-                var validacion_email = /^[a-zA-Z0-9_\.\-]+@[a-zA-Z0-9\-]+\.[a-zA-Z0-9\-\.]+$/;
-                var mensaje = jQuery(".mensaje").val();
-                if (nombre == "") {
-                    jQuery(".nombre").focus();
-                    return false;
-                }else if(email == "" || !validacion_email.test(email)){
-                    jQuery(".email").focus();
-                    return false;
-                }else if(mensaje == ""){
-                    jQuery(".mensaje").focus();
-                    return false;
-                }else{
-                    jQuery('.ajaxgif').removeClass('hide');
-                    var datos = 'nombre='+ nombre + '&email=' + email + '&mensaje=' + mensaje+'&article='+ <?php echo $item->id ?>;
-                    jQuery.ajax({
-                        type: "POST",
-                        url: "<?php echo JUri::base(); ?>index.php?option=com_busqueda&task=blog&format=raw",
-                        data: datos,
-                        success: function() {
-                            jQuery('.ajaxgif').hide();
-                            jQuery('.msg').text('Mensaje enviado!').addClass('msg_ok').animate({ 'right' : '130px' }, 300);
-                            getblog();
-                        },
-                        error: function() {
-                            jQuery('.ajaxgif').hide();
-                            jQuery('.msg').text('Hubo un error!').addClass('msg_error').animate({ 'right' : '130px' }, 300);
-                        }
-                    });
-                    return false;
-                }
-            }
         </script>
     </div>
 </div>
