@@ -31,7 +31,6 @@ $score = $rating->getRating($item->id);
 
     var ruta = "<?php echo JUri::base(); ?>libraries/bardahl/js/raty/img/"
     jQuery(document).ready(function () {
-         getblog();
         jQuery('#calif').raty({
             click: function(score) {
                 var request = jQuery.ajax({
@@ -133,33 +132,6 @@ $score = $rating->getRating($item->id);
                 js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&appId=468581553288902&version=v2.0";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
-
-            function getblog(){
-                var idarticle = 'article='+ <?php echo $item->id ?>;
-                jQuery.ajax({
-                        type: "POST",
-                        url: "<?php echo JUri::base(); ?>index.php?option=com_busqueda&task=getBlog&format=raw",
-                        data: idarticle,
-
-                           success: function(data) {
-
-                           var rows = jQuery.parseJSON(data);
-                           document.getElementById('Table').innerHTML = '';
-                           for (i = 0; i <= rows.length; i++) {
-
-                                document.getElementById('Table').innerHTML += '' +
-                                '<div class="Row fila'+i%2+'">' +
-                                    '<div class="Cell nombre">'+rows[i].nombre+'</div>' +
-                                    '<div class="Cell text">'+rows[i].mensaje+'</div></div>' +
-                                '<br>';
-                           }
-                        },
-                        error: function() {
-                            jQuery('.ajaxgif').hide();
-                            jQuery('.msg').text('Hubo un error!').addClass('msg_error').animate({ 'right' : '130px' }, 300);
-                        }
-                    });
-                }
         </script>
     </div>
 </div>
