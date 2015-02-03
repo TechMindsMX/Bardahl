@@ -18,6 +18,7 @@ $jinput = JFactory::getApplication ()->input;
     var modelos       = new Array();
     var marca         = '';
     var modelo        = '';
+    var idProducto    = '';
     <?php
 
             foreach ($marca as $key => $value) {
@@ -33,18 +34,70 @@ $jinput = JFactory::getApplication ()->input;
         minLength:1
     };
 
-
-
-    jQuery('#modelo').change(function (){
-        var valor = jQuery('#modelo option:selected').text();
-        jQuery('#submodelo').html('');
+    function searchModel(inputMarca) {
+        var form   = jQuery(inputMarca).parentsUntil("form_buscar");
+        var valor  = inputMarca.value;
+        var modelo = jQuery(form).children('#modelo');
+        modelo.html('');
         var peticion = jQuery.ajax({
-            url: '/index.php?option=com_busqueda&task=getsubModelo&format=raw',
+            url: 'index.php?option=com_busqueda&task=getModelo&format=raw',
             type: 'POST',
-            data: {modelo: valor},
+            data: {S2nw93: valor},
             success: function (respuesta) {
+                modelo.append('<option value="">...</option>');
                 jQuery.each(respuesta, function(index, value){
-                    jQuery('#submodelo').append('<option value="'+value.Version+'">'+value.Version+'</option>');
+                    modelo.append('<option value="'+value.Modelo+'">'+value.Modelo+'</option>');
+                });
+            },
+            error: function () {
+                alert('Se ha producido un error');
+            }
+        });
+    }
+
+    function searchSubmodelo(selectModelo){
+        var form        = jQuery(selectModelo).parentsUntil("form_buscar");
+        var valor       = selectModelo.value;
+        var marca       = jQuery(form).children('#marca').val();
+        var version     = jQuery(form).children('#submodelo');
+
+       version.html('');
+        var peticion = jQuery.ajax({
+            url: 'index.php?option=com_busqueda&task=getsubModelo&format=raw',
+            type: 'POST',
+            data: {
+                modelo: valor,
+                marca:  marca
+            },
+            success: function (respuesta) {
+                version.append('<option value="">...</option>');
+                jQuery.each(respuesta, function(index, value){
+                    version.append('<option value="'+value.Version+'">'+value.Version+'</option>');
+                });
+            },
+            error: function () {
+                alert('Se ha producido un error');
+            }
+        });
+    }
+
+    jQuery('#year').change(function (){
+        var marca       = jQuery('#marca').val();
+        var valor       = jQuery('#modelo option:selected').text();
+        var submodelo   = jQuery('#submodelo option:selected').text();
+        var year        = jQuery('#year option:selected').text();
+        jQuery.ajax({
+            url: 'index.php?option=com_busqueda&task=getId&format=raw',
+            type: 'POST',
+            data: {
+                marca:      marca,
+                modelo:     valor,
+                version:    submodelo,
+                year:         year
+            },
+            success: function (data) {
+                jQuery.each(data, function(index, value){
+                    jQuery('#form_buscar').append('<input type="hidden"  name="identity" value="'+value.id+'">');
                 });
             },
             error: function () {
@@ -52,62 +105,52 @@ $jinput = JFactory::getApplication ()->input;
             }
 
         });
-
     });
 
-    jQuery('#submodelo').change(function (){
-        var marca = jQuery('#marca').val();
-        var valor = jQuery('#modelo option:selected').text();
-        var submodelo = jQuery('#submodelo option:selected').text();
+    function searchYear(selectYear){
+        var form        = jQuery(selectYear).parentsUntil("form_buscar");
+        var marca       = jQuery(form).children('#marca').val();
+        var modelo      = jQuery(form).children('#modelo').val();
+        var version     = jQuery(form).children('#submodelo').val();
+        var year        = jQuery(form).children('#year');
+
+        year.html('');
+
         jQuery.ajax({
-            url: '/index.php?option=com_busqueda&task=getdata&format=raw',
+            url: 'index.php?option=com_busqueda&task=getdata&format=raw',
             type: 'POST',
             data: {
                 marca:      marca,
-                modelo:     valor,
-                version:  submodelo
+                modelo:     modelo,
+                version:    version
             },
             success: function (data) {
-                datos = JSON.stringify(data);
-                console.log(datos);
-                jQuery('#form_buscar').append("<input type='hidden' name='dataPdf' value='"+datos+"'>");
+                    year.append('<option label="...">...</option> ');
+                    jQuery.each(data, function(index, value){
+                        year.append('<option value="'+value.A+'">'+value.A+'</option>');
+                    });
+
             },
             error: function () {
                 alert('Se ha producido un error');
             }
 
         });
-    });
-
-
-
-    jQuery('#marca').change(function () {
-        var valor = jQuery('#marca').val();
-        jQuery('#modelo').html('');
-        var peticion = jQuery.ajax({
-            url: '/index.php?option=com_busqueda&task=getModelo&format=raw',
-            type: 'POST',
-            data: {S2nw93: valor},
-            success: function (respuesta) {
-            jQuery.each(respuesta, function(index, value){
-                jQuery('#modelo').append('<option value="'+value.Modelo+'">'+value.Modelo+'</option>');
-            });
-            },
-            error: function () {
-                alert('Se ha producido un error');
-            }
-        });
-    });
+    }
 
     jQuery(document).ready(function() {
         jQuery('.typeahead').typeahead(typeaheadSettings);
+
     });
 
-
-
-
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1&appId=778579362223960";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
 </script>
-
 <div id='div_buscar'>
     <form id="form_buscar"  name='form1' action='index.php?option=com_busqueda' method='post' enctype='multipart/form-data'
           xmlns="http://www.w3.org/1999/html">
@@ -117,26 +160,30 @@ $jinput = JFactory::getApplication ()->input;
         <label for="marca">
             Marca:
         </label><br>
-            <input type='text' name='marca' value='' class="typeahead" autocomplete="off" id='marca' required/>
+            <input type='text' name='marca' value='' class="typeahead" autocomplete="off" id='marca' required onchange="searchModel(this)"/>
         <div id="display">
         </div><br>
         <label for="modelo">
             Modelo:
         </label><br>
-        <select class="typeahead" id="modelo" name="modelo" >
-            <optgroup label="Selecciona la Marca de tu auto..."/>
+         <select class="typeahead" id="modelo" name="modelo"  onchange="searchSubmodelo(this)">
+             <option >Selecciona primero la Marca...</option>
         </select><br>
         <label for="Version">
             Version:
         </label><br>
-        <select class="typeahead" id="submodelo" name="submodelo">
-            <optgroup label="Selecciona primero la Marca..."/>
+        <select class="typeahead" id="submodelo" name="submodelo" onchange="searchYear(this)">
+            <option >Selecciona primero la Marca...</option>
         </select><br>
 
         <label for="year">
             Año:
         </label><br>
-        <input type='text' name='year' value='' id='year' required/><br>
+        <div class="year-data"></div>
+            <select class="typeahead" id="year" name="year" >
+                <option >Selecciona primero la Marca...</option>
+            </select>
+        <br>
         <label for="kilometraje">
             Kilometraje:
         </label><br>
@@ -158,17 +205,11 @@ $jinput = JFactory::getApplication ()->input;
 <div class="auto">
     <img id="auto"  src="templates/t3_bs3_blank/images/site/mustang.png">
 </div>
-<script>
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 </div>
+<div id="fb-root" class=" fb_reset"></div>
 <div class="redes">
     <div id="facebook">
+
         <div class="fb-like" data-href="http://bardahl.com.mx/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
     </div>
     <div id="twitter">
