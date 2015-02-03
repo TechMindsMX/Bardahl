@@ -23,6 +23,13 @@ body {
     position: absolute;
 }
 
+#form_buscar select{
+    width: 206px;
+} 
+.email{
+    background-color: #ffffff !important;
+    width: 259px !important;
+}
 .video_top{
     margin: 56px 0 0 29px;
 }
@@ -47,9 +54,8 @@ body {
     width: 113%;
 }
 
-.conocer{
-    font-size: 25px;
-    font-weight: bold;
+.conocer {
+    font-size: 20px;
 }
 
 
@@ -996,7 +1002,7 @@ ul.noti-event-home {
 }
 .redes{
     display: inline-flex;
-    margin: 34px 0 0 -18px;
+    margin: 20px 0 0 -18px;
     width: 353px;
     z-index: 1000;
     position: relative;
@@ -1006,6 +1012,16 @@ ul.noti-event-home {
 }
 #twitter{
     width: 120px;
+}
+
+.texto-correo, .input-correo, .pdf-botton{
+    display: inline-block;
+}
+
+.ejemplo{
+    float: right;
+    margin: 3px;
+    width: 98px;
 }
 
 .flexslider {
@@ -1760,6 +1776,14 @@ and (max-width : 480px) {
         padding-bottom: 0;
     }
 
+
+    .ejemplo {
+        display: inline-block;
+        float: left;
+        margin: auto;
+        width: 97%;
+    }
+
     .carrazo-texto .jqDnR .flexslider {
         height: auto;
         width: 500px;
@@ -1767,9 +1791,10 @@ and (max-width : 480px) {
     div.category-desc > h1, div.head-category > h2 {
         background-position: -14px center;
         background-size: 327px auto;
-        font-size: 23px;
-        width: 100%;
+        font-size: 17px;
         margin: auto;
+        padding: 4px;
+        width: 100%;
     }
     .table-responsive {
         -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -2031,6 +2056,7 @@ and (max-width : 480px) {
         margin: 0;
         position: relative;
         width: 100%;
+        height: auto;
     }
     .articlelanding-page {
         background-color: white;
@@ -2226,12 +2252,19 @@ and (max-width : 480px) {
         margin: -878px 0 0 20px;
     }
     #idtext {
-        width: 94px;
+        width: 184px;
     }
     .data{
         margin: auto;
         padding: 7px;
         width: 100%;
+    }
+
+    .pdf_boton {
+        margin: 4px 107px;
+        position: relative;
+        transform: skew(-20deg, 0deg);
+        width: 78px;
     }
 
     .contact-textarea > textarea {
