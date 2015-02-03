@@ -13,7 +13,8 @@
 
 // Check to ensure this file is within the rest of the framework
 defined('JPATH_BASE') or die();
-
+jimport('libraries.bardahl');
+jimport('joomla.factory');
 require_once(JPATH_LIBRARIES .'/joomla/document/html/html.php');
 
 /**
@@ -111,8 +112,32 @@ class JDocumentpdf extends JDocumentHTML
         //echo $data;exit;
         $pdf->load_html($data);
         $pdf->render();
-        $pdf->stream($this->getName() . '.pdf');
-        return '';
+        $algo = $pdf->output();
+        file_put_contents("productosPdf/archivo.pdf", $algo);
+
+
+        $mailer = JFactory :: getMailer ();
+        $Config = JFactory :: getConfig ();
+
+        $mailer->setSender('webmaster@bardahl.com.mx');
+
+        $mailer->addRecipient($_GET['email']);
+        $body   = '<body></body>';
+        $title  = 'Pdf Productos recomendados';
+        $mailer->addAttachment('productosPdf/archivo.pdf');
+        $mailer->isHTML(true);
+        $mailer->Encoding = 'base64';
+        $mailer->setSubject($title);
+        $mailer->setBody($body);
+        $send = $mailer->Send();
+
+        //unlink('productosPdf/archivo.pdf');
+
+        if ( $send !== true ) {
+            return 'Error al enviar el correo';
+        } else {
+            return 'Correo enviado';
+        }
     }
 
     /**
