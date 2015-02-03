@@ -69,7 +69,7 @@ class busquedaController extends JControllerLegacy {
 
     public function getsubModelo(){
 
-        $filtro     = array('modelo' => 'STRING');
+        $filtro     = array('modelo' => 'STRING', 'marca' => 'STRING');
         $marca		= $this->input_data->getArray($filtro);
         $getd       = new busqueda();
         $data       = $getd->getsubModelo($marca);
@@ -86,6 +86,32 @@ class busquedaController extends JControllerLegacy {
         $marca		= $this->input_data->getArray($filtro);
         $getd       = new busqueda();
         $data       = $getd->getdata($marca);
+        $document   = JFactory::getDocument();
+
+        $document->setMimeEncoding('application/json');
+
+        echo json_encode($data);
+    }
+
+    public function getdataId(){
+
+        $filtro     = array('modelo' => 'STRING','marca' => 'STRING', 'version' => 'STRING');
+        $marca		= $this->input_data->getArray($filtro);
+        $getd       = new busqueda();
+        $data       = $getd->getdataID($marca);
+        $document   = JFactory::getDocument();
+
+        $document->setMimeEncoding('application/json');
+
+        echo json_encode($data);
+    }
+
+    public function getId(){
+
+        $filtro     = array('modelo' => 'STRING','marca' => 'STRING', 'version' => 'STRING', 'year' => 'STRING');
+        $marca		= $this->input_data->getArray($filtro);
+        $getd       = new busqueda();
+        $data       = $getd->getItem($marca);
         $document   = JFactory::getDocument();
 
         $document->setMimeEncoding('application/json');
