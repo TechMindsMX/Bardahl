@@ -1,19 +1,27 @@
 <?php
 defined( '_JEXEC' ) or die( 'Restricted access' );
-
 jimport( 'joomla.form.validation' );
 jimport( 'joomla.html.html.bootstrap' );
-
-
 ?>
 <script>
-
+    function envio(){
+        var identity           = '<?php echo $_POST['identity'] ?>';
+        var kilometraje        = '<?php echo $_POST['kilometraje'] ?>';
+        var email              = jQuery('.email').val();
+        jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity+'&email='+email);
+        jQuery( "#datapdf" ).submit();
+    }
+    jQuery(document).ready(function(){
+        jQuery("#enlace").click(function(evento){
+            var identity           = '<?php echo $_POST['identity'] ?>';
+            var kilometraje           = '<?php echo $_POST['kilometraje'] ?>';
+            evento.preventDefault();
+            jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity);
+            jQuery( "#datapdf" ).submit();
+        });
+    })
 </script>
 <?php
-
-
-
-
 if ( is_null( $this->data ) ) {
 	echo '	<div id="container" style="display: block"><p>No se encontraron resultados</p></div>';
 } else {
@@ -21,6 +29,7 @@ if ( is_null( $this->data ) ) {
 
 	?>
     <?php if(isset($_POST['year'])){?>
+        <form id="datapdf" method="post"></form>
         <div class="category-desc base-desc recomendados">
             <h1> Te recomendamos estos productos para tu:</h1>
             <div class="marca">
@@ -36,24 +45,25 @@ if ( is_null( $this->data ) ) {
                 <?php echo $_POST['kilometraje']; ?> Kms
             </div>
             <div class="conocer">¿Quieres conocer más sobre las caracteristicas y productos recomendados para tu vehículo?</div>
-<br>
+
             <form class="contacto" method="post">
                 <div class="data">
-                    <table>
-                        <tbody><tr>
-                            <td>Correo Electrónico: </td>
-                            <td><input type="text" name="email" class="email" id="idtext"></td>
-                            <td><input type="button" onclick="envio()" value="Enviar" class="pdf_boton"></td>
-                            <td>Ver ejemplo</td>
-                        </tr>
+                    <div class="Table">
+                        <div class="Row">
+                            <div class='Cel ejemplo'><a href="#" id="enlace" >Ver ejemplo</a></div>
+                            <div class='Cel texto-correo'>Correo Electrónico: </div>
+                            <div class='Cel input-correo'>
+                                <input id="pdf_boton" class="email" type="email" name="email">
+                            </div>
+                            <div class='Cel pdf-botton'>
+                                <input class="pdf_boton" type="button" value="Enviar" onclick="envio()">
+                            </div>
 
-                        </tbody></table>
+                        </div>
+                    </div>
                 </div>
                 <br>
             </form>
-
-
-
         </div>
      <?php } ?>
     <div>
