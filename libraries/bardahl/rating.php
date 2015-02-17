@@ -135,9 +135,9 @@ class busqueda{
     public function getsubModelo($modelo){
         $db = JFactory::getDbo();
         $query = $db->getQuery(true);
-        $query->select('distinctrow Version')
+        $query->select('distinctrow id, Version')
             ->from('tbl_name')
-            ->where($db->quoteName('Modelo').' ="'.$modelo['modelo'].'"' );
+            ->where($db->quoteName('Armadora').' ="'.$modelo['marca'].'"'.' and '.$db->quoteName('Modelo').' ="'.$modelo['modelo'].'"' );
         $db->setQuery($query);
         $result = $db->loadObjectList('');
         return $result;
@@ -146,7 +146,29 @@ class busqueda{
     public function getdata($data){
         $db = JFactory::getDbo();
         $query = $db->getQuery(true);
-        $query->select('*')
+        $query->select('id, A')
+            ->from('tbl_name')
+            ->where($db->quoteName('Armadora').' ="'.$data['marca'].'"'.' and '.$db->quoteName('Modelo').' ="'.$data['modelo'].'" and '.$db->quoteName('Version').' ="'.$data['version'].'"' );
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+        return $result;
+    }
+
+    public function getItem($data){
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $query->select('id, A')
+            ->from('tbl_name')
+            ->where($db->quoteName('Armadora').' ="'.$data['marca'].'"'.' and '.$db->quoteName('A').' ="'.$data['year'].'"'.' and '.$db->quoteName('Modelo').' ="'.$data['modelo'].'" and '.$db->quoteName('Version').' ="'.$data['version'].'"' );
+        $db->setQuery($query);
+        $result = $db->loadObjectList('');
+        return $result;
+    }
+
+    public function getdataID($data){
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $query->select('id')
             ->from('tbl_name')
             ->where($db->quoteName('Armadora').' ="'.$data['marca'].'"'.' and '.$db->quoteName('Modelo').' ="'.$data['modelo'].'" and '.$db->quoteName('Version').' ="'.$data['version'].'"' );
         $db->setQuery($query);

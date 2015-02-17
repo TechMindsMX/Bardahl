@@ -56,7 +56,7 @@ class ModBuscaProductoHelper{
         $db = JFactory::getDbo();
         $query = $db->getQuery(true);
 
-        $query->select('distinctrow Armadora, Modelo')
+        $query->select('distinctrow id AS identificador, Armadora, Modelo')
             ->from('tbl_name');
 
         $db->setQuery($query);

@@ -7,9 +7,16 @@ class busquedaViewbusqueda extends JViewLegacy {
 
 	function display($tpl = null){
 
-		$app 				= JFactory::getApplication();
-		$data				= $app->input->getArray();
 
+		$this->aviso		 = '';
+		$app 				 = JFactory::getApplication();
+		$data				 = $app->input->getArray();
+
+		if(isset($_GET['back'])){
+			$data			= $_SESSION['varPost'];
+			$this->aviso	= 'Se ha enviado un correo a su direccion con informaicon de su automovil..';
+		}
+		$this->varPost	= (object) $data;
         if(isset($data['etiqueta'])){
 	        $this->data = $this->get( 'Busquedatag' );
         }else{
@@ -20,7 +27,8 @@ class busquedaViewbusqueda extends JViewLegacy {
 			JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
 			return false;
         }
-
+		$_SESSION['varPost'] = $data;
 		parent::display($tpl);
+		return true;
 	}
 }

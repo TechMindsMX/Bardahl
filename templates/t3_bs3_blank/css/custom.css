@@ -25,7 +25,9 @@ body {
 
 #form_buscar select{
     width: 206px;
-} 
+}
+
+
 .email{
     background-color: #ffffff !important;
     width: 259px !important;
@@ -58,11 +60,9 @@ body {
     font-size: 20px;
 }
 
-
 .pdf_boton {
     background-color: #f9cf00;
     height: 38px;
-    margin: -12px 28px;
     position: relative;
     transform: skew(-20deg, 0deg);
     width: 103px;
@@ -401,9 +401,14 @@ div.container_left .row #name0{
 
 h2 {
     color: #000000;
-
 }
 
+
+.email_enviado{
+    float: right;
+    width: 162px;
+    color: #003bb3;
+}
 div.container_left .row #name1{
     height: 501px;
     margin: -20px 0 0 -8px;
@@ -438,7 +443,7 @@ div.container_left .row #name1{
 
 .head-category{
     float: left;
-    margin: -40.1% 0 0 14.1px;
+    margin: -39.1% 0 0 14.1px;
     max-width: 1920px;
     width: 75%;
 }
@@ -687,9 +692,22 @@ ul.noti-event-home {
 }
 .data{
     background-color: #ffffff;
-    margin: -7px;
+    margin: 10px;
     width: 797px;
 }
+
+.texto-correo {
+    margin: 3px -7px;
+}
+.input-correo{
+    margin: -2px 17px;
+    position: absolute;
+}
+.pdf-botton {
+    margin: -6px 310px;
+    position: absolute;
+}
+
 .data >table{
     border-collapse: separate;
     border-spacing:  5px;
@@ -1018,9 +1036,10 @@ ul.noti-event-home {
     display: inline-block;
 }
 
+
 .ejemplo{
-    float: right;
-    margin: 3px;
+    margin: 3px 537px;
+    position: absolute;
     width: 98px;
 }
 
@@ -1801,7 +1820,11 @@ and (max-width : 480px) {
         border:none;
         -webkit-overflow-scrolling: touch;
     }
-
+    .texto-correo, .input-correo, .pdf-botton, .ejemplo {
+        display: inline-block;
+        margin: auto;
+        position: relative;
+    }
 
     .header-contacto {
         background-color: white;
@@ -2261,10 +2284,7 @@ and (max-width : 480px) {
     }
 
     .pdf_boton {
-        margin: 4px 107px;
-        position: relative;
-        transform: skew(-20deg, 0deg);
-        width: 78px;
+        margin: 4px 7px;
     }
 
     .contact-textarea > textarea {

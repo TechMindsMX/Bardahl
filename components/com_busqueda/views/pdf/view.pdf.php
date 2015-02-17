@@ -2,6 +2,7 @@
 defined('_JEXEC') or die('Restricted access');
 
 jimport('joomla.application.component.view');
+jimport('bardahl.createPDF');
 
 class busquedaViewPdf extends JViewLegacy {
 
@@ -26,6 +27,9 @@ class busquedaViewPdf extends JViewLegacy {
 		$document = JFactory::getDocument();
 		$document->setName('Recomendado');
 
+	/*	$pdf = new PDF();
+		$pdf->grabaDatos($this);
+*/
 		parent::display($tpl);
 	}
 }

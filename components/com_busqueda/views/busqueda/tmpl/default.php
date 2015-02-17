@@ -5,16 +5,21 @@ jimport( 'joomla.html.html.bootstrap' );
 ?>
 <script>
     function envio(){
-        var identity           = '<?php echo $_POST['identity'] ?>';
-        var kilometraje        = '<?php echo $_POST['kilometraje'] ?>';
+        var identity           = '<?php echo $this->varPost->identity ?>';
+        var kilometraje        = '<?php echo $this->varPost->kilometraje ?>';
         var email              = jQuery('.email').val();
+        if(email==''){
+            jQuery('texto-correo').text('Favor de ingresar el Correo electronico');
+            jQuery('.email').focus();
+            return;
+        }
         jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity+'&email='+email);
         jQuery( "#datapdf" ).submit();
     }
     jQuery(document).ready(function(){
         jQuery("#enlace").click(function(evento){
-            var identity           = '<?php echo $_POST['identity'] ?>';
-            var kilometraje           = '<?php echo $_POST['kilometraje'] ?>';
+            var identity           = '<?php echo $this->varPost->identity ?>';
+            var kilometraje           = '<?php echo $this->varPost->kilometraje ?>';
             evento.preventDefault();
             jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity);
             jQuery( "#datapdf" ).submit();
@@ -28,32 +33,33 @@ if ( is_null( $this->data ) ) {
 	$data = $this->data;
 
 	?>
-    <?php if(isset($_POST['year'])){?>
+    <?php if(isset($this->varPost->year)){?>
         <form id="datapdf" method="post"></form>
         <div class="category-desc base-desc recomendados">
             <h1> Te recomendamos estos productos para tu:</h1>
             <div class="marca">
-                <?php echo $_POST['marca']; ?>
+                <?php echo $this->varPost->marca; ?>
             </div>
+            <div class="email_enviado" id="email_enviado"><?php echo $this->aviso; ?></div>
             <div class="modelo">
-                <?php echo $_POST['modelo']; ?>
+                <?php echo $this->varPost->modelo; ?>
             </div>
             <div class="year">
-               Año:<?php echo ' '.$_POST['year']; ?>
+               Año:<?php echo ' '.$this->varPost->year; ?>
             </div>
             <div class="kilometraje">
-                <?php echo $_POST['kilometraje']; ?> Kms
+                <?php echo $this->varPost->kilometraje; ?> Kms
             </div>
             <div class="conocer">¿Quieres conocer más sobre las caracteristicas y productos recomendados para tu vehículo?</div>
 
             <form class="contacto" method="post">
                 <div class="data">
-                    <div class="Table">
+                    <div>
                         <div class="Row">
-                            <div class='Cel ejemplo'><a href="#" id="enlace" >Ver ejemplo</a></div>
+                            <div class='Cel ejemplo'><a href="productosPdf/ejemplo.pdf" target="_blank">Ver ejemplo</a></div>
                             <div class='Cel texto-correo'>Correo Electrónico: </div>
                             <div class='Cel input-correo'>
-                                <input id="pdf_boton" class="email" type="email" name="email">
+                                <input id="pdf_boton" class="email" type="email" name="email" required="">
                             </div>
                             <div class='Cel pdf-botton'>
                                 <input class="pdf_boton" type="button" value="Enviar" onclick="envio()">
@@ -87,7 +93,7 @@ if ( is_null( $this->data ) ) {
 		foreach ( $data as $key => $value ) {
 			$imagenes = $value->images;
 
-           $newUrl = ''; # JRoute::_('index.php?option=com_content&view=article&catid='.$value->catid.'&id='.$value->id);
+           $newUrl = JRoute::_('index.php?option=com_content&view=article&catid='.$value->catid.'&id='.$value->id);
 
 			echo '<div class="cat-article">
 				<a href="'.$newUrl.'">

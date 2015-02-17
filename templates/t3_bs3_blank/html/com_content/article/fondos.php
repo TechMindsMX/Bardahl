@@ -15,58 +15,23 @@
 
  */
 
-
 defined("_JEXEC") or die("Restricted access");
-
-
-JHtml::addIncludePath(JPATH_COMPONENT . '/helpers');
-
-jimport('bardahl.rating');
-
-
-
-// Create shortcuts to some parameters.
-
-$params  = $this->item->params;
-
-$images  = json_decode($this->item->images);
-
-$urls    = json_decode($this->item->urls);
-
-$canEdit = $params->get('access-edit');
-
-$user    = JFactory::getUser();
-
-$info    = $params->get('info_block_position', 0);
-
-JHtml::_('behavior.caption');
-
-$useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author'));
-
-
-$item = $this->item;
-
-$imagenes = json_decode($item->images);
+$input =JFactory::getApplication()->input->getArray();
 ?>
-
 <div class="head-category">
-
-
-
     <h1>
-
         Fondos de Pantalla
     </h1>
 
     <div class="img-desc">
         <div class="img-left">
-            <img src="/images/calendario/2015/<?php echo $_GET['img'] ?>">
+            <img src="/images/calendario/2015/<?php echo $input['sJbD'] ?>">
         </div>
         <div class="img-rigth">
-            <a href="/images/calendario/2015/1024/<?php echo $_GET['sJbD'] ?>">1024 x 768</a><br><br><br>
-            <a href="/images/calendario/2015/1280/<?php echo $_GET['sJbD'] ?>">1280 x 1024</a><br><br><br>
-            <a href="/images/calendario/2015/movil/<?php echo $_GET['sJbD'] ?>">Móvil</a>
+            <a href="/images/calendario/2015/1024/<?php echo $input['sJbD'] ?>">1024 x 768</a><br><br><br>
+            <a href="/images/calendario/2015/1280/<?php echo $input['sJbD'] ?>">1280 x 1024</a><br><br><br>
+            <a href="/images/calendario/2015/movil/<?php echo $input['sJbD'] ?>">Móvil</a>
         </div>
+
     </div>
 </div>
-<br><br><br>

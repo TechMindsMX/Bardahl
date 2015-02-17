@@ -14,6 +14,7 @@ class busquedaViewPdf extends JViewLegacy {
 			$this->data2 = $this->get('Buscamodelos');
 
 		// Check for errors.
+
 		if (count($errors = $this->get('Errors'))){
 			JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
 			return false;

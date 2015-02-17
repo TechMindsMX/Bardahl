@@ -13,8 +13,7 @@
 
 // Check to ensure this file is within the rest of the framework
 defined('JPATH_BASE') or die();
-jimport('libraries.bardahl');
-jimport('joomla.factory');
+
 require_once(JPATH_LIBRARIES .'/joomla/document/html/html.php');
 
 /**
@@ -71,7 +70,6 @@ class JDocumentpdf extends JDocumentHTML
         require_once($file);
         // Default settings are a portrait layout with an A4 configuration using millimeters as units
         $this->engine =new DOMPDF();
-
         return true;
     }
 
@@ -112,32 +110,26 @@ class JDocumentpdf extends JDocumentHTML
         //echo $data;exit;
         $pdf->load_html($data);
         $pdf->render();
-        $algo = $pdf->output();
-        file_put_contents("productosPdf/archivo.pdf", $algo);
+        $outPdf = $pdf->output();
+        file_put_contents("productosPdf/archivo.pdf", $outPdf);
 
-
-        $mailer = JFactory :: getMailer ();
-        $Config = JFactory :: getConfig ();
-
-        $mailer->setSender('webmaster@bardahl.com.mx');
-
+        $mailer = JFactory::getMailer();
+        $Config = JFactory::getConfig();
+        $remitente = array (
+            $Config['mailfrom'],
+            $Config['fromname']);
+        $mailer->setSender($remitente);
         $mailer->addRecipient($_GET['email']);
-        $body   = '<body></body>';
+        $body   = '<body>Este correo contiene informacion de su automovil</body>';
         $title  = 'Pdf Productos recomendados';
         $mailer->addAttachment('productosPdf/archivo.pdf');
         $mailer->isHTML(true);
         $mailer->Encoding = 'base64';
         $mailer->setSubject($title);
         $mailer->setBody($body);
-        $send = $mailer->Send();
-
-        //unlink('productosPdf/archivo.pdf');
-
-        if ( $send !== true ) {
-            return 'Error al enviar el correo';
-        } else {
-            return 'Correo enviado';
-        }
+        $mailer->Send();
+        unlink('productosPdf/archivo.pdf');
+        header('Location: index.php?option=com_busqueda&back=page');
     }
 
     /**

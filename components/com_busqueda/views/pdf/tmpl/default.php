@@ -1,3 +1,7 @@
+<?php
+defined('_JEXEC') or die('Restricted access');
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -70,7 +74,7 @@
     height: 14px;
     left: -2px;
     position: absolute;
-    top: 530px;
+    top: 513px;
     z-index: 4;
 }
 .footer{
@@ -151,10 +155,9 @@
     height: auto;
     line-height: 1em;
     width: 107px;
-    text-align: center;
 }
 .imgArticle{
-    height: 138px;
+    height: 128px;
 }
 
     .title-productos{
@@ -189,7 +192,7 @@
                 <div class="blod">Tipo de Compustible:</div><?php echo $this->registro->Combustible ?>
             </td>
             <td>
-                <div class="blod">Consumo en carretera:</div><?php echo $this->registro->Carretera ?>
+                <div class="blod">Consumo en carretera:</div><?php echo $this->registro->carretera ?>
             </td>
         </tr>
         <tr class="fila1">
@@ -197,10 +200,10 @@
                 <div class="blod">Posición de Motor:</div><?php echo $this->registro->Tipomotor ?>
             </td>
             <td>
-                <div class="blod">Transmisión:</div><?php echo $this->registro->Transmision ?>
+                <div class="blod">Transmisión:</div><?php echo $this->registro->Transmisi ?>
             </td>
             <td>
-                <div class="blod">Consumo mixto:</div><?php echo $this->registro->ConsumoMixto ?>
+                <div class="blod">Consumo mixto:</div><?php echo $this->registro->Consumomezclado ?>
             </td>
         </tr>
         <tr class="fila0">
@@ -208,7 +211,7 @@
                 <div class="blod">Asientos:</div><?php echo $this->registro->Pasajeros ?>
             </td>
             <td>
-                <div class="blod">Tipo de transmisión:</div><?php echo $this->registro->TipoTransmision ?>
+                <div class="blod">Tipo de transmisión:</div><?php echo $this->registro->TipoTransmisi ?>
             </td>
             <td>
                 <div class="blod">Consumo en ciudad:</div><?php echo $this->registro->ConsumoCiudad ?>
@@ -257,7 +260,7 @@
         </tr>
         <tr class="Row fila1">
             <td>
-                <div class="blod">Alto:</div><?php echo $this->registro->Alto ?>
+                <div class="blod">Alto:</div><?php echo $this->registro->alto ?>
             </td>
             <td>
                 <div class="blod">RPM:</div><?php echo $this->registro->RPM ?>

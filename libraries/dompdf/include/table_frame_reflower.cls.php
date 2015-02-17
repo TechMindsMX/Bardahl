@@ -393,18 +393,20 @@ class Table_Frame_Reflower extends Frame_Reflower {
     // border-spacing to the table as padding.  The other half is added to
     // the cells themselves.
     if ( $style->border_collapse === "separate" ) {
-      list($h, $v) = $style->border_spacing;
+      if(count($style->border_spacing)>1){
+        list($h, $v) = $style->border_spacing;
 
-      $v = $style->length_in_pt($v) / 2;
-      $h = $style->length_in_pt($h) / 2;
+        $v = $style->length_in_pt($v) / 2;
+        $h = $style->length_in_pt($h) / 2;
 
-      $style->padding_left   = $style->length_in_pt($style->padding_left,   $cb["w"]) + $h;
-      $style->padding_right  = $style->length_in_pt($style->padding_right,  $cb["w"]) + $h;
-      $style->padding_top    = $style->length_in_pt($style->padding_top,    $cb["h"]) + $v;
-      $style->padding_bottom = $style->length_in_pt($style->padding_bottom, $cb["h"]) + $v;
+        $style->padding_left   = $style->length_in_pt($style->padding_left,   $cb["w"]) + $h;
+        $style->padding_right  = $style->length_in_pt($style->padding_right,  $cb["w"]) + $h;
+        $style->padding_top    = $style->length_in_pt($style->padding_top,    $cb["h"]) + $v;
+        $style->padding_bottom = $style->length_in_pt($style->padding_bottom, $cb["h"]) + $v;
+      }
+
 
     }
-
     $this->_assign_widths();
 
     // Adjust left & right margins, if they are auto

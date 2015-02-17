@@ -132,6 +132,7 @@ $score = $rating->getRating($item->id);
                 js.src = "//connect.facebook.net/es_MX/sdk.js#xfbml=1&appId=468581553288902&version=v2.0";
                 fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));
+
         </script>
     </div>
 </div>
