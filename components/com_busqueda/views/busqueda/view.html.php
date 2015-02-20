@@ -12,10 +12,11 @@ class busquedaViewbusqueda extends JViewLegacy {
 		$app 				 = JFactory::getApplication();
 		$data				 = $app->input->getArray();
 
-		if(isset($_GET['back'])){
+		if(isset($data['back'])){
 			$data			= $_SESSION['varPost'];
-			$this->aviso	= 'Se ha enviado un correo a su direccion con informaicon de su automovil..';
+			$this->aviso	= 'Se ha enviado un correo a su dirección con información de su automóvil...';
 		}
+
 		$this->varPost	= (object) $data;
         if(isset($data['etiqueta'])){
 	        $this->data = $this->get( 'Busquedatag' );

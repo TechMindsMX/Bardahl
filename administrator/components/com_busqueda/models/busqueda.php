@@ -16,7 +16,7 @@ class busquedaModelbusqueda extends JModelList
 	}
     public function getListQuery()
     {
-        $db = JFactory::getDBO();
+		$db = JFactory::getDBO();
         $query 	= $db->getQuery(true);
 		$q2		= $db->getQuery(true);
         $query

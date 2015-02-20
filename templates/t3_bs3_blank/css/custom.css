@@ -14,6 +14,10 @@ body {
     font-weight: 300;
 }
 
+.fbFeedbackPost .postText {
+    color: #ffffff;
+}
+
 .t3-wrapper #t3-header .row .col-sm-4{
     width: 100%;
 }

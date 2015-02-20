@@ -15,21 +15,14 @@ class busquedaViewPdf extends JViewLegacy {
 		$this->data2 = $this->get( 'Buscamodelos' );
 
 		$datos = new busquedaModelPdf();
+        $this->kilometraje	= $data['kilometraje'];
+        $this->registro  				= $datos->getData($data['token']);
 
-		$this->kilometraje	= $data['kilometraje'];
-		$this->registro  				= $datos->getData($data['token']);
+        $datos->saveEmail($data);
 
-		// Check for errors.
-		if (count($errors = $this->get('Errors'))){
-			JLog::add(implode('<br />', $errors), JLog::WARNING, 'jerror');
-			return false;
-		}
-		$document = JFactory::getDocument();
-		$document->setName('Recomendado');
+        $document = JFactory::getDocument();
+        $document->setName($this->registro->Modelo.' '.$this->registro->Armadora);
 
-	/*	$pdf = new PDF();
-		$pdf->grabaDatos($this);
-*/
-		parent::display($tpl);
+        parent::display($tpl);
 	}
 }

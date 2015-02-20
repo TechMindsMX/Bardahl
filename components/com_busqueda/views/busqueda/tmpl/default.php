@@ -4,10 +4,14 @@ jimport( 'joomla.form.validation' );
 jimport( 'joomla.html.html.bootstrap' );
 ?>
 <script>
+
     function envio(){
+        jQuery('.email_enviado').html('');
+        jQuery('.email_enviado').append('<br>En un momento se le enviará un correo a su cuenta con información de su auto');
         var identity           = '<?php echo $this->varPost->identity ?>';
         var kilometraje        = '<?php echo $this->varPost->kilometraje ?>';
         var email              = jQuery('.email').val();
+
         if(email==''){
             jQuery('texto-correo').text('Favor de ingresar el Correo electronico');
             jQuery('.email').focus();
@@ -15,16 +19,9 @@ jimport( 'joomla.html.html.bootstrap' );
         }
         jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity+'&email='+email);
         jQuery( "#datapdf" ).submit();
+        jQuery('.email').val('');
+
     }
-    jQuery(document).ready(function(){
-        jQuery("#enlace").click(function(evento){
-            var identity           = '<?php echo $this->varPost->identity ?>';
-            var kilometraje           = '<?php echo $this->varPost->kilometraje ?>';
-            evento.preventDefault();
-            jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity);
-            jQuery( "#datapdf" ).submit();
-        });
-    })
 </script>
 <?php
 if ( is_null( $this->data ) ) {

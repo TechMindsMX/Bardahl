@@ -107,29 +107,13 @@ class JDocumentpdf extends JDocumentHTML
         $pdf = $this->engine;
         $data = parent::render();
         $this->fullPaths($data);
-        //echo $data;exit;
+        //cho $data;exit;
         $pdf->load_html($data);
         $pdf->render();
         $outPdf = $pdf->output();
-        file_put_contents("productosPdf/archivo.pdf", $outPdf);
 
-        $mailer = JFactory::getMailer();
-        $Config = JFactory::getConfig();
-        $remitente = array (
-            $Config['mailfrom'],
-            $Config['fromname']);
-        $mailer->setSender($remitente);
-        $mailer->addRecipient($_GET['email']);
-        $body   = '<body>Este correo contiene informacion de su automovil</body>';
-        $title  = 'Pdf Productos recomendados';
-        $mailer->addAttachment('productosPdf/archivo.pdf');
-        $mailer->isHTML(true);
-        $mailer->Encoding = 'base64';
-        $mailer->setSubject($title);
-        $mailer->setBody($body);
-        $mailer->Send();
-        unlink('productosPdf/archivo.pdf');
-        header('Location: index.php?option=com_busqueda&back=page');
+        file_put_contents("productosPdf/".$this->getName().'.pdf', $outPdf);
+        $this->sendMail();
     }
 
     /**
@@ -207,6 +191,32 @@ class JDocumentpdf extends JDocumentHTML
             }
         }
 
+    }
+
+    private function sendMail()
+    {
+        $mailer = JFactory::getMailer();
+
+        $Config = JFactory::getConfig();
+        $input = JFactory::getApplication()->input->getArray();
+
+        $remitente = array(
+            $Config['mailfrom'],
+            $Config['fromname']);
+
+        $body = '<body><p>  </p></body>';
+        $title = 'Pdf Productos recomendados';
+
+        $mailer->addRecipient($input['email']);
+        $mailer->setSender($remitente);
+        $mailer->addAttachment('productosPdf/'.$this->getName().'.pdf');
+        $mailer->isHTML(true);
+        $mailer->Encoding = 'base64';
+        $mailer->setSubject($title);
+        $mailer->setBody($body);
+        $mailer->Send();
+
+        unlink('productosPdf/'.$this->getName().'.pdf');
     }
 
 }

@@ -123,7 +123,7 @@ $score = $rating->getRating($item->id);
     </div>
 
     <div class="productos-form">
-        <div class="fb-comments" data-href="http://www.bardahl.com.mx" data-width="868" data-numposts="10" data-colorscheme="light"></div>
+        <div class="fb-comments" data-href="<?php echo JURI::current(); ?>" data-width="868" data-numposts="10" data-colorscheme="dark"></div>
         <div id="fb-root"></div>
         <script>(function(d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];

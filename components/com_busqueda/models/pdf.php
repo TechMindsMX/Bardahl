@@ -13,8 +13,23 @@ class busquedaModelPdf extends JModelItem {
         parent::__construct();
     }
 
-    public function getData($token){
+    public function saveEmail($data){
 
+        $db = JFactory::getDbo();
+        $query = $db->getQuery(true);
+        $columns = array('email','product_id','date');
+        $values = array('"'.$data['email'].'"', $data['token'], '\''.date('Y-m-d').'\'');
+
+        $query
+            ->insert($db->quoteName('#__promoemail'))
+            ->columns($db->quoteName($columns))
+            ->values(implode(',',$values));
+
+        $db->setQuery($query);
+        $db->execute();
+    }
+
+    public function getData($token){
         $token         = explode('-', $this->inputVars['token']);
         $db		= JFactory::getDbo();
         $query 	= $db->getQuery(true);
@@ -94,29 +109,18 @@ class busquedaModelPdf extends JModelItem {
 
     public function getBuscamodelos(){
 
-        $array=explode('-', $_GET['kilometraje']);
-        $compare    =$array[0];
+        $db		= JFactory::getDbo();
+        $query 	= $db->getQuery(true);
+        $query->select('content.*')
+            ->from($db->quoteName('#__content', 'content'))
+            ->join('inner', $db->quoteName('#__categories', 'categories').' on '.$db->quoteName('content.catid').'='.$db->quoteName('categories.id'))
+            ->where($db->quoteName('categories.id').' = 74 or '.$db->quote('categories.id').' = 75 or '.$db->quote('categories.id').' = 19')
+            ->order('rand() limit 5 ');
+        $db->setQuery($query);
+        $results = $db->loadObjectList();
 
-        $arreglo = array(
-            '125',
-            '89',
-            '86',
-            '85',
-            '72'
-        );
-
-        foreach ($arreglo as $key => $value) {
-            $db		= JFactory::getDbo();
-            $query 	= $db->getQuery(true);
-            $query->select('*')
-                ->from($db->quoteName('#__content'))
-                ->where($db->quoteName('id').' = '.$db->quote($value));
-            $db->setQuery($query);
-            $results[] = $db->loadObject();
-        }
-
-        foreach($results as $key => $value){
-            if($value<>NULL){
+    foreach($results as $key => $value){
+        if($value<>NULL){
                 $query 	= $db->getQuery(true);
                 $query->select('*')
                     ->from($db->quoteName('#__categories', 'a'))
@@ -139,18 +143,15 @@ class busquedaModelPdf extends JModelItem {
         return $respuesta;
     }
 
-
     public function getFieldsAttach($objeto){
         $db		= JFactory::getDbo();
         $query 	= $db->getQuery(true);
         $query->select('tableb.title, tablea.value')
             ->from($db->quoteName('#__fieldsattach_values', 'tablea'))
             ->join('INNER', $db->quoteName('#__fieldsattach', 'tableb').'ON ('.$db->quoteName('tablea.fieldsid') . ' = ' . $db->quoteName('tableb.id').')');
-	       # ->where( $db->quoteName( 'tablea.articleid' ) . ' = ' . $db->quote( $objeto->content_item_id ) );
         $db->setQuery($query);
 
         $results = $db->loadObjectList();
-
 
         foreach($results as $key => $value){
             $propiedad  = $value->title;
