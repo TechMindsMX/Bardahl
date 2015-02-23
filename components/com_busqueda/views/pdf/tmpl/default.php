@@ -74,7 +74,7 @@ defined('_JEXEC') or die('Restricted access');
     height: 14px;
     left: -2px;
     position: absolute;
-    top: 479px;
+    top: 505px;
     z-index: 4;
 }
 .footer{
