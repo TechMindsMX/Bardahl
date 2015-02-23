@@ -104,16 +104,19 @@ class JDocumentpdf extends JDocumentHTML
 
     function render($cache = false, $params = array())
     {
+
         $pdf = $this->engine;
         $data = parent::render();
         $this->fullPaths($data);
-        //cho $data;exit;
+        //echo $data;exit;
         $pdf->load_html($data);
         $pdf->render();
         $outPdf = $pdf->output();
 
         file_put_contents("productosPdf/".$this->getName().'.pdf', $outPdf);
+
         $this->sendMail();
+        exit;
     }
 
     /**

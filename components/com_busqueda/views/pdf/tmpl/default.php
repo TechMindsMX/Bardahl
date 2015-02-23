@@ -74,7 +74,7 @@ defined('_JEXEC') or die('Restricted access');
     height: 14px;
     left: -2px;
     position: absolute;
-    top: 513px;
+    top: 479px;
     z-index: 4;
 }
 .footer{
@@ -164,6 +164,9 @@ defined('_JEXEC') or die('Restricted access');
         position: absolute;
     }
 </style>
+    <script>
+
+    </script>
 </head>
 <body>
 <div id="apDiv1">
@@ -192,7 +195,7 @@ defined('_JEXEC') or die('Restricted access');
                 <div class="blod">Tipo de Compustible:</div><?php echo $this->registro->Combustible ?>
             </td>
             <td>
-                <div class="blod">Consumo en carretera:</div><?php echo $this->registro->carretera ?>
+                <div class="blod">Consumo en carretera:</div><?php echo $this->registro->Carretera ?>
             </td>
         </tr>
         <tr class="fila1">
@@ -200,10 +203,10 @@ defined('_JEXEC') or die('Restricted access');
                 <div class="blod">Posición de Motor:</div><?php echo $this->registro->Tipomotor ?>
             </td>
             <td>
-                <div class="blod">Transmisión:</div><?php echo $this->registro->Transmisi ?>
+                <div class="blod">Transmisión:</div><?php echo $this->registro->Transmision ?>
             </td>
             <td>
-                <div class="blod">Consumo mixto:</div><?php echo $this->registro->Consumomezclado ?>
+                <div class="blod">Consumo mixto:</div><?php echo $this->registro->ConsumoMixto ?>
             </td>
         </tr>
         <tr class="fila0">
@@ -211,7 +214,7 @@ defined('_JEXEC') or die('Restricted access');
                 <div class="blod">Asientos:</div><?php echo $this->registro->Pasajeros ?>
             </td>
             <td>
-                <div class="blod">Tipo de transmisión:</div><?php echo $this->registro->TipoTransmisi ?>
+                <div class="blod">Tipo de transmisión:</div><?php echo $this->registro->TipoTransmision ?>
             </td>
             <td>
                 <div class="blod">Consumo en ciudad:</div><?php echo $this->registro->ConsumoCiudad ?>
@@ -260,7 +263,7 @@ defined('_JEXEC') or die('Restricted access');
         </tr>
         <tr class="Row fila1">
             <td>
-                <div class="blod">Alto:</div><?php echo $this->registro->alto ?>
+                <div class="blod">Alto:</div><?php echo $this->registro->Alto ?>
             </td>
             <td>
                 <div class="blod">RPM:</div><?php echo $this->registro->RPM ?>
@@ -322,3 +325,6 @@ defined('_JEXEC') or die('Restricted access');
 </div>
 </body>
 </html>
+<script>
+    window.close();
+</script>

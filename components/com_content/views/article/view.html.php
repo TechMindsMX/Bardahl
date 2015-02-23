@@ -40,6 +40,8 @@ class ContentViewArticle extends JViewLegacy
 		$app		= JFactory::getApplication();
 		$user		= JFactory::getUser();
 		$dispatcher	= JEventDispatcher::getInstance();
+
+		$this->item		= $this->get('Item');
 		$this->print	= $app->input->getBool('print');
 		$this->state	= $this->get('State');
 		$this->user		= $user;

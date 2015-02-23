@@ -419,7 +419,7 @@ div.container_left .row #name1{
     width: 350px;
 }
 .container_left{
-    background-image: url("../../../images/site/img-back-banner-bardahl.png");
+    background-image: url("../../../images/site/img-back-banner-bardahl.gif");
     background-repeat: no-repeat;
     }
 .container_left .row{
@@ -551,13 +551,18 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 #encuentra-producto input {
-    margin: -11px -18px;
+    margin: -11px 7px;
 }
 
 .container_right .row{
     margin: auto;
 
 }
+
+.conocer{
+    margin:17px auto;
+}
+
 /*/MODULOS PAGINA PRINCIPAL/*/
 .breadcrumb{
     background-color: transparent;
@@ -1024,7 +1029,7 @@ ul.noti-event-home {
 }
 .redes{
     display: inline-flex;
-    margin: 20px 0 0 -18px;
+    margin: 151px 0 0 -18px;
     width: 353px;
     z-index: 1000;
     position: relative;

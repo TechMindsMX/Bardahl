@@ -114,7 +114,6 @@ class busquedaModelbusqueda extends JModelItem {
 
                 self::getFieldsAttach($value);
                 $valor=new stdClass();
-               # $valor->path    = $result->path;
                 $valor->id      = $value->id;
                 $valor->alias   = $value->alias;
                 $valor->title   = $value->title;
@@ -134,11 +133,9 @@ class busquedaModelbusqueda extends JModelItem {
         $query->select('tableb.title, tablea.value')
             ->from($db->quoteName('#__fieldsattach_values', 'tablea'))
             ->join('INNER', $db->quoteName('#__fieldsattach', 'tableb').'ON ('.$db->quoteName('tablea.fieldsid') . ' = ' . $db->quoteName('tableb.id').')');
-	       # ->where( $db->quoteName( 'tablea.articleid' ) . ' = ' . $db->quote( $objeto->content_item_id ) );
         $db->setQuery($query);
 
         $results = $db->loadObjectList();
-
 
         foreach($results as $key => $value){
             $propiedad  = $value->title;

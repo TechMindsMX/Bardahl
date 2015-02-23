@@ -12,7 +12,7 @@ defined('_JEXEC') or die;
 $class = ' class="first"';
 JHtml::_('bootstrap.tooltip');
 $lang	= JFactory::getLanguage();
-echo 'algo aqui se tiene';
+
 if (count($this->items[$this->parent->id]) > 0 && $this->maxLevelcat != 0) :
 ?>
 	<?php foreach($this->items[$this->parent->id] as $id => $item) : ?>

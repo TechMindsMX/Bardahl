@@ -84,21 +84,11 @@ class busquedaModelPdf extends JModelItem {
 
         foreach($results as $key => $value){
             if($value<>NULL){
-                $query 	= $db->getQuery(true);
-                $query->select('*')
-                    ->from($db->quoteName('#__categories', 'a'))
-                    ->join('INNER', $db->quoteName('#__menu','b').'ON ('.$db->quoteName('a.path') . ' = ' . $db->quoteName('b.path').')')
-                    ->where($db->quoteName('a.id').' = '.$db->quote($value->catid));
-                $db->setQuery($query);
-                $result = $db->loadObject();
-
                 self::getFieldsAttach($value);
                 $valor=new stdClass();
-                # $valor->path    = $result->path;
                 $valor->id      = $value->id;
                 $valor->alias   = $value->alias;
                 $valor->title   = $value->title;
-                $valor->Itemid  = @$result->Itemid;
                 $valor->images  = json_decode($value->images);
                 $valor->urls    = json_decode($value->urls);
                 $respuesta[] = $valor;
@@ -109,15 +99,15 @@ class busquedaModelPdf extends JModelItem {
 
     public function getBuscamodelos(){
 
-        $db		= JFactory::getDbo();
-        $query 	= $db->getQuery(true);
-        $query->select('content.*')
-            ->from($db->quoteName('#__content', 'content'))
-            ->join('inner', $db->quoteName('#__categories', 'categories').' on '.$db->quoteName('content.catid').'='.$db->quoteName('categories.id'))
-            ->where($db->quoteName('categories.id').' = 74 or '.$db->quote('categories.id').' = 75 or '.$db->quote('categories.id').' = 19')
-            ->order('rand() limit 5 ');
-        $db->setQuery($query);
-        $results = $db->loadObjectList();
+    $db		= JFactory::getDbo();
+    $query 	= $db->getQuery(true);
+    $query->select('content.*')
+        ->from($db->quoteName('#__content', 'content'))
+        ->join('inner', $db->quoteName('#__categories', 'categories').' on '.$db->quoteName('content.catid').'='.$db->quoteName('categories.id'))
+        ->where($db->quoteName('content.state').'=1 and '.$db->quoteName('categories.id').' = 74 or '.$db->quote('categories.id').' = 75 or '.$db->quote('categories.id').' = 19 ')
+        ->order('rand() limit 5 ');
+    $db->setQuery($query);
+    $results = $db->loadObjectList();
 
     foreach($results as $key => $value){
         if($value<>NULL){

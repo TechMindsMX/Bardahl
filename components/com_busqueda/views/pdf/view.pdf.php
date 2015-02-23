@@ -13,11 +13,9 @@ class busquedaViewPdf extends JViewLegacy {
 		$this->data = $this->get( 'Busquedamodulo' );
 
 		$this->data2 = $this->get( 'Buscamodelos' );
-
 		$datos = new busquedaModelPdf();
         $this->kilometraje	= $data['kilometraje'];
         $this->registro  				= $datos->getData($data['token']);
-
         $datos->saveEmail($data);
 
         $document = JFactory::getDocument();

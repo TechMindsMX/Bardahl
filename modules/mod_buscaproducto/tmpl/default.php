@@ -182,13 +182,10 @@ $jinput = JFactory::getApplication ()->input;
         <br>
         <div class="suggestionList" id="suggestionsList"> &nbsp; </div>
         <p id="encuentra-producto" align="right">
-            <input id="buscar" type='image' name='enviar'align="right" src="templates/t3_bs3_blank/images/site/btn_buscar.png" />
+            <input id="buscar" type='image' name='enviar'align="right" src="templates/t3_bs3_blank/images/site/btn_buscar.gif" />
         </p>
 
     </form>
-</div>
-<div class="auto">
-    <img id="auto"  src="templates/t3_bs3_blank/images/site/mustang.png">
 </div>
 <script>
     (function(d, s, id) {

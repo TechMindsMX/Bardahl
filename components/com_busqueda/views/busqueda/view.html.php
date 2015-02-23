@@ -16,7 +16,6 @@ class busquedaViewbusqueda extends JViewLegacy {
 			$data			= $_SESSION['varPost'];
 			$this->aviso	= 'Se ha enviado un correo a su dirección con información de su automóvil...';
 		}
-
 		$this->varPost	= (object) $data;
         if(isset($data['etiqueta'])){
 	        $this->data = $this->get( 'Busquedatag' );

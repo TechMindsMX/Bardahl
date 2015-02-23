@@ -4,7 +4,6 @@ jimport( 'joomla.form.validation' );
 jimport( 'joomla.html.html.bootstrap' );
 ?>
 <script>
-
     function envio(){
         jQuery('.email_enviado').html('');
         jQuery('.email_enviado').append('<br>En un momento se le enviará un correo a su cuenta con información de su auto');
@@ -17,8 +16,9 @@ jimport( 'joomla.html.html.bootstrap' );
             jQuery('.email').focus();
             return;
         }
-        jQuery('#datapdf').attr('action', 'index.php?option=com_busqueda&view=pdf&format=pdf&kilometraje='+kilometraje+'&token='+identity+'&email='+email);
-        jQuery( "#datapdf" ).submit();
+
+        jQuery.get('index.php?option=com_busqueda&view=pdf&format=pdf&tmpl=component&kilometraje='+kilometraje+'&token='+identity+'&email='+email,
+            function(data, status){ });
         jQuery('.email').val('');
 
     }
@@ -27,11 +27,11 @@ jimport( 'joomla.html.html.bootstrap' );
 if ( is_null( $this->data ) ) {
 	echo '	<div id="container" style="display: block"><p>No se encontraron resultados</p></div>';
 } else {
-	$data = $this->data;
+    $data = $this->data;
 
-	?>
+    ?>
     <?php if(isset($this->varPost->year)){?>
-        <form id="datapdf" method="post"></form>
+        <form id="datapdf" method="post" target="_blank"></form>
         <div class="category-desc base-desc recomendados">
             <h1> Te recomendamos estos productos para tu:</h1>
             <div class="marca">
